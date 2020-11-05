@@ -26,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dispatch_summary/application/users" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,6 +35,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application" />
     </key>
@@ -73,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604556380135</updated>
       <workItem from="1604556381709" duration="2173000" />
-      <workItem from="1604559050176" duration="1232000" />
+      <workItem from="1604559050176" duration="4353000" />
     </task>
     <servers />
   </component>
