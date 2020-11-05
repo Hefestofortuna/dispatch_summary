@@ -1,5 +1,5 @@
 """
-ASGI config for dispatch_summary project.
+ASGI config for Dispatch_Summary project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dispatch_summary.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Dispatch_Summary.settings')
 
 application = get_asgi_application()
