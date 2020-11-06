@@ -16,5 +16,5 @@ class Subdivision(models.Model):
         return self.subdivision_title
 
     class Meta:
-        verbose_name_plural = "Подразделение"
-        verbose_name = "Подразделения"
+        verbose_name_plural = "Подразделения"
+        verbose_name = "Подразделение"

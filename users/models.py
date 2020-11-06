@@ -2,6 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import subdivisions.models
+import organizations.models
 
 
 class User(AbstractUser):
@@ -12,6 +13,10 @@ class User(AbstractUser):
     def get_fio(self):
         return '%s %s %s' % (self.last_name, self.first_name, self.middle_name)
     get_fio.short_description = "ФИО"
+
+    def get_organization(self):
+        return organizations.models.Organization.objects.filter(subdivision__user=self.pk).get()
+    get_organization.short_description = "Организация"
 
     def __str__(self):
         return self.get_fio()
@@ -27,6 +32,9 @@ class Profile(models.Model):
     email = models.EmailField(_('Электронная почта'), blank=True, null=True)
     working = models.BooleanField(_('Работает'), default=True)
     remark = models.TextField(_('Примечание'), blank=True, null=True)
+
+    def __str__(self):
+        return self.user.get_fio()
 
     class Meta:
         verbose_name_plural = "Профиль"

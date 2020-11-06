@@ -25,6 +25,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -53,18 +56,19 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,7 +110,8 @@
       <workItem from="1604571001293" duration="10445000" />
       <workItem from="1604632343373" duration="2575000" />
       <workItem from="1604639660998" duration="2000" />
-      <workItem from="1604639677358" duration="2610000" />
+      <workItem from="1604639677358" duration="5866000" />
+      <workItem from="1604654183464" duration="10776000" />
     </task>
     <servers />
   </component>
@@ -130,5 +135,9 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="709" y="295" key="FileChooserDialogImpl/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604632340309" />
+    <state x="430" y="185" key="SettingsEditor" timestamp="1604658916142">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="430" y="185" key="SettingsEditor/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604658916142" />
   </component>
 </project>

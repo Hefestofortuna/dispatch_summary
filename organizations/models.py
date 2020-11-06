@@ -11,5 +11,5 @@ class Organization(models.Model):
         return self.short_title
 
     class Meta:
-        verbose_name_plural = "Организация"
-        verbose_name = "Организации"
+        verbose_name_plural = "Организации"
+        verbose_name = "Организация"
