@@ -1,5 +1,5 @@
 """
-WSGI config for Dispatch_Summary project.
+WSGI config for dispatch_summary project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Dispatch_Summary.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dispatch_summary.settings')
 
 application = get_wsgi_application()
