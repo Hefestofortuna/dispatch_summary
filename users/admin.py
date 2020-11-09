@@ -3,7 +3,7 @@ from .models import User, Profile
 
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('get_fio', 'email', 'subdivision', 'get_organization')
+    list_display = ('get_fio', 'email', 'subdivision', 'get_organization', 'get_groups')
     list_display_links = ('get_fio',)
 
 

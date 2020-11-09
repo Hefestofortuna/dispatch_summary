@@ -26,5 +26,5 @@ class Folder(MPTTModel):
         return '%s %s' % (self.organization, self.name,)
 
     class Meta:
-        verbose_name_plural = "Папка"
-        verbose_name = "Папки"
+        verbose_name_plural = "Папки"
+        verbose_name = "Папка"

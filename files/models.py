@@ -20,5 +20,5 @@ class File(models.Model):
         return '%s %s' % (self.file_title, self.file_folder)
 
     class Meta:
-        verbose_name_plural = "Файл"
-        verbose_name = "Файлы"
+        verbose_name_plural = "Файлы"
+        verbose_name = "Файл"

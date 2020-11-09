@@ -13,3 +13,14 @@ class Organization(models.Model):
     class Meta:
         verbose_name_plural = "Организации"
         verbose_name = "Организация"
+
+
+class Contractor(models.Model):
+    contractor_title = models.CharField(_('Подрядная организация'), max_length=64)
+
+    def __str__(self):
+        return self.contractor_title
+
+    class Meta:
+        verbose_name_plural = "Подрядные организациия"
+        verbose_name = "Подрядная организация"

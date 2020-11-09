@@ -5,7 +5,7 @@ from .models import Feed, Tag
 class FeedAdmin(admin.ModelAdmin):
     list_display = ('feed_title', 'feed_text', 'feed_pub_date', 'feed_author', 'get_tags')
     list_display_links = ('feed_title',)
-    filter_horizontal = ('tags', 'feed_file',)
+    filter_horizontal = ('feed_tags', 'feed_file',)
 
 
 class TagAdmin(admin.ModelAdmin):

@@ -9,12 +9,12 @@ class Feed(models.Model):
     feed_text = models.TextField(_('Текст новости'), null=True, blank=True)
     feed_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
     feed_file = models.ManyToManyField('files.File', blank=True, verbose_name='Прикрепленные файлы')
-    tags = models.ManyToManyField('Tag', blank=True, verbose_name='Теги')
+    feed_tags = models.ManyToManyField('Tag', blank=True, verbose_name='Теги')
     feed_author = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, blank=True, null=True,
                                     verbose_name='Автор новости')
 
     def get_tags(self):
-        return ",\n".join([str(p) for p in self.tags.all()])
+        return ",\n".join([str(p) for p in self.feed_tags.all()])
     get_tags.short_description = "Тэги"
 
     def __str__(self):
