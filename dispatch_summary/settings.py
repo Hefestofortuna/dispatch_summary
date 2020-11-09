@@ -42,10 +42,10 @@ INSTALLED_APPS = [
     'users',
     'subdivisions',
     'organizations',
-    'feeds',
     'files',
+    'feeds',
     'folders',
-    'mptt'
+    'mptt',
 ]
 
 MIDDLEWARE = [

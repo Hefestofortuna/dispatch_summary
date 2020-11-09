@@ -59,16 +59,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
     </key>
   </component>
   <component name="RunManager">
@@ -114,7 +114,11 @@
       <workItem from="1604654183464" duration="10896000" />
       <workItem from="1604674041335" duration="3742000" />
       <workItem from="1604744466236" duration="62000" />
-      <workItem from="1604744547197" duration="18660000" />
+      <workItem from="1604744547197" duration="22599000" />
+      <workItem from="1604819566762" duration="3000" />
+      <workItem from="1604831979950" duration="1822000" />
+      <workItem from="1604890920821" duration="484000" />
+      <workItem from="1604891450297" duration="10315000" />
     </task>
     <servers />
   </component>
@@ -134,6 +138,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604902664488">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604902664488" />
     <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1604632340309">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
