@@ -17,7 +17,7 @@
 <ol class="decimal_type" style="list-style-type: undefined;margin-left:79px;">
     <li style="text-align: center;">Web-хостинг &ndash; Reg.ru(http://dispatchsummary.ru/)</li>
     <li style="text-align: center;">Web-сервер &ndash; Nginx 1.18.0</li>
-    <li style="text-align: center;">Web-приложение&nbsp;- Django 3.1.3</li>
+    <li style="text-align: center;">Web-приложение&nbsp;- Django 3.1.1</li>
     <li style="text-align: center;">СУБД &ndash; PostgreSQL 13.0</li>
     <li style="text-align: center;">CSS&nbsp;Фреймворк &ndash; Bootstrap 4.5</li>
     <li style="text-align: center;">ОС &ndash; Linux Ubuntu 20.04 LTS</li>
