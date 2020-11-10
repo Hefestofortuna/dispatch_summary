@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'feeds',
     'folders',
     'automobiles',
+    'journals',
     'mptt',
+    'django_cleanup',
 ]
 
 MIDDLEWARE = [
