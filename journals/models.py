@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 from django.utils.translation import ugettext_lazy as _
 import organizations.models
 import subdivisions.models
@@ -50,7 +51,7 @@ class JournalContractor(models.Model):
 
 
 class JournalNotice(models.Model):
-    journal_notice_date_plan = models.DateTimeField(_('Дата выполенния работ'), null=False, blank=False)
+    journal_notice_date_plan = models.DateField(_('Дата выполенния работ'), null=False, blank=False)
     journal_notice_time_start = models.TimeField(_('Начальное время по МСК'), null=False, blank=False)
     journal_notice_time_end = models.TimeField(_('Конечное время по МСК'), null=False, blank=False)
     journal_notice_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
@@ -75,3 +76,33 @@ class JournalNotice(models.Model):
     class Meta:
         verbose_name = 'Предупреждение на производство работы'
         verbose_name_plural = 'Предупреждения на производство работ'
+
+
+class JournalOrder(models.Model):
+    journal_order_number = models.IntegerField(_('Номер разрешения'), unique=True, null=False, blank=False)
+    journal_order_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL, null=True,
+                                                  blank=False, verbose_name='Подразделение')
+    journal_order_type_of_work = models.ForeignKey('TypeOfWork', on_delete=models.SET_NULL, null=True, blank=True,
+                                                   verbose_name='Наименовние работ')
+    journal_order_allow_user = models.ForeignKey(users.models.User, limit_choices_to=Q(groups__name='Выдача приказов'),
+                                                 on_delete=models.SET_NULL, null=True, blank=True,
+                                                 verbose_name='Рашрешен ШЧ')
+    journal_order_description = models.TextField(_('Примечание заявки'), null=False, blank=False)
+    journal_order_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
+    journal_order_datetime_on = models.DateTimeField(_('Дата и время включения'))
+    journal_order_datetime_off = models.DateTimeField(_('Дата и время включения'))
+    journal_order_leader_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True, blank=False,
+                                                  limit_choices_to=Q(groups__name='ШНС'),
+                                                  verbose_name='Ответ ШН|ШНС', related_name='+')
+
+
+
+class TypeOfWork(models.Model):
+    type_of_work_title = models.CharField(_('Наименование работ'), max_length=128, unique=True)
+
+    def __str__(self):
+        return self.type_of_work_title
+
+    class Meta:
+        verbose_name = 'Наименование работы'
+        verbose_name_plural = 'Наименования работ'
