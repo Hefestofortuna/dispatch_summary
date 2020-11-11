@@ -78,23 +78,83 @@ class JournalNotice(models.Model):
         verbose_name_plural = 'Предупреждения на производство работ'
 
 
-class JournalOrder(models.Model):
-    journal_order_number = models.IntegerField(_('Номер разрешения'), unique=True, null=False, blank=False)
-    journal_order_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL, null=True,
-                                                  blank=False, verbose_name='Подразделение')
-    journal_order_type_of_work = models.ForeignKey('TypeOfWork', on_delete=models.SET_NULL, null=True, blank=True,
-                                                   verbose_name='Наименовние работ')
-    journal_order_allow_user = models.ForeignKey(users.models.User, limit_choices_to=Q(groups__name='Выдача приказов'),
-                                                 on_delete=models.SET_NULL, null=True, blank=True,
-                                                 verbose_name='Рашрешен ШЧ')
-    journal_order_description = models.TextField(_('Примечание заявки'), null=False, blank=False)
-    journal_order_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
-    journal_order_datetime_on = models.DateTimeField(_('Дата и время включения'))
-    journal_order_datetime_off = models.DateTimeField(_('Дата и время включения'))
-    journal_order_leader_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True, blank=False,
-                                                  limit_choices_to=Q(groups__name='ШНС'),
-                                                  verbose_name='Ответ ШН|ШНС', related_name='+')
+class JournalOrderObject(models.Model):
+    journal_order_object_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
+                                                         null=True, blank=False, verbose_name='Подразделение')
+    journal_order_object_type_of_work = models.ForeignKey('TypeOfWork', on_delete=models.SET_NULL, null=True,
+                                                          blank=True, verbose_name='Наименовние работ')
+    journal_order_object_application_note = models.TextField(_('Примечание заявки'), null=True, blank=False)
+    journal_order_object_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
+    journal_order_object_journal_order_turning_on = models.OneToOneField('JournalOrderTurningOn',
+                                                                         on_delete=models.CASCADE,
+                                                                         verbose_name='Выключенный объект')
+    journal_order_object_journal_order_turning_off = models.OneToOneField('JournalOrderTurningOff',
+                                                                          on_delete=models.CASCADE,
+                                                                          verbose_name='Включенный объект')
 
+    def __str__(self):
+        return '%s-%s-%s' % (self.journal_order_object_subdivision, self.journal_order_object_type_of_work,
+                             self.journal_order_object_pub_date)
+
+    class Meta:
+        verbose_name = 'Объекты подлежащие выключению|включению'
+        verbose_name_plural = 'Объект подлежащий выключению|включению'
+
+
+class JournalOrderTurningOn(models.Model):
+    journal_order_turning_on_permit_number = models.IntegerField(_('Номер разрешения'), unique=True, null=False,
+                                                                 blank=False)
+    journal_order_turning_on_datetime_on = models.DateTimeField(_('Дата и время включения'))
+    journal_order_turning_on_responsible_shns_user_on = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                                          null=True, blank=True,
+                                                                          limit_choices_to=Q(groups__name='ШН'),
+                                                                          verbose_name='Ответственный ШНС при включении',
+                                                                          related_name='+')
+    journal_order_turning_on_responsible_shchd_user_on = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                                           null=True,
+                                                                           blank=False,
+                                                                           limit_choices_to=Q(groups__name='ШЧД'),
+                                                                           verbose_name='Отвественный ШЧД при включении',
+                                                                           related_name='+')
+    journal_order_turning_on_allowed_ds = models.CharField(_('Расшешено ДС'), max_length=128, null=True, blank=True)
+    journal_order_turning_on_allow_shch_user = models.ForeignKey(users.models.User,
+                                                                 limit_choices_to=Q(groups__name='ШЧ'),
+                                                                 on_delete=models.SET_NULL, null=True, blank=True,
+                                                                 verbose_name='Разрешено ШЧ')
+    journal_order_turning_on_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
+
+    def __str__(self):
+        return '%s-%s' % (self.journal_order_turning_on_permit_number, self.journal_order_turning_on_datetime_on)
+
+    class Meta:
+        verbose_name = 'Выключенные объекты'
+        verbose_name_plural = 'Выключенный объект'
+
+
+class JournalOrderTurningOff(models.Model):
+    journal_order_turning_off_inclusion_number = models.IntegerField(_('Номер выклчюения'), unique=True, null=True,
+                                                                     blank=True)
+    journal_order_turning_off_datetime_off = models.DateTimeField(_('Дата и время выключения'))
+    journal_order_turning_off_responsible_shns_user_off = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                                            null=True,
+                                                                            blank=True,
+                                                                            limit_choices_to=Q(groups__name='ШН'),
+                                                                            verbose_name='Ответственный ШНС при выключении',
+                                                                            related_name='+')
+    journal_order_turning_off_responsible_shchd_user_off = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                                             null=True, blank=True,
+                                                                             limit_choices_to=Q(groups__name='ШЧД'),
+                                                                             verbose_name='Отвественный ШЧД при выключении',
+                                                                             related_name='+')
+    journal_order_turning_off_description = models.TextField(_('Примечание'), null=True, blank=True)
+    journal_order_turning_off_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
+
+    def __str__(self):
+        return '%s-%s' % (self.journal_order_turning_off_inclusion_number, self.journal_order_turning_off_datetime_off)
+
+    class Meta:
+        verbose_name = 'Включенные объекты'
+        verbose_name_plural = 'Включенный объект'
 
 
 class TypeOfWork(models.Model):
