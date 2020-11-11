@@ -42,10 +42,13 @@ INSTALLED_APPS = [
     'users',
     'subdivisions',
     'organizations',
-    'feeds',
     'files',
+    'feeds',
     'folders',
-    'mptt'
+    'automobiles',
+    'journals',
+    'mptt',
+    'django_cleanup',
 ]
 
 MIDDLEWARE = [

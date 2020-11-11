@@ -18,6 +18,10 @@ class User(AbstractUser):
         return organizations.models.Organization.objects.filter(subdivision__user=self.pk).get()
     get_organization.short_description = "Организация"
 
+    def get_groups(self):
+        return ",\n".join([str(p) for p in self.groups.all()])
+    get_groups.short_description = "Группы"
+
     def __str__(self):
         return self.get_fio()
 
@@ -37,5 +41,5 @@ class Profile(models.Model):
         return self.user.get_fio()
 
     class Meta:
-        verbose_name_plural = "Профиль"
-        verbose_name = "Профили"
+        verbose_name_plural = "Профили"
+        verbose_name = "Профиль"

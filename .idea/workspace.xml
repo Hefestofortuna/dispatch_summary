@@ -19,20 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/feeds/templates/feeds/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feeds/templates/feeds/cache.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feeds/templates/feeds/feeds_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feeds/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Dispatch-Summary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dispatch-Summary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatch_summary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/feeds/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/folders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subdivisions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdivisions/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +41,6 @@
   </component>
   <component name="JupyterTrust" id="fcfff652-7817-4a84-9f2a-d1f0b2d03e3d" />
   <component name="ProjectId" id="1jrJfPgJ0qEyj8n6vjfVja1wQPc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -73,16 +59,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
     </key>
   </component>
   <component name="RunManager">
@@ -110,10 +96,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="" />
@@ -131,15 +114,16 @@
       <workItem from="1604654183464" duration="10896000" />
       <workItem from="1604674041335" duration="3742000" />
       <workItem from="1604744466236" duration="62000" />
-      <workItem from="1604744547197" duration="18660000" />
-      <workItem from="1604885003604" duration="15867000" />
-      <workItem from="1604973401193" duration="10081000" />
-      <workItem from="1605073113799" duration="5001000" />
+      <workItem from="1604744547197" duration="22599000" />
+      <workItem from="1604819566762" duration="3000" />
+      <workItem from="1604831979950" duration="1822000" />
+      <workItem from="1604890920821" duration="484000" />
+      <workItem from="1604891450297" duration="39524000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -154,6 +138,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="555" y="218" key="#Inspections" timestamp="1605016378673">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="555" y="218" key="#Inspections/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605016378673" />
+    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604902664488">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604902664488" />
     <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1604632340309">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -162,9 +154,5 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="430" y="185" key="SettingsEditor/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604658916142" />
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1604909820193">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080/-265.-1080.2498.1080@62.0.1858.1080" timestamp="1604909820193" />
   </component>
 </project>
