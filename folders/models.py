@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import organizations.models
 import feeds.models

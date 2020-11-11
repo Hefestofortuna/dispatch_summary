@@ -1,0 +1,44 @@
+{% extends 'feeds/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    {% if news %}
+    {% for element in news %}
+    <div class = "uk-margin-small">
+        <article class="uk-comment uk-comment-primary">
+            <header class="uk-comment-header">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-comment-avatar"
+                             src="https://cdn11.bigcommerce.com/s-zb4ffa3sum/images/stencil/1280x1280/products/10498/10761/Mouse-ELISA-Assays-1__38138.1533166268.jpg?c=2"
+                             width="80" height="80" alt="">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ element.feed_author }}</a></h4>
+                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                            <li><h1 class=".uk-text-muted">{{ element.feed_pub_date }}</h1></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        <div class="uk-comment-body">
+            <h4 class=".uk-text-lead">{{ element.feed_title }}</h4>
+            <p class=".uk-text-meta">{{ element.feed_text }}</p>
+            <!--footer><h4><span uk-icon="folder"></span> <a href="#">Файл 1</a> <span uk-icon="folder"></span> <a href="#">Файл 2</a></h4> </footer-->
+            <footer>
+                {% for tags in element.tags.all %}
+                    <span class="uk-label"></span>
+                {% endfor %}
+            </footer>
+            <p></p>
+        </div>
+        </article>
+    </div>
+    {% endfor %}
+    {% else %}
+        <p>Новостей нет!</p>
+    {% endif %}
+{% endblock %}
