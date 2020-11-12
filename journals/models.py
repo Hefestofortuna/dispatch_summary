@@ -86,9 +86,11 @@ class JournalOrderObject(models.Model):
     journal_order_object_application_note = models.TextField(_('Примечание заявки'), null=True, blank=False)
     journal_order_object_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
     journal_order_object_journal_order_turning_on = models.OneToOneField('JournalOrderTurningOn',
+                                                                         null=False, blank=False,
                                                                          on_delete=models.CASCADE,
                                                                          verbose_name='Выключенный объект')
     journal_order_object_journal_order_turning_off = models.OneToOneField('JournalOrderTurningOff',
+                                                                          null=False, blank=False,
                                                                           on_delete=models.CASCADE,
                                                                           verbose_name='Включенный объект')
 
