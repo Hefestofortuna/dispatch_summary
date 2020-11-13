@@ -86,14 +86,14 @@ class JournalOrderObject(models.Model):
     journal_order_object_application_note = models.TextField(_('Примечание заявки'), null=True, blank=False)
     journal_order_object_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
     journal_order_object_journal_order_turning_on = models.OneToOneField('JournalOrderTurningOn',
-                                                                         null=False, blank=False,
+                                                                         null=True, blank=True,
                                                                          on_delete=models.CASCADE,
                                                                          verbose_name='Выключенный объект')
     journal_order_object_journal_order_turning_off = models.OneToOneField('JournalOrderTurningOff',
-                                                                          null=False, blank=False,
+                                                                          null=True, blank=True,
                                                                           on_delete=models.CASCADE,
                                                                           verbose_name='Включенный объект')
-
+    #
     def __str__(self):
         return '%s-%s-%s' % (self.journal_order_object_subdivision, self.journal_order_object_type_of_work,
                              self.journal_order_object_pub_date)
@@ -157,6 +157,27 @@ class JournalOrderTurningOff(models.Model):
     class Meta:
         verbose_name = 'Включенные объекты'
         verbose_name_plural = 'Включенный объект'
+
+
+class JournalEMSU(models.Model):
+    journal_emsu_date_setup = models.DateField(_('Дата установки'))
+    journal_emsu_switch_number = models.IntegerField(_('Номер стрелки'))
+    #journal_emsu_power_supply = models.ForeignKey(_('Иссочник питания'), on_delete=models.SET_NULL,
+    #                                              null=True, blank=True)
+    journal_emsu_engine_number = models.IntegerField(_('Номер двигателя ЭМСУ'))
+    journal_emsu_date_create = models.DateField(_('Год выпуска двигателя ЭМСУ'))
+    journal_emsu_pub_date = models.DateTimeField(_('Дата публикациизаписи'), auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Учет вигателей ЭМСУ'
+        verbose_name_plural = 'Учет двигателя ЭМСУ'
+
+
+#class EnginesType(models.Model):
+
+
+class AmperageType(models.Model):
+    amperage_type_title = models.CharField(_('Питание'), max_length=128)
 
 
 class TypeOfWork(models.Model):
