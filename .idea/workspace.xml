@@ -48,16 +48,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\subdivisions" />
     </key>
   </component>
   <component name="RunManager">
@@ -119,7 +119,7 @@
       <workItem from="1605583592721" duration="7000" />
       <workItem from="1605585780163" duration="1113000" />
       <workItem from="1605678951711" duration="49000" />
-      <workItem from="1605783296552" duration="6673000" />
+      <workItem from="1605783296552" duration="11596000" />
     </task>
     <servers />
   </component>
@@ -169,10 +169,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="218" key="#Inspections" timestamp="1605016378673">
+    <state x="555" y="218" key="#Inspections" timestamp="1605800883042">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="555" y="218" key="#Inspections/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605016378673" />
+    <state x="555" y="218" key="#Inspections/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605800883042" />
     <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604902664488">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

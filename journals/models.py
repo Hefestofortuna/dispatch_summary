@@ -94,7 +94,10 @@ class JournalOrder(models.Model):
                                                                             null=True,
                                                                             blank=True,
                                                                             limit_choices_to=Q(
-                                                                                groups__name=['ШН', 'ШНС']),
+                                                                                groups__name='ШН'
+                                                                            ) | Q(
+                                                                                groups__name='ШНС'
+                                                                            ),
                                                                             verbose_name='Ответственный ШН/ШНС при '
                                                                                          'выключении',
                                                                             related_name='+')
@@ -102,7 +105,10 @@ class JournalOrder(models.Model):
                                                                              on_delete=models.SET_NULL,
                                                                              null=True, blank=True,
                                                                              limit_choices_to=Q(
-                                                                                 groups__name=['ШЧД', 'ШЧДС']),
+                                                                                 groups__name='ШЧД'
+                                                                             ) | Q(
+                                                                                 groups__name='ШЧДC'
+                                                                             ),
                                                                              verbose_name='Отвественный ШЧД/ШЧДС при '
                                                                                           'выключении',
                                                                              related_name='+')
@@ -117,7 +123,11 @@ class JournalOrder(models.Model):
     journal_order_object_on_datetime_on = models.DateTimeField(_('Дата и время включения'), null=True, blank=True)
     journal_order_object_on_responsible_shns_user_on = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
                                                                          null=True, blank=True,
-                                                                         limit_choices_to=Q(groups__name=['ШН', 'ШНС']),
+                                                                         limit_choices_to=Q(
+                                                                             groups__name='ШН'
+                                                                         ) | Q(
+                                                                             groups__name='ШНС'
+                                                                         ),
                                                                          verbose_name='Ответственный ШН/ШНС при '
                                                                                       'включении',
                                                                          related_name='+')
@@ -125,7 +135,10 @@ class JournalOrder(models.Model):
                                                                           null=True,
                                                                           blank=True,
                                                                           limit_choices_to=Q(
-                                                                              groups__name=['ШЧД', 'ШЧДС']),
+                                                                              groups__name='ШЧД'
+                                                                          ) | Q(
+                                                                              groups__name='ШЧДC'
+                                                                          ),
                                                                           verbose_name='Отвественный ШЧД/ШЧДС при '
                                                                                        'включении',
                                                                           related_name='+')
@@ -154,6 +167,29 @@ class JournalEMSU(models.Model):
     class Meta:
         verbose_name = 'Учет вигателей ЭМСУ'
         verbose_name_plural = 'Учет двигателя ЭМСУ'
+
+
+class JournalInspector(models.Model):
+    journal_inspector_date_find = models.DateField(_('Дата выявления предотказного состояния'))
+    journal_inspector_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
+                                                      null=True, blank=False,
+                                                      verbose_name='Место предотказного состояния')
+    journal_inspector_parameter = models.CharField(_('Параметр предотказного состояния'), max_length=512)
+    journal_inspector_responsible_organization = models.ForeignKey(organizations.models.Organization,
+                                                                   on_delete=models.SET_NULL,
+                                                                   null=True, blank=False,
+                                                                   verbose_name='Ответсвенное предприятие')
+    journal_inspector_user_find = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True,
+                                                    blank=False,
+                                                    verbose_name='Выявил на месте')
+    journal_inspector_transferred = models.CharField(_('Передано'), max_length=64)
+    journal_inspector_date_elimination = models.DateField(_('Устранить замечание до'))
+    journal_inspector_date_finish = models.DateField(_('Дата устранения замечания'), null=True, blank=True)
+    journal_inspector_control_elimination = models.BooleanField(_('Контроль фактического устранения'), default=False)
+
+    class Meta:
+        verbose_name_plural = 'Замечания инспекторов'
+        verbose_name = 'Замечание инспектора'
 
 
 class AmperageType(models.Model):

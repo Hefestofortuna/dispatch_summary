@@ -10,6 +10,7 @@ class UserAdmin(admin.ModelAdmin):
 class ProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'phone', 'working')
     list_display_links = ('user',)
+    list_filter = ('working',)
 
 
 admin.site.register(User, UserAdmin)

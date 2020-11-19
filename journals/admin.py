@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import JournalContractor, JournalNotice, JournalOrder, TypeOfWork
+from .models import JournalContractor, JournalNotice, JournalOrder, JournalInspector, TypeOfWork
 
 
 class JournalContractorAdmin(admin.ModelAdmin):
@@ -25,6 +25,15 @@ class JournalOrderAdmin(admin.ModelAdmin):
     list_display_links = ('journal_order_object_subdivision',)
 
 
+class JournalInspectorAdmin(admin.ModelAdmin):
+    list_display = ('journal_inspector_date_find', 'journal_inspector_subdivision', 'journal_inspector_parameter',
+                    'journal_inspector_responsible_organization', 'journal_inspector_user_find',
+                    'journal_inspector_transferred', 'journal_inspector_date_elimination',
+                    'journal_inspector_date_finish',
+                    'journal_inspector_control_elimination',)
+    list_display_links = ('journal_inspector_parameter',)
+    list_filter = ('journal_inspector_control_elimination',)
+
 
 class TypeOfWorkAdmin(admin.ModelAdmin):
     list_display = ('type_of_work_title',)
@@ -34,4 +43,5 @@ class TypeOfWorkAdmin(admin.ModelAdmin):
 admin.site.register(JournalContractor, JournalContractorAdmin)
 admin.site.register(JournalNotice, JournalNoticeAdmin)
 admin.site.register(JournalOrder, JournalOrderAdmin)
+admin.site.register(JournalInspector, JournalInspectorAdmin)
 admin.site.register(TypeOfWork, TypeOfWorkAdmin)
