@@ -25,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/journals/models.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="JupyterTrust" id="fcfff652-7817-4a84-9f2a-d1f0b2d03e3d" />
   <component name="ProjectId" id="1jrJfPgJ0qEyj8n6vjfVja1wQPc" />
   <component name="ProjectViewState">
@@ -109,6 +112,14 @@
       <workItem from="1605188505878" duration="3096000" />
       <workItem from="1605193337774" duration="2245000" />
       <workItem from="1605233180164" duration="6137000" />
+      <workItem from="1605535272621" duration="498000" />
+      <workItem from="1605582980543" duration="9000" />
+      <workItem from="1605583059616" duration="189000" />
+      <workItem from="1605583284079" duration="67000" />
+      <workItem from="1605583592721" duration="7000" />
+      <workItem from="1605585780163" duration="1113000" />
+      <workItem from="1605678951711" duration="49000" />
+      <workItem from="1605783296552" duration="6673000" />
     </task>
     <servers />
   </component>
@@ -166,13 +177,13 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604902664488" />
-    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1604632340309">
+    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1605585888687">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="709" y="295" key="FileChooserDialogImpl/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604632340309" />
-    <state x="430" y="185" key="SettingsEditor" timestamp="1604658916142">
+    <state x="709" y="295" key="FileChooserDialogImpl/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605585888687" />
+    <state x="430" y="185" key="SettingsEditor" timestamp="1605585899887">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="430" y="185" key="SettingsEditor/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604658916142" />
+    <state x="430" y="185" key="SettingsEditor/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605585899887" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import JournalContractor, JournalNotice, JournalOrderObject, JournalOrderTurningOff, JournalOrderTurningOn, \
-    TypeOfWork
+from .models import JournalContractor, JournalNotice, JournalOrder, TypeOfWork
 
 
 class JournalContractorAdmin(admin.ModelAdmin):
@@ -19,29 +18,12 @@ class JournalNoticeAdmin(admin.ModelAdmin):
     list_display_links = ('journal_notice_number_acceptance',)
 
 
-class JournalOrderObjectAdmin(admin.ModelAdmin):
+class JournalOrderAdmin(admin.ModelAdmin):
     list_display = ('journal_order_object_subdivision', 'journal_order_object_type_of_work',
-                    'journal_order_object_application_note', 'journal_order_object_pub_date',
-                    #'journal_order_object_journal_order_turning_on', 'journal_order_object_journal_order_turning_off',
+                    'journal_order_object_application_note', 'journal_order_pub_date',
                     )
     list_display_links = ('journal_order_object_subdivision',)
 
-
-class JournalOrderTurningOffAdmin(admin.ModelAdmin):
-    list_display = ('journal_order_turning_off_inclusion_number', 'journal_order_turning_off_datetime_off',
-                    'journal_order_turning_off_responsible_shns_user_off',
-                    #'journal_order_turning_off_responsible_shchd_user_off', 'journal_order_turning_off_description',
-                    'journal_order_turning_off_pub_date',)
-    list_display_links = ('journal_order_turning_off_inclusion_number',)
-
-
-class JournalOrderTurningOnAdmin(admin.ModelAdmin):
-    list_display = ('journal_order_turning_on_permit_number', 'journal_order_turning_on_datetime_on',
-                    'journal_order_turning_on_responsible_shns_user_on',
-                    'journal_order_turning_on_responsible_shchd_user_on', 'journal_order_turning_on_allowed_ds',
-                    #'journal_order_turning_on_pub_date',
-                    )
-    list_display_links = ('journal_order_turning_on_permit_number',)
 
 
 class TypeOfWorkAdmin(admin.ModelAdmin):
@@ -51,7 +33,5 @@ class TypeOfWorkAdmin(admin.ModelAdmin):
 
 admin.site.register(JournalContractor, JournalContractorAdmin)
 admin.site.register(JournalNotice, JournalNoticeAdmin)
-admin.site.register(JournalOrderObject, JournalOrderObjectAdmin)
-admin.site.register(JournalOrderTurningOff, JournalOrderTurningOffAdmin)
-admin.site.register(JournalOrderTurningOn, JournalOrderTurningOnAdmin)
+admin.site.register(JournalOrder, JournalOrderAdmin)
 admin.site.register(TypeOfWork, TypeOfWorkAdmin)
