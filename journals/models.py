@@ -157,12 +157,50 @@ class JournalOrder(models.Model):
 
 class JournalEMSU(models.Model):
     journal_emsu_date_setup = models.DateField(_('Дата установки'))
+    journal_emsu_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
+                                                 null=True, blank=False, verbose_name='Подразделение')
+    # Тут должна быть еще и станция
     journal_emsu_switch_number = models.IntegerField(_('Номер стрелки'))
-    # journal_emsu_power_supply = models.ForeignKey(_('Иссочник питания'), on_delete=models.SET_NULL,
-    #                                              null=True, blank=True)
+    journal_emsu_power_supply = models.ForeignKey('AmperageType', on_delete=models.SET_NULL,
+                                                  null=True, blank=True, verbose_name='Источник питания')
     journal_emsu_engine_number = models.IntegerField(_('Номер двигателя ЭМСУ'))
     journal_emsu_date_create = models.DateField(_('Год выпуска двигателя ЭМСУ'))
-    journal_emsu_pub_date = models.DateTimeField(_('Дата публикациизаписи'), auto_now_add=True)
+
+    journal_emsu_msp_normal_voltage_plus = models.DecimalField(_('Напряжение при нормальном переводе двигателя в '
+                                                                 'плюсовое положение, В'),
+                                                               max_digits=5, decimal_places=2, null=True)
+    journal_emsu_msp_normal_voltage_minus = models.DecimalField(
+        _('Напряжение при нормальном переводе двигателя в минусовое положение, В'),
+        max_digits=5, decimal_places=2, null=True)
+
+    journal_emsu_msp_friction_voltage_plus = models.DecimalField(
+        _('Напряжение при работе на фрикцию двигателя в плюсовом положении, В'),
+        max_digits=5, decimal_places=2, null=True)
+    journal_emsu_msp_friction_voltage_minus = models.DecimalField(
+        _('Напряжение при работе на фрикцию двигателя в минусовом положении, В'),
+        max_digits=5, decimal_places=2, null=True)
+
+    journal_emsu_emsu_normal_voltage_plus = models.DecimalField(
+        _('Напряжение при нормальном переводе двигателя в плюсовое положение, В'),
+        max_digits=5, decimal_places=2, null=True)
+    journal_emsu_emsu_normal_voltage_minus = models.DecimalField(
+        _('Напряжение при нормальном переводе двигателя в минусовое положение, В'),
+        max_digits=5, decimal_places=2, null=True)
+
+    journal_emsu_emsu_friction_voltage_plus = models.DecimalField(
+        _('Напряжение при работе на фрикцию двигателя в плюсовом положении, В'),
+        max_digits=5, decimal_places=2, null=True)
+    journal_emsu_emsu_friction_voltage_minus = models.DecimalField(
+        _('Напряжение при работе на фрикцию двигателя в минусовом положении, В'),
+        max_digits=5, decimal_places=2, null=True)
+
+    journal_emsu_emsu_translation_effort_plus = models.DecimalField(
+        _('Усилие перевода при работе на фрикцию, кгс(1кгс = 9.81 Ньютона в плюсовом положении)'), max_digits=4,
+        decimal_places=2, null=True)
+    journal_emsu_emsu_translation_effort_minus = models.DecimalField(
+        _('Усилие перевода при работе на фрикцию, кгс(1кгс = 9.81 Ньютона в минусовом полождении)'), max_digits=4,
+        decimal_places=2, null=True)
+    journal_emsu_pub_date = models.DateTimeField(_('Дата публикации записи'), auto_now_add=True)
 
     class Meta:
         verbose_name = 'Учет вигателей ЭМСУ'
@@ -194,6 +232,9 @@ class JournalInspector(models.Model):
 
 class AmperageType(models.Model):
     amperage_type_title = models.CharField(_('Питание'), max_length=128)
+
+    def __str__(self):
+        return self.amperage_type_title
 
 
 class TypeOfWork(models.Model):

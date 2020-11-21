@@ -19,7 +19,8 @@ class Folder(MPTTModel):
         while self.parent:
             url = "/%s%s" % (self.parent.name, url)
             self = self.parent
-        return str(self.organization) + '\\' + url
+        return str(self.organization) + url
+
     get_folder_full_path.short_description = "Полный путь"
 
     def __str__(self):

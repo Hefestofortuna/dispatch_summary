@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'journals',
     'mptt',
     'django_cleanup',
+    'stations',
+    'dga',
 ]
 
 MIDDLEWARE = [
