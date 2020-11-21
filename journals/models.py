@@ -4,6 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 import organizations.models
 import subdivisions.models
 import users.models
+import stations.models
 
 
 class JournalContractor(models.Model):
@@ -157,9 +158,10 @@ class JournalOrder(models.Model):
 
 class JournalEMSU(models.Model):
     journal_emsu_date_setup = models.DateField(_('Дата установки'))
+    journal_emsu_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL, null=True,
+                                             blank=False, verbose_name='Станция')
     journal_emsu_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
                                                  null=True, blank=False, verbose_name='Подразделение')
-    # Тут должна быть еще и станция
     journal_emsu_switch_number = models.IntegerField(_('Номер стрелки'))
     journal_emsu_power_supply = models.ForeignKey('AmperageType', on_delete=models.SET_NULL,
                                                   null=True, blank=True, verbose_name='Источник питания')
