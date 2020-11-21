@@ -10,8 +10,8 @@ import stations.models
 class JournalContractor(models.Model):
     journal_contractor_contractor = models.ForeignKey(organizations.models.Contractor, on_delete=models.SET_NULL,
                                                       null=True, blank=False, verbose_name='Подряная организация')
-    journal_contractor_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
-                                                       null=True, blank=False, verbose_name='Место проведения работ')
+    journal_contractor_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                                   null=True, blank=False, verbose_name='Место проведения работ')
     journal_contractor_date_start = models.DateTimeField(_('Дата начала'), null=False, blank=False)
     journal_contractor_date_finish = models.DateTimeField(_('Дата завершения'), null=False, blank=False)
     journal_contractor_notice = models.CharField(_('Предупреждение'), null=False, blank=False, max_length=128)
@@ -44,7 +44,7 @@ class JournalContractor(models.Model):
     get_organization.short_description = "Организация"
 
     def __str__(self):
-        return '%s - %s c  %s по %s' % (self.journal_contractor_contractor, self.journal_contractor_subdivision,
+        return '%s - %s c  %s по %s' % (self.journal_contractor_contractor, self.journal_contractor_station,
                                         self.journal_contractor_date_start, self.journal_contractor_date_finish)
 
     class Meta:
@@ -56,8 +56,8 @@ class JournalNotice(models.Model):
     journal_notice_date_plan = models.DateField(_('Дата выполенния работ'), null=False, blank=False)
     journal_notice_time_start = models.TimeField(_('Начальное время по МСК'), null=False, blank=False)
     journal_notice_time_end = models.TimeField(_('Конечное время по МСК'), null=False, blank=False)
-    journal_notice_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
-                                                   null=True, blank=False, verbose_name='Место на предупреждение')
+    journal_notice_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                               null=True, blank=False, verbose_name='Место на предупреждение')
     journal_notice_description = models.TextField(_('Описание'), null=False, blank=False)
     journal_notice_place = models.CharField(_('Место работ (№ пути, километр, пикет)'), max_length=128, null=False,
                                             blank=False)
@@ -73,7 +73,7 @@ class JournalNotice(models.Model):
     journal_notice_pub_date = models.DateTimeField(_('Время публикации'), auto_now_add=True)
 
     def __str__(self):
-        return '%s - %s' % (self.journal_notice_subdivision, self.journal_notice_number_acceptance)
+        return '%s - %s' % (self.journal_notice_station, self.journal_notice_number_acceptance)
 
     class Meta:
         verbose_name = 'Предупреждение на производство работы'
@@ -81,8 +81,8 @@ class JournalNotice(models.Model):
 
 
 class JournalOrder(models.Model):
-    journal_order_object_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
-                                                         null=True, blank=False, verbose_name='Подразделение')
+    journal_order_object_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                                     null=True, blank=False, verbose_name='Подразделение')
     journal_order_object_type_of_work = models.ForeignKey('TypeOfWork', on_delete=models.SET_NULL, null=True,
                                                           blank=False, verbose_name='Наименовние работ')
     journal_order_object_application_note = models.TextField(_('Примечание заявки'), null=False, blank=False)
@@ -148,7 +148,7 @@ class JournalOrder(models.Model):
     journal_order_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
 
     def __str__(self):
-        return '%s-%s-%s' % (self.journal_order_object_subdivision, self.journal_order_object_type_of_work,
+        return '%s-%s-%s' % (self.journal_order_object_station, self.journal_order_object_type_of_work,
                              self.journal_order_pub_date)
 
     class Meta:
@@ -211,9 +211,9 @@ class JournalEMSU(models.Model):
 
 class JournalInspector(models.Model):
     journal_inspector_date_find = models.DateField(_('Дата выявления предотказного состояния'))
-    journal_inspector_subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.SET_NULL,
-                                                      null=True, blank=False,
-                                                      verbose_name='Место предотказного состояния')
+    journal_inspector_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                                  null=True, blank=False,
+                                                  verbose_name='Место предотказного состояния')
     journal_inspector_parameter = models.CharField(_('Параметр предотказного состояния'), max_length=512)
     journal_inspector_responsible_organization = models.ForeignKey(organizations.models.Organization,
                                                                    on_delete=models.SET_NULL,
