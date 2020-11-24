@@ -231,6 +231,33 @@ class JournalInspector(models.Model):
         verbose_name_plural = 'Замечания инспекторов'
         verbose_name = 'Замечание инспектора'
 
+class JournalFactory(models.Model):
+    journal_factory_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True, blank=False,
+                                             verbose_name='ФИО сотрудника')
+    journal_factory_date_start = models.DateTimeField(_('Начало периода'))
+    journal_factory_date_finish = models.DateTimeField(_('Конец периода'))
+    journal_factory_classifier = models.ForeignKey('ClassifierOfWork', on_delete=models.SET_NULL, null=True, blank=False,
+                                                   verbose_name='Классификация записи')
+    journal_factory_note = models.CharField(_('Примечание'), max_length=256,null=True, blank=True)
+    journal_factory_subdibision = models.ForeignKey(organizations.models.Organization, on_delete=models.SET_NULL,
+                                                    null=True, blank=False, verbose_name='Подразделение')
+    journal_factory_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
+
+    class Meta:
+        verbose_name = 'Нахождение работников'
+        verbose_name_plural = 'Нахождения работников'
+
+
+class ClassifierOfWork(models.Model):
+    classifier_of_work = models.CharField(_('Классификтор'), max_length=64)
+
+    def __str__(self):
+        return self.classifier_of_work
+
+    class Meta:
+        verbose_name = 'Классификторы работы'
+        verbose_name_plural = 'Классификтор работ'
+
 
 class AmperageType(models.Model):
     amperage_type_title = models.CharField(_('Питание'), max_length=128)
