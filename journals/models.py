@@ -231,17 +231,20 @@ class JournalInspector(models.Model):
         verbose_name_plural = 'Замечания инспекторов'
         verbose_name = 'Замечание инспектора'
 
-class JournalFactory(models.Model):
-    journal_factory_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True, blank=False,
-                                             verbose_name='ФИО сотрудника')
-    journal_factory_date_start = models.DateTimeField(_('Начало периода'))
-    journal_factory_date_finish = models.DateTimeField(_('Конец периода'))
-    journal_factory_classifier = models.ForeignKey('ClassifierOfWork', on_delete=models.SET_NULL, null=True, blank=False,
-                                                   verbose_name='Классификация записи')
-    journal_factory_note = models.CharField(_('Примечание'), max_length=256,null=True, blank=True)
-    journal_factory_subdibision = models.ForeignKey(organizations.models.Organization, on_delete=models.SET_NULL,
-                                                    null=True, blank=False, verbose_name='Подразделение')
-    journal_factory_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
+
+class JournalFactoryOfWork(models.Model):
+    journal_factory_of_work_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True,
+                                                     blank=False,
+                                                     verbose_name='ФИО сотрудника')
+    journal_factory_of_work_date_start = models.DateTimeField(_('Начало периода'))
+    journal_factory_of_work_date_finish = models.DateTimeField(_('Конец периода'))
+    journal_factory_of_work_classifier = models.ForeignKey('ClassifierOfWork', on_delete=models.SET_NULL, null=True,
+                                                           blank=False, verbose_name='Классификация записи')
+    journal_factory_of_work_note = models.CharField(_('Примечание'), max_length=256, null=True, blank=True)
+    journal_factory_of_work_subdibision = models.ForeignKey(organizations.models.Organization,
+                                                            on_delete=models.SET_NULL,
+                                                            null=True, blank=False, verbose_name='Подразделение')
+    journal_factory_of_work_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
 
     class Meta:
         verbose_name = 'Нахождение работников'

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import JournalContractor, JournalNotice, JournalOrder, JournalInspector, TypeOfWork, JournalEMSU, \
-    AmperageType
+    AmperageType, JournalFactoryOfWork, ClassifierOfWork
 
 
 class JournalContractorAdmin(admin.ModelAdmin):
@@ -42,6 +42,18 @@ class JournalInspectorAdmin(admin.ModelAdmin):
     list_filter = ('journal_inspector_control_elimination',)
 
 
+class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
+    list_display = ('journal_factory_of_work_note','journal_factory_of_work_user',
+                    'journal_factory_of_work_date_start',
+                    'journal_factory_of_work_date_finish','journal_factory_of_work_classifier',
+                    'journal_factory_of_work_subdibision',
+                    'journal_factory_of_work_pub_date',)
+    list_display_links = ('journal_factory_of_work_note',)
+
+class ClassifierOfWorkAdmin(admin.ModelAdmin):
+    list_display = ('classifier_of_work',)
+    list_display_links = ('classifier_of_work',)
+
 class TypeOfWorkAdmin(admin.ModelAdmin):
     list_display = ('type_of_work_title',)
     list_display_links = ('type_of_work_title',)
@@ -52,9 +64,11 @@ class AmperageTypeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(JournalContractor, JournalContractorAdmin)
+admin.site.register(JournalFactoryOfWork, JournalFactoryOfWorkAdmin)
 admin.site.register(JournalNotice, JournalNoticeAdmin)
 admin.site.register(JournalOrder, JournalOrderAdmin)
 admin.site.register(JournalInspector, JournalInspectorAdmin)
 admin.site.register(TypeOfWork, TypeOfWorkAdmin)
 admin.site.register(JournalEMSU, JournalEMSUAdmin)
 admin.site.register(AmperageType, AmperageTypeAdmin)
+admin.site.register(ClassifierOfWork, ClassifierOfWorkAdmin)
