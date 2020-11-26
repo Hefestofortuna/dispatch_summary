@@ -38,11 +38,13 @@
                     <ul class="uk-navbar-nav">
                         {% if request.user.is_authenticated %}
                             <a class="uk-navbar-item uk-logo" href="#"><h3 id="username">{{ request.user.get_short_full_name }}</h3></a>
-                            <div uk-dropdown="pos: bottom-right">
+                            <div uk-dropdown="pos: bottom-center">
                                 <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="uk-nav-header">{{ request.user.get_organization }}</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Автотранспорт</a></li>
+                                    <li><a href="{% url 'JournalFactoryOfWorkCreateView' %}">Журнал нахождения работников</a></li>
+                                    <li><a href="#">Журнал учета путевых листов</a></li>
+                                    <li><a href="#">ЭМСУ</a></li>
+                                    <li><a href="#">Журнал учета перемычек</a></li>
                                     <li class="uk-nav-divider"></li>
                                     <li><a href="{% url 'logout' %}">Выйти</a></li>
                                 </ul>

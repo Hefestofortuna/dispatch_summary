@@ -21,10 +21,10 @@ from django.views.i18n import JavaScriptCatalog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('subdivisions/', include('subdivisions.urls')),
+    path('subdivision/', include('subdivisions.urls')),
     path('feed/', include('feeds.urls')),
     path('main/', include('main.urls')),
-    path('journals/', include('journals.urls')),
+    path('journal/', include('journals.urls')),
     path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
