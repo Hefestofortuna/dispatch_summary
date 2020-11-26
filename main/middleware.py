@@ -12,5 +12,5 @@ class AuthRequiredMiddleware(MiddlewareMixin):
     def __call__(self, request):
         response = self.get_response(request)
         if not request.user.is_authenticated and resolve(request.path).url_name != 'login':
-            return redirect('/main/login')
+            return redirect('/main/login/')
         return response

@@ -23,5 +23,6 @@ urlpatterns = [
     path('subdivisions/', include('subdivisions.urls')),
     path('feed/', include('feeds.urls')),
     path('main/', include('main.urls')),
+    path('journals/', include('journals.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

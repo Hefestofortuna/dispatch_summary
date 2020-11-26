@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from .forms import JournalFactortOfWorkForm
 
-# Create your views here.
+
+def JournalCreateView(request):
+    form = JournalFactortOfWorkForm()
+    return render(request, 'JournalFactoryOfWork/create.html', {'form': form})
