@@ -1,6 +1,10 @@
-from django.shortcuts import render
-from django.contrib.auth.views import LogoutView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LogoutView, LoginView
 
-class BBLogoutView(LoginRequiredMixin, LogoutView):
-    template_name = 'main/logout.html'
+class LogoutView(LoginRequiredMixin, LogoutView):
+    None
+
+
+class LoginView(LoginView):
+    None
+

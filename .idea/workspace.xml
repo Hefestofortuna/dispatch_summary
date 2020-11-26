@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -38,7 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/image" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\images" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\css" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\dispatch_summary\application\users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
@@ -130,7 +130,7 @@
       <workItem from="1606143446497" duration="4000" />
       <workItem from="1606216383987" duration="3861000" />
       <workItem from="1606291325322" duration="6306000" />
-      <workItem from="1606353010349" duration="7473000" />
+      <workItem from="1606353010349" duration="15177000" />
     </task>
     <servers />
   </component>
@@ -188,10 +188,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604902664488" />
-    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606359081155">
+    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606371335691">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1606359081155" />
+    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1606371335691" />
     <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1605585888687">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

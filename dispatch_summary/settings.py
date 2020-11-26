@@ -147,3 +147,7 @@ STATICFILES_DIRS = [
 ]
 
 AUTH_USER_MODEL = 'users.User'
+
+LOGIN_REDIRECT_URL = '/feed/index/'
+
+LOGOUT_REDIRECT_URL = '/main/login/'

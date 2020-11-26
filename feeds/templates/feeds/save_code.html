@@ -1,9 +1,0 @@
-{% for item in page.paginator.page_range %}
-    {% if item != 1 and item != page.paginator.num_pages %}
-        {% if item == page.number %}
-            <li class="uk-active"><span>{{ page.number }}</span></li>
-        {% else %}
-            <li><a href="?page={{ item }}">{{ item }}</a></li>
-        {% endif %}
-    {% endif %}
-{% endfor %}
