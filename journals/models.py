@@ -268,6 +268,10 @@ class AmperageType(models.Model):
     def __str__(self):
         return self.amperage_type_title
 
+    class Meta:
+        verbose_name_plural = 'Типы питания'
+        verbose_name = 'Тип питания'
+
 
 class TypeOfWork(models.Model):
     type_of_work_title = models.CharField(_('Наименование работ'), max_length=128, unique=True)

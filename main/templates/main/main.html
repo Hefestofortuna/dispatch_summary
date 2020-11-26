@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="{% static 'css/uikit.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed" id="header">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar">
+                <div class="uk-navbar-left">
+                    <button class="uk-button uk-button-default uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-overlay"
+                        style="border-style: none">
+                        <img data-src="{% static 'resources/img/menuicon.png' %}"
+                             width="30" alt="" uk-img></button>
+                    <h3 id="username">{{ request.user.get_organization }}</h3>
+                </div>
+                <div class="uk-navbar-center">
+                    <ul class="top_buttons">
+                        <li><a href="#" >Отчеты</a></li>
+                        <li><a href="#" >Квартальные данные</a></li>
+                        <li><a href="#" >Справочники</a></li>
+                        <li><a href="#" >Документация</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        {% if request.user.is_authenticated %}
+                            <a class="uk-navbar-item uk-logo" href="#"><h3 id="username">{{ request.user.get_short_full_name }}</h3></a>
+                            <div uk-dropdown="pos: bottom-right">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-nav-header">{{ request.user.get_organization }}</li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="{% url 'logout' %}">Выйти</a></li>
+                                </ul>
+                            </div>
+                        {% else %}
+                            <a class="uk-navbar-item uk-logo" href="#"><h3 style="margin-right: 20px; margin-top: 15px">
+                                Войти</h3><img data-src="https://img.pngio.com/outline-person-svg-png-icon-free-download-357118-png-person-outline-980_980.png"
+                                width="30" alt="" uk-img></a>
+                        {% endif %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Боковое меню -->
+    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3 style="text-align: center">Разделы</h3> <hr class="uk-divider-icon">
+            <a href="{% url 'feed' %}">Новости</a> <hr class="uk-divider-small">
+            <a href="#">Журнал нахождения работников (ИрЦУАТ)</a> <span class="uk-badge">5</span> <hr class="uk-divider-small">
+            <a>Плановые совещаяни Ш</a> <hr class="uk-divider-small">
+            <a>Журнал учета подрядных оранизаций</a> <hr class="uk-divider-small">
+            <a>Документы</a> <hr class="uk-divider-small">
+        </div>
+    </div>
+
+    <!-- Тело -->
+    <div class="uk-container uk-container-small uk-position-relative">
+        {% block content %}{% endblock %}
+    </div>
+    <!-- Подвал -->
+    <footer>
+
+    </footer>
+<!-- UIkit JS -->
+<script src="{% static 'js/uikit.min.js' %}"></script>
+<script src="{% static 'js/uikit-icons.min.js' %}"></script>
+</body>
+</html>

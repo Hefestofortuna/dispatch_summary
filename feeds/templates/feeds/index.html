@@ -1,4 +1,4 @@
-{% extends 'feeds/base.html' %}
+{% extends 'main/main.html' %}
 
 {% block title %}
 {{ title }}
@@ -7,8 +7,8 @@
 {% block content %}
     {% if news %}
     {% for element in news %}
-    <div class = "uk-margin-small">
-        <article class="uk-comment uk-comment-primary">
+    <div class = "uk-margin-top">
+        <article class="uk-comment uk-comment-primary" style="background-color: #ffffff">
             <header class="uk-comment-header">
                 <div class="uk-grid-medium uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
@@ -27,10 +27,9 @@
         <div class="uk-comment-body">
             <h4 class=".uk-text-lead">{{ element.feed_title }}</h4>
             <p class=".uk-text-meta">{{ element.feed_text }}</p>
-            <!--footer><h4><span uk-icon="folder"></span> <a href="#">Файл 1</a> <span uk-icon="folder"></span> <a href="#">Файл 2</a></h4> </footer-->
             <footer>
-                {% for tags in element.tags.all %}
-                    <span class="uk-label"></span>
+                {% for tag in element.feed_tags.all %}
+                    <span class="uk-label">{{ tag }}</span>
                 {% endfor %}
             </footer>
             <p></p>
@@ -41,4 +40,5 @@
     {% else %}
         <p>Новостей нет!</p>
     {% endif %}
+    {% include "feeds/pagination.html" with page=news %}
 {% endblock %}

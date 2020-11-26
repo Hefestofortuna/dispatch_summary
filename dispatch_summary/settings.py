@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django_cleanup',
     'stations',
     'dga',
+    'main',
 ]
 
 MIDDLEWARE = [

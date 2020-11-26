@@ -1,0 +1,85 @@
+<ul class="uk-pagination uk-flex-center" style="" uk-margin>
+    <!-- Для случаев если страниц менльше 6 - отображаем все страницы -->
+    {% if page.paginator.num_pages >= 0 and page.paginator.num_pages <= 6 %}
+        <!-- Левая стрелка -->
+        {% if page.has_previous %}
+            <li><a href="?page={{ page.previous_page_number }}"><span uk-pagination-previous></span></a></li>
+        {% else %}
+            <li><a class="uk-disabled"><span uk-pagination-previous></span></a></li>
+        {% endif %}
+        <!-- Цифры страниц -->
+        {% for item in page.paginator.page_range %}
+            {% if item == page.number %}
+                <li class="uk-active"><span>{{ page.number }}</span></li>
+            {% else %}
+                <li><a href="?page={{ item }}">{{ item }}</a></li>
+            {% endif %}
+        {% endfor %}
+        <!-- Правая стрелка -->
+        {% if page.has_next %}
+            <li><a href="?page={{ page.next_page_number }}"><span uk-pagination-next></span></a></li>
+        {% else %}
+            <li><a class="uk-disabled"><span uk-pagination-next></span></a></li>
+        {% endif %}
+     <!-- Для случаев если страниц больше 8 - отображаем крайние и 5 страниц посредине -->
+    {% elif page.paginator.num_pages > 6 %}
+        <!-- Левая стрелка -->
+        {% if page.has_previous %}
+            <li><a href="?page={{ page.previous_page_number }}"><span uk-pagination-previous></span></a></li>
+        {% else %}
+            <li><a class="uk-disabled"><span uk-pagination-previous></span></a></li>
+        {% endif %}
+        <!-- Цифры страниц -->
+        <!-- Для левой части при крайнем индексе -->
+        {% if page.number <= 4 %}
+            {% for item in page.paginator.page_range %}
+                {% if item <= 6 %}
+                    {% if item == page.number %}
+                        <li class="uk-active"><span>{{ page.number }}</span></li>
+                    {% else %}
+                        <li><a href="?page={{ item }}">{{ item }}</a></li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <li class="uk-disabled"><span>...</span></li>
+            <li><a href="?page={{ page.paginator.num_pages }}">{{ page.paginator.num_pages }}</a></li>
+        <!-- Для правой части при крайнем индексе -->
+        {% elif page.number >= last_index_minus3 %}
+            <li><a href="?page=1">1</a></li>
+            <li class="uk-disabled"><span>...</span></li>
+            {% for item in page.paginator.page_range %}
+                {% if item >= last_index_minus5 %}
+                    {% if item == page.number %}
+                        <li class="uk-active"><span>{{ page.number }}</span></li>
+                    {% else %}
+                        <li><a href="?page={{ item }}">{{ item }}</a></li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <!-- Для всех остальных случаев (когда нужны "..." и справа и слева)-->
+        {% else %}
+            <!-- Разделитель в начале -->
+            <li><a href="?page=1">1</a></li>
+            <li class="uk-disabled"><span>...</span></li>
+            <!-- Номера страниц посредине -->
+            {% for item in page.paginator.page_range %}
+                {% if item >= index_minus2 and item <= index_plus2 %}
+                    {% if item == page.number %}
+                        <li class="uk-active"><span>{{ page.number }}</span></li>
+                    {% else %}
+                        <li><a href="?page={{ item }}">{{ item }}</a></li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <!-- Разделитель в конце -->
+            <li class="uk-disabled"><span>...</span></li>
+            <li><a href="?={{ page.paginator.num_pages }}">{{ page.paginator.num_pages }}</a></li>
+        {% endif %}
+        <!-- Правая стрелка -->
+        {% if page.has_next %}
+            <li><a href="?page={{ page.next_page_number }}"><span uk-pagination-next></span></a></li>
+        {% else %}
+            <li><a class="uk-disabled"><span uk-pagination-next></span></a></li>
+        {% endif %}
+    {% endif %}
+</ul>

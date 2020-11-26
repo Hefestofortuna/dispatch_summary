@@ -22,6 +22,9 @@ class User(AbstractUser):
         return ",\n".join([str(p) for p in self.groups.all()])
     get_groups.short_description = "Группы"
 
+    def get_short_full_name(self):
+        return '%s %s. %s.' % (self.last_name, self.first_name[0], self.middle_name[0])
+
     def __str__(self):
         return self.get_fio()
 
