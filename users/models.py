@@ -9,7 +9,10 @@ class User(AbstractUser):
     middle_name = models.CharField(_('Отчество'), max_length=150, blank=True, null=True)
     subdivision = models.ForeignKey(subdivisions.models.Subdivision, on_delete=models.PROTECT, blank=True, null=True,
                                     verbose_name='Подразделение')
-
+    phone = models.CharField(_('Номер телефона'), max_length=11, blank=True, null=True)
+    email = models.EmailField(_('Электронная почта'), blank=True, null=True)
+    working = models.BooleanField(_('Работает'), default=True)
+    remark = models.TextField(_('Примечание'), blank=True, null=True)
     def get_fio(self):
         return '%s %s %s' % (self.last_name, self.first_name, self.middle_name)
     get_fio.short_description = "ФИО"
@@ -31,18 +34,3 @@ class User(AbstractUser):
     class Meta:
         verbose_name_plural = "Пользователи"
         verbose_name = "Пользователь"
-
-
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name='Пользователь')
-    phone = models.CharField(_('Номер телефона'), max_length=11, blank=True, null=True)
-    email = models.EmailField(_('Электронная почта'), blank=True, null=True)
-    working = models.BooleanField(_('Работает'), default=True)
-    remark = models.TextField(_('Примечание'), blank=True, null=True)
-
-    def __str__(self):
-        return self.user.get_fio()
-
-    class Meta:
-        verbose_name_plural = "Профили"
-        verbose_name = "Профиль"
