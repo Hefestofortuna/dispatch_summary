@@ -252,10 +252,12 @@ class JournalFactoryOfWork(models.Model):
 
 
 class ClassifierOfWork(models.Model):
-    classifier_of_work = models.CharField(_('Классификтор'), max_length=64)
+    classifier_of_work_title = models.CharField(_('Классификтор'), max_length=64)
+    classifier_of_work_short_title = models.CharField(_('Сокращенное название классификатора'), max_length=64, null=True,
+                                                      blank=False)
 
     def __str__(self):
-        return self.classifier_of_work
+        return self.classifier_of_work_title
 
     class Meta:
         verbose_name = 'Классификторы работы'

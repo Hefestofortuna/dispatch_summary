@@ -51,8 +51,8 @@ class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
     list_display_links = ('journal_factory_of_work_note',)
 
 class ClassifierOfWorkAdmin(admin.ModelAdmin):
-    list_display = ('classifier_of_work',)
-    list_display_links = ('classifier_of_work',)
+    list_display = ('classifier_of_work_short_title','classifier_of_work_title',)
+    list_display_links = ('classifier_of_work_title',)
 
 class TypeOfWorkAdmin(admin.ModelAdmin):
     list_display = ('type_of_work_title',)
