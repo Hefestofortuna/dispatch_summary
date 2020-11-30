@@ -246,6 +246,9 @@ class JournalFactoryOfWork(models.Model):
                                                             null=True, blank=False, verbose_name='Подразделение')
     journal_factory_of_work_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
 
+    def __str__(self):
+        return '%s-%s' % (self.journal_factory_of_work_user, self.journal_factory_of_work_date_start)
+
     class Meta:
         verbose_name = 'Нахождение работников'
         verbose_name_plural = 'Нахождения работников'

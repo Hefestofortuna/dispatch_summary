@@ -1,5 +1,5 @@
-from django.contrib.admin.widgets import AdminSplitDateTime
-from django.forms import ModelForm, DateField, Textarea, Select, ModelChoiceField
+from django.contrib.admin.widgets import AdminSplitDateTime, AdminDateWidget
+from django.forms import ModelForm, DateField, Textarea, Select, ModelChoiceField, SplitDateTimeField
 from django.utils.translation import ugettext_lazy as _
 from users.models import User
 from subdivisions.models import Subdivision
@@ -30,6 +30,8 @@ class JournalFactoryOfWorkForm(ModelForm):
         super(JournalFactoryOfWorkForm, self).__init__(*args, **kwargs)
         self.fields['journal_factory_of_work_user'].initial = user.pk
         self.fields['journal_factory_of_work_subdibision'].initial = user.subdivision
+        self.fields['journal_factory_of_work_date_start'] = SplitDateTimeField()
+        self.fields['journal_factory_of_work_date_finish'] = SplitDateTimeField()
 
     class Meta:
         model = JournalFactoryOfWork
