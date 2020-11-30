@@ -49,19 +49,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\images" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\images" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,7 +135,7 @@
       <workItem from="1606445280723" duration="4471000" />
       <workItem from="1606454982035" duration="490000" />
       <workItem from="1606457436180" duration="7685000" />
-      <workItem from="1606705760824" duration="19833000" />
+      <workItem from="1606705760824" duration="24034000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,12 @@
-from django.shortcuts import render
+from django.views.generic import CreateView
 from .forms import JournalFactoryOfWorkForm
-from users.models import User
 
 
-def JournalFactoryOfWorkCreateView(request):
-    form = JournalFactoryOfWorkForm(user=request.user)
-    return render(request, 'JournalFactoryOfWork/create.html', {'form': form})
+class JournalFactoryOfWorkCreateView(CreateView):
+    template_name = 'JournalFactoryOfWork/create.html'
+    form_class = JournalFactoryOfWorkForm
+
+    def get_form_kwargs(self):
+        kwargs = super(JournalFactoryOfWorkCreateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
