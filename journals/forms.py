@@ -7,9 +7,9 @@ from .models import JournalFactoryOfWork, ClassifierOfWork
 
 
 class JournalFactoryOfWorkForm(ModelForm):
-    journal_factory_of_work_date_start = DateField(widget=AdminSplitDateTime(),
+    journal_factory_of_work_date_start = SplitDateTimeField(widget=AdminSplitDateTime(),
                                                    label=_('Начало периода'))
-    journal_factory_of_work_date_finish = DateField(widget=AdminSplitDateTime(),
+    journal_factory_of_work_date_finish = SplitDateTimeField(widget=AdminSplitDateTime(),
                                                     label=_('Конец периода'))
     journal_factory_of_work_user = ModelChoiceField(queryset=User.objects.
                                                     filter(subdivision__organization__short_title='ИрЦУАТ'),
@@ -30,8 +30,6 @@ class JournalFactoryOfWorkForm(ModelForm):
         super(JournalFactoryOfWorkForm, self).__init__(*args, **kwargs)
         self.fields['journal_factory_of_work_user'].initial = user.pk
         self.fields['journal_factory_of_work_subdibision'].initial = user.subdivision
-        self.fields['journal_factory_of_work_date_start'] = SplitDateTimeField()
-        self.fields['journal_factory_of_work_date_finish'] = SplitDateTimeField()
 
     class Meta:
         model = JournalFactoryOfWork
