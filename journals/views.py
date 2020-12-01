@@ -3,7 +3,7 @@ from django.urls import reverse
 from .models import JournalFactoryOfWork
 from django.views.generic import CreateView, ListView, View
 from .forms import JournalFactoryOfWorkForm
-
+from .filters import JournalFactoryOfWorkFilter
 
 class JournalFactoryOfWorkCreateView(CreateView):
     template_name = 'JournalFactoryOfWork/create.html'
@@ -15,9 +15,11 @@ class JournalFactoryOfWorkCreateView(CreateView):
         return kwargs
 
 class JournalFactoryOfWorkListView(ListView):
+
     def get(self, request):
         FactoryOfWork = JournalFactoryOfWork.objects.all()
-        return render(request,"JournalFactoryOfWork/index.html",{"FactoryOfWorkList": FactoryOfWork})
+        myFilter =JournalFactoryOfWorkFilter()
+        return render(request,"JournalFactoryOfWork/index.html",{"FactoryOfWorkList": FactoryOfWork,"myFilter":myFilter,})
 
 class JournalFactoryOfWorkView(View):
     def get(self, request, pk):

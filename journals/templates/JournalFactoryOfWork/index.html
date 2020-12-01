@@ -4,6 +4,7 @@
 {{ title }}
 {% endblock %}
 {% block content %}
+    {{ myFilter.form }}
     {% for FactoryOfWork in FactoryOfWorkList %}
         {{ FactoryOfWork.journal_factory_of_work_note }}
     {% endfor %}
