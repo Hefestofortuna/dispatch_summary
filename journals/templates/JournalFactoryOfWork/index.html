@@ -1,0 +1,11 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+    {% for FactoryOfWork in FactoryOfWorkList %}
+        {{ FactoryOfWork.journal_factory_of_work_note }}
+    {% endfor %}
+
+{% endblock %}
