@@ -49,19 +49,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
+      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
-      <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
     </key>
   </component>
   <component name="RunManager">
@@ -142,7 +142,8 @@
       <workItem from="1606803535564" duration="534000" />
       <workItem from="1606804089573" duration="29000" />
       <workItem from="1606804134148" duration="3800000" />
-      <workItem from="1606830429536" duration="4036000" />
+      <workItem from="1606830429536" duration="4647000" />
+      <workItem from="1606893144528" duration="351000" />
     </task>
     <servers />
   </component>

@@ -12,27 +12,23 @@
             <header class="uk-comment-header">
                 <div class="uk-grid-medium uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
-                        <img class="uk-comment-avatar"
-                             src="https://cdn11.bigcommerce.com/s-zb4ffa3sum/images/stencil/1280x1280/products/10498/10761/Mouse-ELISA-Assays-1__38138.1533166268.jpg?c=2"
-                             width="80" height="80" alt="">
-                    </div>
-                    <div class="uk-width-expand">
-                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ element.feed_author }}</a></h4>
-                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                            <li><h1 class=".uk-text-muted">{{ element.feed_pub_date }}</h1></li>
-                        </ul>
+                        {% for tag in element.feed_tags.all %}
+                            <span class="uk-label uk-label-danger">{{ tag }}</span>
+                        {% endfor %}
                     </div>
                 </div>
             </header>
         <div class="uk-comment-body">
             <h4 class=".uk-text-lead">{{ element.feed_title }}</h4>
             <p class=".uk-text-meta">{{ element.feed_text }}</p>
-            <footer>
-                {% for tag in element.feed_tags.all %}
-                    <span class="uk-label">{{ tag }}</span>
-                {% endfor %}
+            <footer class="uk-align-right uk-text-right@l uk-padding-remove">
+                <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ element.feed_author }}</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove uk-align-right">
+                        <li><h1 class=".uk-text-muted">{{ element.feed_pub_date }}</h1></li>
+                    </ul>
+                </div>
             </footer>
-            <p></p>
         </div>
         </article>
     </div>
