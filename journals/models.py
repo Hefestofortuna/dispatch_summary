@@ -254,6 +254,55 @@ class JournalFactoryOfWork(models.Model):
         verbose_name_plural = 'Нахождения работников'
 
 
+class JournalDisconnection(models.Model):
+    journal_disconnection_date = models.DateField(_('Дата отключения'), null=False, blank=False)
+    journal_disconnection_time_start = models.TimeField(_('Начало'), null=False, blank=False)
+    journal_disconnection_time_finish = models.TimeField(_('Кончало'), null=False, blank=False)
+    journal_disconnection_time_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                                           null=True, blank=False, verbose_name='Место')
+    journal_disconnection_what_disconnected = models.CharField(_('Что отключается'), null=False, blank=False,
+                                                               max_length=256)
+    journal_disconnection_description = models.CharField(_('Опиасание'), null=True, blank=True,
+                                                         max_length=256)
+    journal_disconnection_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True, null=True)
+    journal_disconnection_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                   null=True, blank=False, verbose_name='Кто опубликовал')
+
+    def __str__(self):
+        return '%s %s' % (self.journal_disconnection_time_station, self.journal_disconnection_what_disconnected)
+
+    class Meta:
+        verbose_name = 'Отлючение'
+        verbose_name_plural = 'Отлючения'
+
+
+class JournalFireSystem(models.Model):
+    journal_fire_system_date = models.DateTimeField(_('Дата'), null=False, blank=False)
+    journal_fire_system_character = models.CharField(_('Характер неисправности'), null=False, blank=False,
+                                                     max_length=256)
+    journal_fire_system_reported = models.CharField(_('Сообщил'), null=False, blank=False,
+                                                    max_length=56)
+    journal_fire_system_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                                    null=True, blank=False, verbose_name='Объект')
+    journal_fire_system_datetime_fix = models.DateTimeField(_('Дата устранения'), null=True, blank=True)
+    journal_fire_system_reported_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                          null=True, blank=True, verbose_name='Доложил об устранении')
+    journal_fire_system_confirmed_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                                           null=True, blank=True, verbose_name='Подтвердил',
+                                                           related_name='+')
+    journal_fire_system_description = models.CharField(_('Примечание'), null=True, blank=True,
+                                                       max_length=256)
+    journal_fire_system_finished = models.BooleanField(_('Завершено'))
+    journal_fire_system_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.journal_fire_system_character
+
+    class Meta:
+        verbose_name = 'Замечание системы пожаротушения'
+        verbose_name_plural = 'Замечания систем пожаротушения'
+
+
 class ClassifierOfWork(models.Model):
     classifier_of_work_title = models.CharField(_('Классификтор'), max_length=64)
     classifier_of_work_short_title = models.CharField(_('Сокращенное название классификатора'), max_length=64, null=True,

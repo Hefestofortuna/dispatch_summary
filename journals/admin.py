@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import JournalContractor, JournalNotice, JournalOrder, JournalInspector, TypeOfWork, JournalEMSU, \
-    AmperageType, JournalFactoryOfWork, ClassifierOfWork
+    AmperageType, JournalFactoryOfWork, ClassifierOfWork, JournalDisconnection, JournalFireSystem
 
 
 class JournalContractorAdmin(admin.ModelAdmin):
@@ -43,20 +43,42 @@ class JournalInspectorAdmin(admin.ModelAdmin):
 
 
 class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
-    list_display = ('journal_factory_of_work_note','journal_factory_of_work_user',
+    list_display = ('journal_factory_of_work_note', 'journal_factory_of_work_user',
                     'journal_factory_of_work_date_start',
                     'journal_factory_of_work_date_finish','journal_factory_of_work_classifier',
                     'journal_factory_of_work_subdibision',
                     'journal_factory_of_work_pub_date',)
     list_display_links = ('journal_factory_of_work_note',)
 
+
+class JournalDisconnectionAdmin(admin.ModelAdmin):
+    list_display = ('journal_disconnection_date', 'journal_disconnection_time_start',
+                    'journal_disconnection_time_finish',
+                    'journal_disconnection_time_station','journal_disconnection_what_disconnected',
+                    'journal_disconnection_description',
+                    'journal_disconnection_user',)
+    list_display_links = ('journal_disconnection_description',)
+
+
+class JournalFireSystemAdmin(admin.ModelAdmin):
+    list_display = ('journal_fire_system_date', 'journal_fire_system_character',
+                    'journal_fire_system_reported',
+                    'journal_fire_system_station', 'journal_fire_system_datetime_fix',
+                    'journal_fire_system_reported_user',
+                    'journal_fire_system_confirmed_user', 'journal_fire_system_description',
+                    'journal_fire_system_finished')
+    list_display_links = ('journal_fire_system_reported',)
+
+
 class ClassifierOfWorkAdmin(admin.ModelAdmin):
     list_display = ('classifier_of_work_short_title','classifier_of_work_title',)
     list_display_links = ('classifier_of_work_title',)
 
+
 class TypeOfWorkAdmin(admin.ModelAdmin):
     list_display = ('type_of_work_title',)
     list_display_links = ('type_of_work_title',)
+
 
 class AmperageTypeAdmin(admin.ModelAdmin):
     list_display = ('amperage_type_title',)
@@ -70,5 +92,7 @@ admin.site.register(JournalOrder, JournalOrderAdmin)
 admin.site.register(JournalInspector, JournalInspectorAdmin)
 admin.site.register(TypeOfWork, TypeOfWorkAdmin)
 admin.site.register(JournalEMSU, JournalEMSUAdmin)
+admin.site.register(JournalDisconnection, JournalDisconnectionAdmin)
+admin.site.register(JournalFireSystem, JournalFireSystemAdmin)
 admin.site.register(AmperageType, AmperageTypeAdmin)
 admin.site.register(ClassifierOfWork, ClassifierOfWorkAdmin)
