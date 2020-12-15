@@ -1,14 +1,36 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
 from .models import Feed
-from django.views.generic import CreateView, ListView, View
+from django.views.generic import CreateView, UpdateView, View
+from .forms import FeedForm
+
 
 class FeedView(View):
-
     def get(self, request, pk):
         feed_list = Feed.objects.get(id=pk)
         return render(request, "feeds/view.html", {"feed_list": feed_list,
                                                                   "title": feed_list.feed_title})
+
+
+class FeedCreateView(CreateView):
+    template_name = 'feeds/create.html'
+    form_class = FeedForm
+    success_url = '/feed/index/'
+
+    def form_valid(self, form):
+        form.instance.feed_author = self.request.user
+        return super(FeedCreateView, self).form_valid(form)
+
+    def get_form_kwargs(self):
+        kwargs = super(FeedCreateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
+
+
+class FeedUpdateView(UpdateView):
+    template_name = 'feeds/update.html'
+    form_class = FeedForm
+    success_url = '/feed/index/'
 
 
 def feed(request):

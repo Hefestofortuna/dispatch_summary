@@ -1,12 +1,13 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import users.models
+from tinymce.models import HTMLField
 from mptt.models import TreeForeignKey
 
 
 class Feed(models.Model):
     feed_title = models.CharField(_('Наименование новости'), max_length=128, null=False, blank=False)
-    feed_text = models.TextField(_('Текст новости'), null=True, blank=True)
+    feed_text = HTMLField()
     feed_pub_date = models.DateTimeField(_('Дата публикации'), auto_now_add=True)
     feed_file = models.ManyToManyField('files.File', blank=True, verbose_name='Прикрепленные файлы')
     feed_tags = models.ManyToManyField('Tag', blank=True, verbose_name='Теги')

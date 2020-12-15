@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'stations',
     'dga',
     'main',
+    'tinymce',
 ]
 
 MIDDLEWARE = [

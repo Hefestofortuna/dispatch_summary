@@ -21,19 +21,19 @@
             </header>
         <div class="uk-comment-body">
             <a href="{% url 'FeedView' element.pk %}"><h4 class=".uk-text-lead">{{ element.feed_title }}</h4></a>
-            <p class=".uk-text-meta">{{ element.feed_text|truncatewords:100 }}</p>
+            <p class=".uk-text-meta">{{ element.feed_text|truncatewords:100|safe}}</p>
             <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                         <div class="uk-width-auto">
                                         <span class="uk-label">
                                             {% for file in element.feed_file.all %}
                                                 {% if file.file_title == '.doc' or '.docx' %}
-                                                    <img width="32" height="32" src="{% static 'icon/Word.png' %}">
+                                                    <img width="22" height="22" src="{% static 'icon/Word.png' %}">
                                                 {% elif file.file_title == '.xls' or '.xlsx' %}
-                                                    <img width="32" height="32" src="{% static 'icon/Excel.png' %}">
+                                                    <img width="22" height="22" src="{% static 'icon/Excel.png' %}">
                                                 {% elif file.file_title == '.pdf' %}
-                                                    <img width="32" height="32" src="{% static 'icon/Pdf.png' %}">
+                                                    <img width="22" height="22" src="{% static 'icon/Pdf.png' %}">
                                                 {% elif file.file_title == '.ppt' or '.pptx' %}
-                                                    <img width="32" height="32" src="{% static 'icon/PowerPoint.png' %}">
+                                                    <img width="22" height="22" src="{% static 'icon/PowerPoint.png' %}">
                                                 {% endif %}
                                                 <a style="color: white" href="/media/{{ file.file_name }}">{{ file.file_title }}</a>
                                             {% endfor %}

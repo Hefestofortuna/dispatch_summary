@@ -26,5 +26,6 @@ urlpatterns = [
     path('main/', include('main.urls')),
     path('journal/', include('journals.urls')),
     path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),
+    path('tinymce/', include('tinymce.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

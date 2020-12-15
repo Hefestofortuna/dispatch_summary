@@ -38,7 +38,7 @@ class JournalFactoryOfWorkForm(ModelForm):
         widgets = {
             "journal_factory_of_work_note": Textarea(attrs={
                 'class': 'uk-textarea',
-                'placeholder': 'Введите описнаие'
+                'placeholder': 'Введите описание'
             }),
             "journal_factory_of_work_classifier": Select(attrs={
                 'class': 'uk-select',
