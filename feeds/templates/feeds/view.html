@@ -6,8 +6,17 @@
 {% block content %}
     <div class="uk-card uk-card-default uk-card-body uk-margin-small-top">
     <h2>{{ title }}</h2>
-
     <p>{{ feed_list.feed_text|safe }}</p>
+    <br>
+                <footer class="uk-align-right uk-text-right@l uk-padding-remove">
+                <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ feed_list.feed_author }}</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove uk-align-right">
+                        <li><h1 class=".uk-text-muted">{{ feed_list.feed_pub_date }}</h1></li>
+                    </ul>
+                </div>
+            </footer>
+    <br>
         <h3>Файлы:</h3>
         <div class="uk-grid-medium uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
@@ -35,6 +44,24 @@
                         {% endfor %}
                     </div>
         </div>
-    </div>
+        {% if feed_list.feed_author.pk == user.pk %}
 
+        <h3>Действия:</h3>
+        <div class="uk-margin-small-top">
+        <form action="{% url 'FeedUpdate' feed_list.pk %}" style="display: inline-block;">
+           <input class="uk-button uk-button-primary uk-navbar-right" style="background-color: #27475c" type="submit" value="Обновить">
+        </form>
+        <form style="display: inline-block;">
+            <input class="uk-button uk-button-danger uk-navbar-right" value="Удалить" onclick="deleteView()" type="button">
+        </form>
+        </div>
+        {% endif %}
+    </div>
+    <script>
+            function deleteView(){
+                if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {
+                    window.open("/feed/delete/{{ feed_list.pk }}");
+            }
+        }
+    </script>
 {% endblock %}

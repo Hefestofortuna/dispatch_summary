@@ -1,7 +1,7 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
 from .models import Feed
-from django.views.generic import CreateView, UpdateView, View
+from django.views.generic import CreateView, UpdateView, View, DeleteView
 from .forms import FeedForm
 
 
@@ -28,9 +28,28 @@ class FeedCreateView(CreateView):
 
 
 class FeedUpdateView(UpdateView):
+    model = Feed
     template_name = 'feeds/update.html'
     form_class = FeedForm
     success_url = '/feed/index/'
+
+    def form_valid(self, form):
+        form.instance.feed_author = self.request.user
+        return super(FeedUpdateView, self).form_valid(form)
+
+    def get_form_kwargs(self):
+        kwargs = super(FeedUpdateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
+
+
+class FeedDeleteView(DeleteView):
+    model = Feed
+    success_url = '/feed/index/'
+    template_name = 'feeds/delete.html'
+
+    def get(self, *args, **kwargs):
+        return self.post(*args, **kwargs)
 
 
 def feed(request):
