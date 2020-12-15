@@ -3,29 +3,22 @@
 {% block title %}
 {{ title }}
 {% endblock %}
-
 {% block content %}
-    {% if news %}
-    {% for element in news %}
-    <div class = "uk-margin-top">
-        <article class="uk-comment uk-comment-primary" style="background-color: #ffffff">
-            <header class="uk-comment-header">
-                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-small-top">
+    <h3 class="uk-card-title">{{ title }}</h3>
+
+    <p>{{ feed_list.feed_text }}</p>
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
-                        {% for tag in element.feed_tags.all %}
+                        {% for tag in feed_list.feed_tags.all %}
                             <span class="uk-label uk-label-danger">{{ tag }}</span>
                         {% endfor %}
                     </div>
-                </div>
-
-            </header>
-        <div class="uk-comment-body">
-            <a href="{% url 'FeedView' element.pk %}"><h4 class=".uk-text-lead">{{ element.feed_title }}</h4></a>
-            <p class=".uk-text-meta">{{ element.feed_text|truncatewords:100 }}</p>
-            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+        </div>
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                         <div class="uk-width-auto">
                                         <span class="uk-label">
-                                            {% for file in element.feed_file.all %}
+                                            {% for file in feed_list.feed_file.all %}
                                                 {% if file.file_title == '.doc' or '.docx' %}
                                                     <img width="32" height="32" src="{% static 'icon/Word.png' %}">
                                                 {% elif file.file_title == '.xls' or '.xlsx' %}
@@ -39,21 +32,7 @@
                                             {% endfor %}
                                         </span>
                                         </div>
-            </div>
-            <footer class="uk-align-right uk-text-right@l uk-padding-remove">
-                <div class="uk-width-expand">
-                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ element.feed_author }}</a></h4>
-                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove uk-align-right">
-                        <li><h1 class=".uk-text-muted">{{ element.feed_pub_date }}</h1></li>
-                    </ul>
-                </div>
-            </footer>
         </div>
-        </article>
     </div>
-    {% endfor %}
-    {% else %}
-        <p>Новостей нет!</p>
-    {% endif %}
-    {% include "feeds/pagination.html" with page=news %}
+
 {% endblock %}

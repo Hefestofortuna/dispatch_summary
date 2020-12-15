@@ -3,7 +3,6 @@ from django.contrib.auth.admin import UserAdmin
 from .models import User
 
 
-
 class UserAdmin(UserAdmin):
     list_display = ('get_fio', 'email', 'subdivision', 'get_organization', 'get_groups','phone', 'working',)
     list_display_links = ('get_fio',)
@@ -15,5 +14,6 @@ class UserAdmin(UserAdmin):
         (('Права доступа'), {'fields': ('is_active', 'is_staff','is_superuser','groups','user_permissions')}),
         (('Важные даты'), {'fields': ('last_login', 'date_joined',)}),
 )
+
 
 admin.site.register(User, UserAdmin)

@@ -1,3 +1,5 @@
+import os
+
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import users.models
@@ -23,6 +25,10 @@ class File(models.Model):
 
     def __str__(self):
         return '%s %s' % (self.file_title, self.file_folder)
+
+    def extension(self):
+        name, extension = os.path.splitext(self.file_name.name)
+        return extension
 
     class Meta:
         verbose_name_plural = "Файлы"

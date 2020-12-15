@@ -1,9 +1,15 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
 from .models import Feed
+from django.views.generic import CreateView, ListView, View
 
+class FeedView(View):
 
-# from users.models import
+    def get(self, request, pk):
+        feed_list = Feed.objects.get(id=pk)
+        return render(request, "feeds/view.html", {"feed_list": feed_list,
+                                                                  "title": feed_list.feed_title})
+
 
 def feed(request):
     if request.user.is_authenticated:
