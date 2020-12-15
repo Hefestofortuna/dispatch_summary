@@ -39,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,7 +72,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Ivan\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -146,6 +146,19 @@
       <workItem from="1606893144528" duration="351000" />
       <workItem from="1606964297184" duration="613000" />
       <workItem from="1607067376523" duration="633000" />
+      <workItem from="1607511541935" duration="55000" />
+      <workItem from="1607589385065" duration="585000" />
+      <workItem from="1607610064020" duration="596000" />
+      <workItem from="1607612269583" duration="4000" />
+      <workItem from="1607612427518" duration="36000" />
+      <workItem from="1607612816103" duration="37000" />
+      <workItem from="1607612963202" duration="41000" />
+      <workItem from="1607647934399" duration="1746000" />
+      <workItem from="1607698144278" duration="160000" />
+      <workItem from="1607703675274" duration="686000" />
+      <workItem from="1607951258952" duration="605000" />
+      <workItem from="1608003768063" duration="38000" />
+      <workItem from="1608011387047" duration="1566000" />
     </task>
     <servers />
   </component>
@@ -193,37 +206,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="555" y="218" key="#Inspections" timestamp="1606462384825">
-      <screen x="0" y="0" width="1857" height="1080" />
-    </state>
-    <state x="555" y="218" key="#Inspections/1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1606462384825" />
-    <state x="555" y="218" key="#Inspections/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605840785540" />
-    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604902664488">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state x="521" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1604902664488" />
-    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606371335691">
-      <screen x="0" y="0" width="1857" height="1080" />
-    </state>
-    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1606371335691" />
-    <state x="709" y="295" key="FileChooserDialogImpl" timestamp="1606382175590">
-      <screen x="0" y="0" width="1857" height="1080" />
-    </state>
-    <state x="709" y="295" key="FileChooserDialogImpl/1920.0.1857.1080/0.0.1857.1080@0.0.1857.1080" timestamp="1606382175590" />
-    <state x="709" y="295" key="FileChooserDialogImpl/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605585888687" />
-    <state x="430" y="185" key="SettingsEditor" timestamp="1605585899887">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state x="430" y="185" key="SettingsEditor/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1605585899887" />
-    <state x="1297" y="68" width="1457" height="793" key="dock-window-1" timestamp="1606834435832">
-      <screen x="1920" y="0" width="1858" height="1080" />
-    </state>
-    <state x="1297" y="68" width="1457" height="793" key="dock-window-1/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1606834435832" />
-    <state x="772" y="325" key="refactoring.ChangeSignatureDialog" timestamp="1606808811863">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state x="772" y="325" key="refactoring.ChangeSignatureDialog/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1606808811863" />
   </component>
 </project>
