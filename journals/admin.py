@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import JournalContractor, JournalNotice, JournalOrder, JournalInspector, TypeOfWork, JournalEMSU, \
-    AmperageType, JournalFactoryOfWork, ClassifierOfWork, JournalDisconnection, JournalFireSystem
+    AmperageType, JournalFactoryOfWork, ClassifierOfWork, JournalDisconnection, JournalFireSystem, JournalCable
 
 
 class JournalContractorAdmin(admin.ModelAdmin):
@@ -70,6 +70,17 @@ class JournalFireSystemAdmin(admin.ModelAdmin):
     list_display_links = ('journal_fire_system_reported',)
 
 
+class JournalCableAdmin(admin.ModelAdmin):
+    list_display = ('journal_cable_date_find', 'journal_cable_station',
+                    'journal_cable_place',
+                    'journal_cable_type', 'journal_cable_brand',
+                    'journal_cable_om',
+                    'journal_cable_break', 'journal_cable_description',
+                    'journal_cable_user', 'journal_cable_finish', 'journal_cable_date_finish',
+                    'journal_cable_measures', 'journal_cable_pub_date')
+    list_display_links = ('journal_cable_brand',)
+
+
 class ClassifierOfWorkAdmin(admin.ModelAdmin):
     list_display = ('classifier_of_work_short_title','classifier_of_work_title',)
     list_display_links = ('classifier_of_work_title',)
@@ -96,3 +107,4 @@ admin.site.register(JournalDisconnection, JournalDisconnectionAdmin)
 admin.site.register(JournalFireSystem, JournalFireSystemAdmin)
 admin.site.register(AmperageType, AmperageTypeAdmin)
 admin.site.register(ClassifierOfWork, ClassifierOfWorkAdmin)
+admin.site.register(JournalCable, JournalCableAdmin)

@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'dga',
     'main',
     'tinymce',
+    'feedbacks',
+    'kips',
 ]
 
 MIDDLEWARE = [

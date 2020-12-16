@@ -303,6 +303,38 @@ class JournalFireSystem(models.Model):
         verbose_name_plural = 'Замечания систем пожаротушения'
 
 
+class JournalCable(models.Model):
+    journal_cable_date_find = models.DateTimeField(_('Дата обнаружения'), null=False, blank=False)
+    journal_cable_station = models.ForeignKey(stations.models.Station, on_delete=models.SET_NULL,
+                                              null=True, blank=True, verbose_name='Станция/Перегон')
+    journal_cable_place = models.CharField(_('Место укладки кабеля и длинна кабеля, м'), null=False, blank=False,
+                                           max_length=256)
+    journal_cable_type = models.BooleanField(_('Кабель/Устройство'))
+    journal_cable_brand = models.CharField(_('Марка и жильность кабеля'), null=False, blank=False, max_length=128)
+    journal_cable_om = models.FloatField(_('R изоляция (мОм)'), null=False, blank=False)
+    journal_cable_break = models.BooleanField(_('Обрыв'))
+    journal_cable_description = models.CharField(_('Описание'), null=False, blank=False, max_length=256)
+    journal_cable_user = models.ForeignKey(users.models.User, on_delete=models.SET_NULL,
+                                           null=True, blank=True,
+                                           limit_choices_to=Q(
+                                               groups__name='ШН'
+                                           ) | Q(
+                                               groups__name='ШНС'
+                                           ),
+                                           verbose_name='Передал')
+    journal_cable_finish = models.BooleanField(_('Устранено'))
+    journal_cable_date_finish = models.DateTimeField(_('Дата устранения'), null=True, blank=True)
+    journal_cable_measures = models.CharField(_('Принятые меры'), null=True, blank=True, max_length=128)
+    journal_cable_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
+
+    def __str__(self):
+        return self.journal_cable_description
+
+    class Meta:
+        verbose_name = 'Учет кабеля СЦБ'
+        verbose_name_plural = 'Учет кабелей СЦБ'
+
+
 class ClassifierOfWork(models.Model):
     classifier_of_work_title = models.CharField(_('Классификтор'), max_length=64)
     classifier_of_work_short_title = models.CharField(_('Сокращенное название классификатора'), max_length=64, null=True,
