@@ -65,13 +65,21 @@
     <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3 style="text-align: center">Разделы</h3> <hr class="uk-divider-icon">
-            <a href="{% url 'feed' %}">Новости</a> <hr class="uk-divider-small">
-            {% if "ШНС" in request.user.get_groups %} <!-- 1 вид интервейса для ИрЦУАТ -->
-                <a href="{% url 'JournalFactoryOfWorkCreateView' %}">Журнал нахождения работников</a>
-                    <!--span class="uk-badge">5</span--><hr class="uk-divider-small">
-                <!--a>Плановые совещаяни Ш</a> <hr class="uk-divider-small"-->
-            {% endif %}
+
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body">
+                    <h3 class="uk-card-title">Меню</h3>
+                    <hr>
+                    {% now "SHORT_DATETIME_FORMAT" %}
+                    <hr>
+                    <a href="{% url 'feed' %}">Новости</a> <hr class="uk-divider-small">
+                        {% if "ШНС" in request.user.get_groups %}
+                            <a href="{% url 'JournalFactoryOfWorkCreateView' %}">Журнал нахождения работников</a>
+                             <hr class="uk-divider-small">
+                        {% endif %}
+                </div>
+            </div>
+
         </div>
     </div>
 

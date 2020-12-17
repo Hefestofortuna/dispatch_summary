@@ -63,3 +63,19 @@ class JournalFactoryOfWorkDeleteView(DeleteView):
         return self.post(*args, **kwargs)
 
 
+class JournalFactoryOfWorkPrint(ListView):
+    model = JournalFactoryOfWork
+    template_name = 'JournalFactoryOfWork/print.html'
+
+    def get_context_data(self, **kwargs):
+        journal_factory_of_work_list = JournalFactoryOfWork.objects.all()
+        journal_factory_of_work_filter = JournalFactoryOfWorkFilter(self.request.GET,
+                                                                    queryset=journal_factory_of_work_list)
+        context = super().get_context_data(**kwargs)
+        context['title'] = "Печать"
+        context['FactoryOfWorkList'] = journal_factory_of_work_list
+        context['myFilter'] = journal_factory_of_work_filter
+        return context
+
+
+

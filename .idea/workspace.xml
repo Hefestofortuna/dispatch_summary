@@ -17,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,19 +49,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals" />
+      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -163,7 +163,7 @@
       <workItem from="1608109230335" duration="694000" />
       <workItem from="1608129203045" duration="5800000" />
       <workItem from="1608171842468" duration="15031000" />
-      <workItem from="1608214395656" duration="5581000" />
+      <workItem from="1608214395656" duration="9596000" />
     </task>
     <servers />
   </component>
