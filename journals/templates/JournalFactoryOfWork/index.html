@@ -4,9 +4,42 @@
 {{ title }}
 {% endblock %}
 {% block content %}
-    {{ myFilter.form }}
     {% for FactoryOfWork in FactoryOfWorkList %}
         {{ FactoryOfWork.journal_factory_of_work_note }}
     {% endfor %}
-
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>ФИО сотрудника</th>
+            <th>Начало периода</th>
+            <th>Конец периода</th>
+            <th>Классификация записи</th>
+            <th>Примечание</th>
+            <th>Подразделение</th>
+            <th>Дата публикации</th>
+        </tr>
+        <tr>
+                <th>{{ myFilter.form.journal_factory_of_work_user}}</th>
+                <th>{{ myFilter.form.journal_factory_of_work_date_start}}</th>
+                <th>{{ myFilter.form.journal_factory_of_work_date_finish}}</th>
+                <th>{{ myFilter.form.journal_factory_of_work_classifier}}</th>
+                <th>{{ myFilter.form.journal_factory_of_work_note}}</th>
+                <th>{{ myFilter.form.journal_factory_of_work_subdibision}}</th>
+                <th>{{ myFilter.form.journal_factory_of_work_pub_date}}</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for FactoryOfWork in FactoryOfWorkList %}
+            <tr>
+                <td>{{ FactoryOfWork.journal_factory_of_work_note }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_user }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_date_start }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_date_finish }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_classifier }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_subdibision }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_pub_date }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}

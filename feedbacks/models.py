@@ -8,7 +8,7 @@ class FeedBack(models.Model):
                                       verbose_name='Контактное лицо')
     feedback_theme = models.CharField(_('Тема сообщения'), max_length=64, null=False)
     feedback_message = models.TextField(_('Сообщение'), null=False)
-    feedback_state = models.BooleanField(_('Состояние'))
+    feedback_state = models.BooleanField(_('Выполнено'))
     feedback_pub_date = models.DateTimeField(_('Дата'), auto_now=True, null=False)
 
     def __str__(self):
@@ -16,4 +16,4 @@ class FeedBack(models.Model):
 
     class Meta:
         verbose_name_plural = "Сообщения"
-        verbose_name = "Обратная связь"
+        verbose_name = "Сообщение"
