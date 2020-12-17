@@ -4,7 +4,6 @@
 {{ title }}
 {% endblock %}
 {% block content %}
-    <div style="margin-left: -35%">
 <table class="styled-table">
     <thead>
         <tr>
@@ -17,7 +16,9 @@
             <th>Дата публикации</th>
             <th>Действие</th>
         </tr>
-        <tr>
+    </thead>
+    <tr>
+    <form method="GET" style=" display: inline-block;" >
                 <th>{{ myFilter.form.journal_factory_of_work_user}}</th>
                 <th>{{ myFilter.form.journal_factory_of_work_date_start}}</th>
                 <th>{{ myFilter.form.journal_factory_of_work_date_finish}}</th>
@@ -26,12 +27,11 @@
                 <th>{{ myFilter.form.journal_factory_of_work_subdibision}}</th>
                 <th>{{ myFilter.form.journal_factory_of_work_pub_date}}</th>
                 <td>
-                    <form method="GET">
-                        <button type="submit" uk-icon="search" ></button>
-                    </form>
+                    <button type="submit" uk-icon="search" style="color: black;"></button>
+    </form>
+    <a href="{% url 'JournalFactoryOfWorkCreateView'  %}" uk-icon="plus" style="color: black;"></a>
                 </td>
         </tr>
-    </thead>
     <tbody>
     {% for FactoryOfWork in myFilter.qs %}
             <tr>
@@ -43,13 +43,20 @@
                 <td>{{ FactoryOfWork.journal_factory_of_work_subdibision }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_pub_date }}</td>
                 <td>
-                    <a  href="{% url 'JournalFactoryOfWorkView' FactoryOfWork.pk  %}"><span uk-icon="file-edit" ></span></a>
-                    <a  href="{% url 'JournalFactoryOfWorkDelete' FactoryOfWork.pk  %}"><span uk-icon="trash" ></span></a>
-                    <a  href="{% url 'JournalFactoryOfWorkUpdate' FactoryOfWork.pk  %}"><span uk-icon="file-edit" ></span></a>
+                    <div style="text-align: center;">
+                        <a  onclick="deleteView({{ FactoryOfWork.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
+                        <a  href="{% url 'JournalFactoryOfWorkUpdate' FactoryOfWork.pk  %}"><span uk-icon="file-edit" style="color: black;"></span></a>
+                    </div>
                 </td>
             </tr>
         {% endfor %}
     </tbody>
 </table>
-    </div>
+     <script>
+            function deleteView(pk){
+                if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {
+                    window.open("/journal/FactoryOfWork/delete/"+pk);
+            }
+        }
+    </script>
 {% endblock %}

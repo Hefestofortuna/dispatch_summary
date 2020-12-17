@@ -9,6 +9,7 @@ from .filters import JournalFactoryOfWorkFilter
 class JournalFactoryOfWorkCreateView(CreateView):
     template_name = 'JournalFactoryOfWork/create.html'
     form_class = JournalFactoryOfWorkForm
+    success_url = '/journal/FactoryOfWork/index/'
 
     def get_form_kwargs(self):
         kwargs = super(JournalFactoryOfWorkCreateView, self).get_form_kwargs()

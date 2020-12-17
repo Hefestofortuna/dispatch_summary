@@ -42,7 +42,7 @@
                             <div uk-dropdown="pos: bottom-center">
                                 <ul class="uk-nav uk-dropdown-nav">
                                     <li><a href="#">Автотранспорт</a></li>
-                                    <li><a href="{% url 'JournalFactoryOfWorkCreateView' %}">Журнал нахождения работников</a></li>
+                                    <li><a href="{% url 'JournalFactoryOfWorkListView' %}">Журнал нахождения работников</a></li>
                                     <li><a href="#">Журнал учета путевых листов</a></li>
                                     <li><a href="#">ЭМСУ</a></li>
                                     <li><a href="#">Журнал учета перемычек</a></li>
@@ -76,8 +76,10 @@
     </div>
 
     <!-- Тело -->
-    <div class="uk-container uk-container-small uk-position-relative">
-        {% block content %}{% endblock %}
+    <div class="uk-container uk-container-xlarge uk-position-relative">
+                {% block content %}{% endblock %}
+    </div>
+
     </div>
     <!-- Подвал -->
     <footer>
