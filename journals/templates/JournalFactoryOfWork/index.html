@@ -4,9 +4,7 @@
 {{ title }}
 {% endblock %}
 {% block content %}
-    {% for FactoryOfWork in FactoryOfWorkList %}
-        {{ FactoryOfWork.journal_factory_of_work_note }}
-    {% endfor %}
+    <div style="margin-left: -35%">
 <table class="styled-table">
     <thead>
         <tr>
@@ -17,6 +15,7 @@
             <th>Примечание</th>
             <th>Подразделение</th>
             <th>Дата публикации</th>
+            <th>Действие</th>
         </tr>
         <tr>
                 <th>{{ myFilter.form.journal_factory_of_work_user}}</th>
@@ -26,20 +25,31 @@
                 <th>{{ myFilter.form.journal_factory_of_work_note}}</th>
                 <th>{{ myFilter.form.journal_factory_of_work_subdibision}}</th>
                 <th>{{ myFilter.form.journal_factory_of_work_pub_date}}</th>
+                <td>
+                    <form method="GET">
+                        <button type="submit" uk-icon="search" ></button>
+                    </form>
+                </td>
         </tr>
     </thead>
     <tbody>
-    {% for FactoryOfWork in FactoryOfWorkList %}
+    {% for FactoryOfWork in myFilter.qs %}
             <tr>
-                <td>{{ FactoryOfWork.journal_factory_of_work_note }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_user }}</td>
+                <td>{{ FactoryOfWork.journal_factory_of_work_note }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_date_start }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_date_finish }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_classifier }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_subdibision }}</td>
                 <td>{{ FactoryOfWork.journal_factory_of_work_pub_date }}</td>
+                <td>
+                    <a  href="{% url 'JournalFactoryOfWorkView' FactoryOfWork.pk  %}"><span uk-icon="file-edit" ></span></a>
+                    <a  href="{% url 'JournalFactoryOfWorkDelete' FactoryOfWork.pk  %}"><span uk-icon="trash" ></span></a>
+                    <a  href="{% url 'JournalFactoryOfWorkUpdate' FactoryOfWork.pk  %}"><span uk-icon="file-edit" ></span></a>
+                </td>
             </tr>
         {% endfor %}
     </tbody>
 </table>
+    </div>
 {% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+    {{form.media}}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Добавить">
+    </form>
+
+{% endblock %}
