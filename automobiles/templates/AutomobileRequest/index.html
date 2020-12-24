@@ -35,7 +35,7 @@
                 <td>{{ automobile_request.automobile_request_agreed }}</td>
                 <td>
                     <div style="text-align: center;">
-                        <a  onclick="deleteView({{ automobile_request_list.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
+                        <a  onclick="deleteView({{ automobile_request.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
                         <a  href="{% url 'AutomobileRequestUpdate' automobile_request.pk  %}"><span uk-icon="file-edit" style="color: black;"></span></a>
                     </div>
                 </td>

@@ -36,3 +36,19 @@ class AutomobileRequestDeleteView(DeleteView):
 
     def get(self, *args, **kwargs):
         return self.post(*args, **kwargs)
+
+
+class AutomobileRequestUpdateView(UpdateView):
+    model = AutomobileRequest
+    template_name = 'AutomobileRequest/update.html'
+    form_class = AutomobileRequestForm
+    success_url = '/automobile/AutomobileRequest/index/'
+
+    def form_valid(self, form):
+        form.instance.feed_author = self.request.user
+        return super(AutomobileRequestUpdateView, self).form_valid(form)
+
+    def get_form_kwargs(self):
+        kwargs = super(AutomobileRequestUpdateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs

@@ -7,6 +7,6 @@ urlpatterns = [
     path('AutomobileRequest/index/', views.AutomobileRequestListView.as_view(), name='AutomobileRequestListView'),
    # path('automobile/AutomobileRequest/print/', views.AutomobileRequestPrint.as_view(), name='AutomobileRequestPrint'),
    # path('automobile/AutomobileRequest/view/<int:pk>', views.AutomobileRequestView.as_view(), name='AutomobileRequestView'),
-   # path('automobile/AutomobileRequest/update/<int:pk>', views.AutomobileRequestUpdateView.as_view(), name='AutomobileRequestUpdate'),
-   # path('automobile/AutomobileRequest/delete/<int:pk>', views.AutomobileRequestDeleteView.as_view(), name='AutomobileRequestDelete'),
+    path('AutomobileRequest/update/<int:pk>', views.AutomobileRequestUpdateView.as_view(), name='AutomobileRequestUpdate'),
+    path('AutomobileRequest/delete/<int:pk>', views.AutomobileRequestDeleteView.as_view(), name='AutomobileRequestDelete'),
 ]
