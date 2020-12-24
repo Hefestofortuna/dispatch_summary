@@ -21,18 +21,18 @@
         </tr>
     </thead>
     <tbody>
-    {% for automobile_request_list in AutomobileRequestList %}
+    {% for automobile_request in AutomobileRequestList %}
             <tr>
-                <td>{{ automobile_request_list.automobile_request_date_of_travel }}</td>
-                <td>{{ automobile_request_list.automobile_request_subdivision }}</td>
-                <td>{{ automobile_request_list.automobile_request_mission }}</td>
-                <td>{{ automobile_request_list.automobile_request_client }}</td>
-                <td>{{ automobile_request_list.automobile_request_executor }}</td>
-                <td>{{ automobile_request_list.automobile_request_automobile }}</td>
-                <td>{{ automobile_request_list.automobile_request_arrival_time }}</td>
-                <td>{{ automobile_request_list.automobile_request_return_time }}</td>
-                <td>{{ automobile_request_list.automobile_request_odometer }}</td>
-                <td>{{ automobile_request_list.automobile_request_agreed }}</td>
+                <td>{{ automobile_request.automobile_request_date_of_travel }}</td>
+                <td>{{ automobile_request.automobile_request_subdivision }}</td>
+                <td>{{ automobile_request.automobile_request_mission }}</td>
+                <td>{{ automobile_request.automobile_request_client }}</td>
+                <td>{{ automobile_request.automobile_request_executor }}</td>
+                <td>{{ automobile_request.automobile_request_automobile }}</td>
+                <td>{{ automobile_request.automobile_request_arrival_time }}</td>
+                <td>{{ automobile_request.automobile_request_return_time }}</td>
+                <td>{{ automobile_request.automobile_request_odometer }}</td>
+                <td>{{ automobile_request.automobile_request_agreed }}</td>
                 <td>
                     <div style="text-align: center;">
                         <a  onclick="deleteView({{ automobile_request_list.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
