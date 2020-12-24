@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block content %}
+
+    <div class="uk-container uk-container-small uk-position-relative">
     {% if news %}
     {% for element in news %}
     <div class = "uk-margin-top">
@@ -49,8 +51,17 @@
                 </div>
             </footer>
         </div>
+
+        <div class="uk-align-right uk-text-right@l uk-padding-remove" style="width: 130px;">
+        <div style="position: fixed;top: 93%;">
+            <a class="uk-button uk-button-primary uk-navbar-right" style="background-color: #27475c" href="{% url 'FeedCreate' %}">Добавить</a>
+        </div>
+            </div>
+
         </article>
+
     </div>
+        </div>
     {% endfor %}
     {% else %}
         <p>Новостей нет!</p>

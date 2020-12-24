@@ -5,10 +5,13 @@
 {% endblock %}
 {% block content %}
     {{form.media}}
+
+ <div class="uk-container uk-container-small uk-position-relative">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Добавить">
+        <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Обновить">
     </form>
+ </div>
 
 {% endblock %}

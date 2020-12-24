@@ -4,6 +4,9 @@
 {{ title }}
 {% endblock %}
 {% block content %}
+
+    <div class="uk-container uk-container-small uk-position-relative" >
+
     <div class="uk-card uk-card-default uk-card-body uk-margin-small-top">
     <h2>{{ title }}</h2>
     <p>{{ feed_list.feed_text|safe }}</p>
@@ -43,20 +46,25 @@
                             <span class="uk-label uk-label-danger">{{ tag }}</span>
                         {% endfor %}
                     </div>
-        </div>
-        {% if feed_list.feed_author.pk == user.pk %}
 
-        <h3>Действия:</h3>
-        <div class="uk-margin-small-top">
-        <form action="{% url 'FeedUpdate' feed_list.pk %}" style="display: inline-block;">
-           <input class="uk-button uk-button-primary uk-navbar-right" style="background-color: #27475c" type="submit" value="Обновить">
-        </form>
-        <form style="display: inline-block;">
-            <input class="uk-button uk-button-danger uk-navbar-right" value="Удалить" onclick="deleteView()" type="button">
-        </form>
         </div>
+
+        {% if feed_list.feed_author.pk == user.pk %}
+         <div class="uk-align-right uk-text-right@l uk-padding-remove" style="width: 245px;">
+        <div style="position: fixed;top: 93%;">
+            <form action="{% url 'FeedUpdate' feed_list.pk %}" style="display: inline-block;">
+               <input class="uk-button uk-button-primary uk-navbar-right" style="background-color: #27475c" type="submit" value="Обновить">
+            </form>
+            <form style="display: inline-block;">
+                <input class="uk-button uk-button-danger uk-navbar-right" value="Удалить" onclick="deleteView()" type="button">
+            </form>
+        </div>
+            </div>
         {% endif %}
     </div>
+    </div>
+
+
     <script>
             function deleteView(){
                 if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {

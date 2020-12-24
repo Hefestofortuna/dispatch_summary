@@ -71,6 +71,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="dispatch_summary.settings" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Ivan\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -164,6 +165,12 @@
       <workItem from="1608129203045" duration="5800000" />
       <workItem from="1608171842468" duration="15031000" />
       <workItem from="1608214395656" duration="9596000" />
+      <workItem from="1608360030838" duration="716000" />
+      <workItem from="1608363486992" duration="221000" />
+      <workItem from="1608476558148" duration="8812000" />
+      <workItem from="1608653568264" duration="253000" />
+      <workItem from="1608691990831" duration="4154000" />
+      <workItem from="1608813856412" duration="7671000" />
     </task>
     <servers />
   </component>
