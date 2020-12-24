@@ -1,0 +1,53 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Дата</th>
+            <th>Подразделение</th>
+            <th>Цель поездки</th>
+            <th>Кому</th>
+            <th>Водитель</th>
+            <th>Марка/Номер</th>
+            <th>Время прибытия</th>
+            <th>Время возвращения</th>
+            <th>Одометр</th>
+            <th>Согласованно</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for automobile_request_list in AutomobileRequestList %}
+            <tr>
+                <td>{{ automobile_request_list.automobile_request_date_of_travel }}</td>
+                <td>{{ automobile_request_list.automobile_request_subdivision }}</td>
+                <td>{{ automobile_request_list.automobile_request_mission }}</td>
+                <td>{{ automobile_request_list.automobile_request_client }}</td>
+                <td>{{ automobile_request_list.automobile_request_executor }}</td>
+                <td>{{ automobile_request_list.automobile_request_automobile }}</td>
+                <td>{{ automobile_request_list.automobile_request_arrival_time }}</td>
+                <td>{{ automobile_request_list.automobile_request_return_time }}</td>
+                <td>{{ automobile_request_list.automobile_request_odometer }}</td>
+                <td>{{ automobile_request_list.automobile_request_agreed }}</td>
+                <td>
+                    <div style="text-align: center;">
+                        <a  onclick="deleteView({{ automobile_request_list.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
+                        <a  href="{% url 'JournalFactoryOfWorkUpdate' automobile_request_list.pk  %}"><span uk-icon="file-edit" style="color: black;"></span></a>
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+     <script>
+            function deleteView(pk){
+                if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {
+                    window.open("/journal/FactoryOfWork/delete/"+pk);
+            }
+        }
+    </script>
+{% endblock %}

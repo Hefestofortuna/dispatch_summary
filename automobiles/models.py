@@ -71,6 +71,8 @@ class AutomobileRequest(models.Model):
     automobile_request_executor = models.ForeignKey(users.models.User, limit_choices_to=Q(groups__name='Водители'),
                                                     on_delete=models.SET_NULL, null=True, blank=True,
                                                     related_name='+', verbose_name='Исполнитель')
+    automobile_request_automobile = models.ForeignKey('Automobile',
+                                                    on_delete=models.SET_NULL, null=True, blank=True, verbose_name='Автотранспорт')
     automobile_request_date_of_travel = models.DateTimeField(_('Дата поездки'), null=True, blank=False)
     automobile_request_put_date = models.DateTimeField(_('Дата формирования заявки'),
                                                        default=datetime.datetime.now())

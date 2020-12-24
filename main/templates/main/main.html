@@ -41,7 +41,7 @@
                             <img data-src="{% static 'resources/img/personicon.png' %}" style="width: 30px;" alt="" uk-img></a></a>
                             <div uk-dropdown="pos: bottom-center">
                                 <ul class="uk-nav uk-dropdown-nav">
-                                    <li><a href="#">Автотранспорт</a></li>
+                                    <li><a href="{% url 'AutomobileRequestListView' %}">Автотранспорт</a></li>
                                     <li><a href="{% url 'JournalFactoryOfWorkListView' %}">Журнал нахождения работников</a></li>
                                     <li><a href="#">Журнал учета путевых листов</a></li>
                                     <li><a href="#">ЭМСУ</a></li>

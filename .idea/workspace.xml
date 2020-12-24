@@ -39,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/automobiles" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\automobiles" />
       <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
@@ -170,7 +170,7 @@
       <workItem from="1608476558148" duration="8812000" />
       <workItem from="1608653568264" duration="253000" />
       <workItem from="1608691990831" duration="4154000" />
-      <workItem from="1608813856412" duration="7671000" />
+      <workItem from="1608813856412" duration="13404000" />
     </task>
     <servers />
   </component>
