@@ -27,3 +27,12 @@ class AutomobileRequestListView(ListView):
         # Add in a QuerySet of all the books
         context['AutomobileRequestList'] = automobile_request_list
         return context
+
+
+class AutomobileRequestDeleteView(DeleteView):
+    model = AutomobileRequest
+    success_url = '/automobile/AutomobileRequest/index/'
+    template_name = 'AutomobileRequest/delete.html'
+
+    def get(self, *args, **kwargs):
+        return self.post(*args, **kwargs)

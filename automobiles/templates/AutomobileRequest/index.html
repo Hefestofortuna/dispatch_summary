@@ -36,7 +36,7 @@
                 <td>
                     <div style="text-align: center;">
                         <a  onclick="deleteView({{ automobile_request_list.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
-                        <a  href="{% url 'JournalFactoryOfWorkUpdate' automobile_request_list.pk  %}"><span uk-icon="file-edit" style="color: black;"></span></a>
+                        <a  href="{% url 'AutomobileRequestUpdate' automobile_request.pk  %}"><span uk-icon="file-edit" style="color: black;"></span></a>
                     </div>
                 </td>
             </tr>
@@ -46,7 +46,7 @@
      <script>
             function deleteView(pk){
                 if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {
-                    window.open("/journal/FactoryOfWork/delete/"+pk);
+                    window.open("/automobile/AutomobileRequest/delete/"+pk);
             }
         }
     </script>
