@@ -1,5 +1,7 @@
+import self as self
 from django.shortcuts import redirect, render
 from django.urls import reverse
+import urllib
 from django.views.generic import CreateView, ListView, View, DeleteView, UpdateView
 
 from automobiles.forms import AutomobileRequestForm
@@ -8,8 +10,8 @@ from automobiles.models import AutomobileRequest
 
 class AutomobileRequestCreateView(CreateView):
     template_name = 'AutomobileRequest/create.html'
-    form_class = AutomobileRequestForm
     success_url = '/automobile/AutomobileRequest/create/'
+    form_class = AutomobileRequestForm
 
     def get_form_kwargs(self):
         kwargs = super(AutomobileRequestCreateView, self).get_form_kwargs()

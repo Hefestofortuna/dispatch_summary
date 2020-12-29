@@ -76,8 +76,8 @@ class AutomobileRequest(models.Model):
     automobile_request_date_of_travel = models.DateTimeField(_('Дата поездки'), null=True, blank=False)
     automobile_request_put_date = models.DateTimeField(_('Дата формирования заявки'),
                                                        default=datetime.datetime.now())
-    automobile_request_arrival_time = models.TimeField(_('Дата прибытия'), null=True, blank=True)
-    automobile_request_return_time = models.TimeField(_('Дата возвращения'), null=True, blank=True)
+    automobile_request_arrival_time = models.TimeField(_('Время прибытия'), null=True, blank=True)
+    automobile_request_return_time = models.TimeField(_('Время возвращения'), null=True, blank=True)
     automobile_request_odometer = models.IntegerField(_('Одометр'), null=True, blank=True)
     automobile_request_agreed = models.BooleanField(_('Согласовано'), null=True, blank=True)
 

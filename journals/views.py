@@ -18,6 +18,10 @@ class JournalFactoryOfWorkCreateView(CreateView):
         kwargs['user'] = self.request.user
         return kwargs
 
+    def form_valid(self, form):
+        JournalFactoryOfWork.journal_factory_of_work_subdibision = self.request.user.subdivision
+        return super(JournalFactoryOfWorkCreateView, self).form_valid(form)
+
 
 class JournalFactoryOfWorkListView(ListView):
     model = JournalFactoryOfWork

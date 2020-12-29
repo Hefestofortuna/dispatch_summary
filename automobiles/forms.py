@@ -9,12 +9,6 @@ from .models import AutomobileRequest
 
 
 class AutomobileRequestForm(ModelForm):
-    automobile_request_date_of_travel = SplitDateTimeField(widget=AdminSplitDateTime(),
-                                                           label=_('Дата поездки'))
-    automobile_request_arrival_time = SplitDateTimeField(widget=AdminTimeWidget(),
-                                                             label=_('Время прибытия'))
-    automobile_request_return_time = SplitDateTimeField(widget=AdminTimeWidget(),
-                                                             label=_('Время возвращения'))
     automobile_request_client = ModelChoiceField(queryset=User.objects.all(),
                                                     label=_('Кому'),
                                                     empty_label=None)
@@ -38,7 +32,10 @@ class AutomobileRequestForm(ModelForm):
 
     class Meta:
         model = AutomobileRequest
-        fields = '__all__'
+        fields = ['automobile_request_date_of_travel', 'automobile_request_client', 'automobile_request_subdivision',
+                  'automobile_request_mission', 'automobile_request_executor', 'automobile_request_automobile',
+                  'automobile_request_arrival_time', 'automobile_request_return_time', 'automobile_request_return_time',
+                  'automobile_request_odometer', 'automobile_request_agreed']
         widgets = {
             "automobile_request_mission": Textarea(attrs={
                 'class': 'uk-textarea',
@@ -50,4 +47,15 @@ class AutomobileRequestForm(ModelForm):
             "automobile_request_automobile": Select(attrs={
                 'class': 'uk-select',
             }),
+            "automobile_request_date_of_travel": TextInput(attrs={
+                'class': 'uk-input',
+            }),
+            "automobile_request_arrival_time": TextInput(attrs={
+                'class': 'uk-input',
+            }),
+            "automobile_request_return_time": TextInput(attrs={
+                'class': 'uk-input',
+            }),
+
         }
+
