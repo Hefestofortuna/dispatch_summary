@@ -46,7 +46,7 @@ body{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .styled-table thead tr {
-    background-color: #E21A1A;
+    background-color: #27475c;
     color: #ffffff;
     text-align: left;
 }
@@ -64,7 +64,7 @@ body{
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #E21A1A;
+    border-bottom: 2px solid #27475c;
 }
 .styled-table tbody tr.active-row {
     font-weight: bold;

@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from .models import JournalFactoryOfWork
@@ -22,7 +24,7 @@ class JournalFactoryOfWorkListView(ListView):
     template_name = 'JournalFactoryOfWork/index.html'
 
     def get_context_data(self, **kwargs):
-        journal_factory_of_work_list = JournalFactoryOfWork.objects.all()
+        journal_factory_of_work_list = JournalFactoryOfWork.objects.filter(journal_factory_of_work_pub_date__month=datetime.now().month)
         journal_factory_of_work_filter = JournalFactoryOfWorkFilter(self.request.GET, queryset=journal_factory_of_work_list)
         context = super().get_context_data(**kwargs)
         context['FactoryOfWorkList'] = journal_factory_of_work_list

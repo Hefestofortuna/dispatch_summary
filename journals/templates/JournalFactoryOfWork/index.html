@@ -29,6 +29,7 @@
                 <td>
                     <button type="submit" uk-icon="search" style="color: black;"></button>
     </form>
+
     <a href="{% url 'JournalFactoryOfWorkCreateView'  %}" uk-icon="plus" style="color: black;"></a>
     <a href="{% url 'JournalFactoryOfWorkPrint'  %}" uk-icon="print" style="color: black;"></a>
                 </td>
@@ -53,6 +54,12 @@
         {% endfor %}
     </tbody>
 </table>
+    <script>
+            jQuery(document).ready(function () {
+                jQuery('#id_journal_factory_of_work_date_start').datetimepicker();
+                jQuery('#id_journal_factory_of_work_date_finish').datetimepicker();
+            });
+        </script>
      <script>
             function deleteView(pk){
                 if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {

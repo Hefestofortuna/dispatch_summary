@@ -12,6 +12,12 @@
         {{ form.as_p }}
         <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Обновить">
     </form>
+  <script>
+            jQuery(document).ready(function () {
+                jQuery('#id_journal_factory_of_work_date_start').datetimepicker();
+                jQuery('#id_journal_factory_of_work_date_finish').datetimepicker();
+            });
+        </script>
  </div>
 
 {% endblock %}

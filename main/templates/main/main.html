@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="{% static 'css/uikit.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/widgets.css' %}">
-    <script src="{% url 'js-catlog' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.datetimepicker.css' %}">
+    <script src="{% static 'js/uikit.min.js' %}"></script>
+    <script src="{% static 'js/uikit-icons.min.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/jquery.datetimepicker.full.js' %}"></script>
+    <script src="{% static 'js/core.js' %}"></script>
+    <!--<script src="{% url 'js-catlog' %}"></script>-->
 
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -89,8 +95,6 @@
 
     </footer>
 <!-- UIkit JS -->
-<script src="{% static 'js/uikit.min.js' %}"></script>
-<script src="{% static 'js/uikit-icons.min.js' %}"></script>
-    <script src="{% static 'js/core.js' %}"></script>
+
 </body>
 </html>
