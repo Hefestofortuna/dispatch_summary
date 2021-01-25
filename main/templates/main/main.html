@@ -27,10 +27,17 @@
   return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
   }
                     $( function() {
-    $( "#datepicker" ).datepicker().val(getCook('datetimenow'));
+    $( "#datetimepicker" ).datetimepicker().val(getCook('datetimenow'));
   } );
-
             </script>
+<script>
+jQuery(document).ready(function () {
+                jQuery('#datetimepicker').datetimepicker({
+ timepicker:false,
+ format:'d.m.Y'
+});
+            });
+</script>
 
 
     <!--<script src="{% url 'js-catlog' %}"></script>-->
@@ -62,9 +69,9 @@
                         {% if request.user.is_authenticated %}
                             <a class="uk-navbar-item uk-logo" href="#"><h3 id="username">{{ request.user.get_short_full_name }}</h3>
                             <img data-src="{% static 'resources/img/personicon.png' %}" style="width: 30px;" alt="" uk-img></a></a>
-                            <div uk-dropdown="pos: bottom-center">
+                            <div uk-dropdown="pos: bottom-center;mode: click">
                                 <ul class="uk-nav uk-dropdown-nav">
-                                    <h3><input style="border-width:0px;border:none; text-align: center;cursor: pointer;" class="uk-input" id="datepicker"></h3>
+                                    <h3><input style="border-width:0px;border:none; text-align: center;cursor: pointer;" class="uk-input" id="datetimepicker"></h3>
 
                                     <li class="uk-nav-divider"></li>
                                     <li><a href="{% url 'AutomobileRequestListView' %}">Автотранспорт</a></li>
@@ -117,8 +124,9 @@
     </footer>
 <!-- UIkit JS -->
 <script>
-                                        $("#datepicker").change(function (){
-                                            document.cookie = "datetimenow=" + ($("#datepicker").val());
+                                        $("#datetimepicker").change(function (){
+                                            document.cookie = 'datetimenow=' + ($("#datetimepicker").val())+';path=/';
+
                         window.location.reload();
                     });
                                     </script>

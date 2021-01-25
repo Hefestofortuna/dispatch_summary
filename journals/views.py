@@ -28,7 +28,9 @@ class JournalFactoryOfWorkListView(ListView):
     template_name = 'JournalFactoryOfWork/index.html'
 
     def get_context_data(self, **kwargs):
-        journal_factory_of_work_list = JournalFactoryOfWork.objects.filter(journal_factory_of_work_pub_date__month=datetime.now().month)
+        MounthPicked = datetime.strptime(self.request.COOKIES.get('datetimenow'), "%d.%m.%Y")
+        journal_factory_of_work_list = JournalFactoryOfWork.objects.filter(journal_factory_of_work_pub_date__month=MounthPicked.month )#datetime.now().month
+
         journal_factory_of_work_filter = JournalFactoryOfWorkFilter(self.request.GET, queryset=journal_factory_of_work_list)
         context = super().get_context_data(**kwargs)
         context['FactoryOfWorkList'] = journal_factory_of_work_list
