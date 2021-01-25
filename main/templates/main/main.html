@@ -11,11 +11,28 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/widgets.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.datetimepicker.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
     <script src="{% static 'js/uikit.min.js' %}"></script>
     <script src="{% static 'js/uikit-icons.min.js' %}"></script>
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/jquery.datetimepicker.full.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
     <script src="{% static 'js/core.js' %}"></script>
+
+
+            <script>
+                function getCook(cookiename)
+  {
+  var cookiestring=RegExp(cookiename+"=[^;]+").exec(document.cookie);
+  return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
+  }
+                    $( function() {
+    $( "#datepicker" ).datepicker().val(getCook('datetimenow'));
+  } );
+
+            </script>
+
+
     <!--<script src="{% url 'js-catlog' %}"></script>-->
 
     <title>{% block title %}{% endblock %}</title>
@@ -47,6 +64,9 @@
                             <img data-src="{% static 'resources/img/personicon.png' %}" style="width: 30px;" alt="" uk-img></a></a>
                             <div uk-dropdown="pos: bottom-center">
                                 <ul class="uk-nav uk-dropdown-nav">
+                                    <h3><input style="border-width:0px;border:none; text-align: center;cursor: pointer;" class="uk-input" id="datepicker"></h3>
+
+                                    <li class="uk-nav-divider"></li>
                                     <li><a href="{% url 'AutomobileRequestListView' %}">Автотранспорт</a></li>
                                     <li><a href="{% url 'JournalFactoryOfWorkListView' %}">Журнал нахождения работников</a></li>
                                     <li><a href="#">Журнал учета путевых листов</a></li>
@@ -61,6 +81,7 @@
                                 Войти</h3>
                             </a>
                         {% endif %}
+
                     </ul>
                 </div>
             </nav>
@@ -95,6 +116,11 @@
 
     </footer>
 <!-- UIkit JS -->
-
+<script>
+                                        $("#datepicker").change(function (){
+                                            document.cookie = "datetimenow=" + ($("#datepicker").val());
+                        window.location.reload();
+                    });
+                                    </script>
 </body>
 </html>

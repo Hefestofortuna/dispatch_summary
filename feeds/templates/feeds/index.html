@@ -22,7 +22,7 @@
 
             </header>
         <div class="uk-comment-body">
-            <a href="{% url 'FeedView' element.pk %}"><h4 class=".uk-text-lead">{{ element.feed_title }}</h4></a>
+            <a href="{% url 'FeedView' element.pk %}"><h2 class=".uk-text-lead">{{ element.feed_title }}</h2></a>
             <p class=".uk-text-meta">{{ element.feed_text|truncatewords:100|safe}}</p>
             <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                         <div class="uk-width-auto">

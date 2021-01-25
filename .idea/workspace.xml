@@ -29,7 +29,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/journals/models.py" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="JupyterTrust" id="fcfff652-7817-4a84-9f2a-d1f0b2d03e3d" />
+  <component name="JupyterTrust" id="0dd7765f-efa1-4971-b36a-bae32aa0bb56" />
   <component name="ProjectId" id="1jrJfPgJ0qEyj8n6vjfVja1wQPc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,8 +38,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/automobiles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,19 +50,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\automobiles" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
-      <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\static\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\css" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\js" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\automobiles" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,6 +174,14 @@
       <workItem from="1608813856412" duration="14545000" />
       <workItem from="1609116150264" duration="3452000" />
       <workItem from="1609221680387" duration="12688000" />
+      <workItem from="1611160393600" duration="73000" />
+      <workItem from="1611160566645" duration="29000" />
+      <workItem from="1611160852793" duration="32000" />
+      <workItem from="1611161559599" duration="31000" />
+      <workItem from="1611161703324" duration="33000" />
+      <workItem from="1611161737873" duration="921000" />
+      <workItem from="1611557041243" duration="615000" />
+      <workItem from="1611586104377" duration="5181000" />
     </task>
     <servers />
   </component>
@@ -220,5 +229,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1611162134326">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611162134326" />
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1611162210398">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611162210398" />
   </component>
 </project>
