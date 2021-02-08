@@ -4,6 +4,9 @@
 {{ title }}
 {% endblock %}
 {% block content %}
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-small-top" >
+            <h3 class="uk-card-title">Журнал нахождения работников</h3>
 <table class="styled-table">
     <thead>
         <tr>
@@ -27,11 +30,12 @@
                 <th>{{ myFilter.form.journal_factory_of_work_subdibision}}</th>
                 <th>{{ myFilter.form.journal_factory_of_work_pub_date}}</th>
                 <td>
+
                     <button type="submit" uk-icon="search" style="color: black;"></button>
     </form>
 
-    <a href="{% url 'JournalFactoryOfWorkCreateView'  %}" uk-icon="plus" style="color: black;"></a>
-    <a href="{% url 'JournalFactoryOfWorkPrint'  %}" uk-icon="print" style="color: black;"></a>
+    <!--<a href="{% url 'JournalFactoryOfWorkCreateView'  %}" uk-icon="plus" style="color: black;"></a>-->
+    <!--<a href="{% url 'JournalFactoryOfWorkPrint'  %}" uk-icon="print" style="color: black;"></a>-->
                 </td>
         </tr>
     <tbody>
@@ -54,10 +58,18 @@
         {% endfor %}
     </tbody>
 </table>
+        </div>
+    </div>
     <script>
             jQuery(document).ready(function () {
-                jQuery('#id_journal_factory_of_work_date_start').datetimepicker();
-                jQuery('#id_journal_factory_of_work_date_finish').datetimepicker();
+                jQuery('#id_journal_factory_of_work_date_start').datetimepicker({
+        timepicker:false,
+        format:'Y-m-d'
+        });
+                jQuery('#id_journal_factory_of_work_date_finish').datetimepicker({
+        timepicker:false,
+        format:'Y-m-d'
+        });
             });
         </script>
      <script>

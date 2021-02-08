@@ -11,6 +11,18 @@
         {{ form.as_p }}
         <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Добавить">
     </form>
-
+ <script>
+            jQuery(document).ready(function () {
+                jQuery('#id_automobile_request_date_of_travel').datetimepicker();
+                jQuery('#id_automobile_request_arrival_time').datetimepicker({
+        datepicker:false,
+        format:'H:i'
+        });
+                jQuery('#id_automobile_request_return_time').datetimepicker({
+        datepicker:false,
+        format:'H:i'
+        });
+            });
+        </script>
 </div>
 {% endblock %}

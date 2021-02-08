@@ -7,11 +7,14 @@
     {{form.media}}
 
  <div class="uk-container uk-container-small uk-position-relative">
+ <div class="uk-card uk-card-default uk-card-body uk-margin-small-top">
+    <h3 class="uk-card-title">Обновление записи в журнал нахождения</h3>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Обновить">
     </form>
+</div>
   <script>
             jQuery(document).ready(function () {
                 jQuery('#id_journal_factory_of_work_date_start').datetimepicker();

@@ -61,9 +61,11 @@ jQuery(document).ready(function ()
                 <div class="uk-navbar-center">
                     <ul class="top_buttons">
                         <li><a href="{% url 'feed' %}" >Новости</a></li>
-                        <li><a href="#" >Квартальные данные</a></li>
-                        <li><a href="#" >Справочники</a></li>
-                        <li><a href="#" >Документация</a></li>
+                        <li><a href="{% url 'AutomobileRequestListView' %}">Автотранспорт</a></li>
+                        <li><a href="{% url 'JournalFactoryOfWorkListView' %}">Журнал нахождения работников</a></li>
+                        <li><a href="#">Журнал учета путевых листов</a></li>
+                        <li><a href="{% url 'JournalEMSUListView' %}">ЭМСУ</a></li>
+                        <li><a href="#">Журнал учета перемычек</a></li>
                     </ul>
                 </div>
                 <div class="uk-navbar-right">
@@ -74,13 +76,9 @@ jQuery(document).ready(function ()
                             <div uk-dropdown="pos: bottom-center;mode: click">
                                 <ul class="uk-nav uk-dropdown-nav">
                                     <h3><input style="border-width:0px;border:none; text-align: center;cursor: pointer;" class="uk-input" id="datetimepicker"></h3>
-
                                     <li class="uk-nav-divider"></li>
-                                    <li><a href="{% url 'AutomobileRequestListView' %}">Автотранспорт</a></li>
-                                    <li><a href="{% url 'JournalFactoryOfWorkListView' %}">Журнал нахождения работников</a></li>
-                                    <li><a href="#">Журнал учета путевых листов</a></li>
-                                    <li><a href="#">ЭМСУ</a></li>
-                                    <li><a href="#">Журнал учета перемычек</a></li>
+                                    <li><a href="{% url 'AutomobileRequestListView' %}">Личный кабинет</a></li>
+                                    <li><a href="{% url 'JournalFactoryOfWorkCreateView' %}">Отметиться в журнале нахождения</a></li>
                                     <li class="uk-nav-divider"></li>
                                     <li><a href="{% url 'logout' %}">Выйти</a></li>
                                 </ul>

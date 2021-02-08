@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/journals/templates/JournalEMSU" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,11 +58,11 @@
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalEMSU" />
       <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\css" />
       <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\js" />
       <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
       <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\automobiles" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalFactoryOfWork" />
     </key>
   </component>
   <component name="RunManager">
@@ -184,7 +184,12 @@
       <workItem from="1611586104377" duration="11474000" />
       <workItem from="1611979664164" duration="45000" />
       <workItem from="1611983659993" duration="8450000" />
-      <workItem from="1612099596154" duration="2215000" />
+      <workItem from="1612099596154" duration="2952000" />
+      <workItem from="1612184449450" duration="11915000" />
+      <workItem from="1612436342183" duration="1464000" />
+      <workItem from="1612743081797" duration="1181000" />
+      <workItem from="1612782560490" duration="9725000" />
+      <workItem from="1612798510130" duration="4628000" />
     </task>
     <servers />
   </component>
@@ -234,9 +239,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1611162134326">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612200804610">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612200804610" />
+    <state x="740" y="265" key="FileChooserDialogImpl" timestamp="1612436376380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="265" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612436376380" />
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611162134326" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1611162210398">
       <screen x="1920" y="0" width="1920" height="1080" />

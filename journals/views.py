@@ -2,10 +2,10 @@ from datetime import datetime
 
 from django.shortcuts import redirect, render
 from django.urls import reverse
-from .models import JournalFactoryOfWork
+from .models import JournalFactoryOfWork, JournalEMSU
 from django.views.generic import CreateView, ListView, View, DeleteView, UpdateView
-from .forms import JournalFactoryOfWorkForm
-from .filters import JournalFactoryOfWorkFilter
+from .forms import JournalFactoryOfWorkForm, JournalEMSUForm
+from .filters import JournalFactoryOfWorkFilter, JournalEMSUFilter
 
 
 class JournalFactoryOfWorkCreateView(CreateView):
@@ -86,4 +86,63 @@ class JournalFactoryOfWorkPrint(ListView):
         return context
 
 
+class JournalEMSUCreateView(CreateView):
+    template_name = 'JournalEMSU/create.html'
+    form_class = JournalEMSUForm
+    success_url = '/journal/EMSU/index/'
 
+    def get_form_kwargs(self):
+        kwargs = super(JournalEMSUCreateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
+
+    def form_valid(self, form):
+        JournalEMSU.journal_emsu_subdivision = self.request.user.subdivision
+        return super(JournalEMSUCreateView, self).form_valid(form)
+
+
+class JournalEMSUListView(ListView):
+    model = JournalEMSU
+    template_name = 'JournalEMSU/index.html'
+
+    def get_context_data(self, **kwargs):
+        journal_emsu_list = JournalEMSU.objects.all()
+
+        journal_emsu_filter = JournalEMSUFilter(self.request.GET, queryset=journal_emsu_list)
+        context = super().get_context_data(**kwargs)
+        context['EMSUList'] = journal_emsu_list
+        context['myFilter'] = journal_emsu_filter
+        return context
+
+
+class JournalEMSUView(View):
+
+    def get(self, request, pk):
+        EMSU = JournalEMSU.objects.get(id=pk)
+        return render(request,"JournalEMSU/view.html", {"FactoryOfWorkView": EMSU,
+                                                                 "title": EMSU.emsu_user})
+
+
+class JournalEMSUUpdateView(UpdateView):
+    model = JournalEMSU
+    template_name = 'JournalEMSU/update.html'
+    form_class = JournalEMSUForm
+    success_url = '/journal/EMSU/index/'
+
+    def form_valid(self, form):
+        form.instance.feed_author = self.request.user
+        return super(JournalEMSUUpdateView, self).form_valid(form)
+
+    def get_form_kwargs(self):
+        kwargs = super(JournalEMSUUpdateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
+
+
+class JournalEMSUDeleteView(DeleteView):
+    model = JournalEMSU
+    success_url = '/journal/EMSU/index/'
+    template_name = 'JournalEMSU/delete.html'
+
+    def get(self, *args, **kwargs):
+        return self.post(*args, **kwargs)

@@ -4,44 +4,67 @@
 {{ title }}
 {% endblock %}
 {% block content %}
-<table class="styled-table">
-    <thead>
-        <tr>
-            <th>Дата</th>
-            <th>Подразделение</th>
-            <th>Цель поездки</th>
-            <th>Кому</th>
-            <th>Водитель</th>
-            <th>Марка/Номер</th>
-            <th>Время прибытия</th>
-            <th>Время возвращения</th>
-            <th>Одометр</th>
-            <th>Согласованно</th>
-        </tr>
-    </thead>
-    <tbody>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-small-top" >
+            <h3 class="uk-card-title">Автотранспорт</h3>
+<div class="uk-child-width-1-2@m uk-child-width-1-3@l" uk-height-match=".uk-card-body" uk-grid>
     {% for automobile_request in AutomobileRequestList %}
-            <tr>
-                <td>{{ automobile_request.automobile_request_date_of_travel }}</td>
-                <td>{{ automobile_request.automobile_request_subdivision }}</td>
-                <td>{{ automobile_request.automobile_request_mission }}</td>
-                <td>{{ automobile_request.automobile_request_client }}</td>
-                <td>{{ automobile_request.automobile_request_executor }}</td>
-                <td>{{ automobile_request.automobile_request_automobile }}</td>
-                <td>{{ automobile_request.automobile_request_arrival_time }}</td>
-                <td>{{ automobile_request.automobile_request_return_time }}</td>
-                <td>{{ automobile_request.automobile_request_odometer }}</td>
-                <td>{{ automobile_request.automobile_request_agreed }}</td>
-                <td>
-                    <div style="text-align: center;">
-                        <a  onclick="deleteView({{ automobile_request.pk }})"><span uk-icon="trash" style="color: black;"></span></a>
-                        <a  href="{% url 'AutomobileRequestUpdate' automobile_request.pk  %}"><span uk-icon="file-edit" style="color: black;"></span></a>
-                    </div>
-                </td>
-            </tr>
+
+           <div>
+<div class="uk-card uk-card-default">
+<div class="uk-card-media-top">
+<div class="uk-text-center">
+<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+<div class="uk-position-center">
+<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+</div>
+</div>
+</div>
+    {% if automobile_request.automobile_request_agreed == True %}
+        <div class="uk-card-badge uk-label uk-label-success">Согласованно</div>
+        {% elif automobile_request.automobile_request_agreed == False %}
+        <div class="uk-card-badge uk-label uk-label-danger">Откланено</div>
+        {% elif automobile_request_agreed == None %}
+        <div class="uk-card-badge uk-label">На соглосовании</div>
+    {% endif %}
+
+</div>
+<div class="uk-card-body">
+<h3 class="uk-card-title">{{ automobile_request.automobile_request_subdivision|default_if_none:'<font color="red">Отсутсвует</font>'}}</h3>
+<p class="uk-text-truncate ">Цель поездки: {{ automobile_request.automobile_request_mission|default_if_none:'<font color="red">Отсутсвует</font>' }}</p>
+<p class="uk-text-truncate">Кому: {{ automobile_request.automobile_request_client|default_if_none:'<font color="red">Отсутсвует</font>' }}</p>
+<p class="uk-text-truncate">Водитель: {{ automobile_request.automobile_request_executor|default_if_none:'<font color="red">Не назначен</font>' }}</p>
+<p class="uk-text-truncate">Марка и номер: {{ automobile_request.automobile_request_automobile|default_if_none:'<font color="red">Отсутсвует</font>' }}</p>
+<p class="uk-text-truncate">Время прибытия: {{ automobile_request.automobile_request_arrival_time|default_if_none:'<font color="red">Отсутсвует</font>' }}</p>
+<p class="uk-text-truncate">Время возвращения: {{ automobile_request.automobile_request_return_time|default_if_none:'<font color="red">Отсутсвует</font>' }}</p>
+<p class="uk-text-truncate">Одометр: {{ automobile_request.automobile_request_odometer|default_if_none:'<font color="red">Не выставлен</font>' }}</p>
+<p class="uk-text-truncate">Дата: {{ automobile_request.automobile_request_date_of_travel|default_if_none:'<font color="red">Отсутсвует</font>' }}</p>
+<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+<div>
+</div>
+</div>
+
+</div>
+
+<div class="uk-card-footer">
+<div class="uk-flex uk-flex-between">
+<div>
+
+</div>{% if automobile_request.automobile_request_agreed == None or automobile_request.automobile_request_agreed == False %}
+    <a class="uk-button uk-text-right" style="background: #32d296; color: white;">
+<span uk-icon="icon: check;"></span>
+</a>
+    {% elif  automobile_request.automobile_request_agreed == True %}
+     <a class="uk-button uk-button-danger uk-text-right" style="color: white;">
+<span uk-icon="icon: close;"></span>
+</a>
+    {% endif %}
+</div>
+</div>
+</div>
+</div>
         {% endfor %}
-    </tbody>
-</table>
+    </div>
      <script>
             function deleteView(pk){
                 if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {
