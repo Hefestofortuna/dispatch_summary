@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/journals/templates/JournalEMSU" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/automobiles/templates/AutomobileRequest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,19 +50,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\AutomobileRequest" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalEMSU" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\css" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\js" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalEMSU" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\css" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\js" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\automobiles" />
     </key>
   </component>
   <component name="RunManager">
@@ -190,6 +190,8 @@
       <workItem from="1612743081797" duration="1181000" />
       <workItem from="1612782560490" duration="9725000" />
       <workItem from="1612798510130" duration="4628000" />
+      <workItem from="1612871395276" duration="164000" />
+      <workItem from="1612881946696" duration="7462000" />
     </task>
     <servers />
   </component>

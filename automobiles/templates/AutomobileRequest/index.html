@@ -7,7 +7,7 @@
     <div>
         <div class="uk-card uk-card-default uk-card-body uk-margin-small-top" >
             <h3 class="uk-card-title">Автотранспорт</h3>
-<div class="uk-child-width-1-2@m uk-child-width-1-3@l" uk-height-match=".uk-card-body" uk-grid>
+<div class="uk-child-width-1-2@m uk-child-width-1-4@l" uk-height-match=".uk-card-body" uk-grid>
     {% for automobile_request in AutomobileRequestList %}
 
            <div>
@@ -23,7 +23,7 @@
     {% if automobile_request.automobile_request_agreed == True %}
         <div class="uk-card-badge uk-label uk-label-success">Согласованно</div>
         {% elif automobile_request.automobile_request_agreed == False %}
-        <div class="uk-card-badge uk-label uk-label-danger">Откланено</div>
+        <div class="uk-card-badge uk-label uk-label-danger">Отклонено</div>
         {% elif automobile_request_agreed == None %}
         <div class="uk-card-badge uk-label">На соглосовании</div>
     {% endif %}
@@ -46,27 +46,40 @@
 
 </div>
 
-<div class="uk-card-footer">
-<div class="uk-flex uk-flex-between">
-<div>
-
-</div>{% if automobile_request.automobile_request_agreed == None or automobile_request.automobile_request_agreed == False %}
-    <a class="uk-button uk-text-right" style="background: #32d296; color: white;">
-<span uk-icon="icon: check;"></span>
-</a>
-    {% elif  automobile_request.automobile_request_agreed == True %}
-     <a class="uk-button uk-button-danger uk-text-right" style="color: white;">
-<span uk-icon="icon: close;"></span>
-</a>
+{% load user_tags %}
+{% if automobile_request.automobile_request_agreed != True %}
+    {% if automobile_request.automobile_request_agreed == None and request.user|has_group:"Руководитель"%}
+         <div class="uk-card-footer">
+            <div class="uk-flex uk-flex-between">
+                     {% if automobile_request.automobile_request_client.pk == request.user.pk %}
+                <div>
+                    <a class="uk-button uk-button-primary uk-text-right" style="color: white;">
+                        <span uk-icon="icon: pencil;"></span>
+                    </a>
+                </div>
+                <div>
+                     <a onclick="deleteView({{ automobile_request.pk }})" class="uk-button uk-button-danger uk-text-right" style="color: white;">
+                        <span uk-icon="icon: trash;"></span>
+                    </a>
+                </div>
+                     {% endif %}
+                {% if request.user|has_group:"Руководитель" %}
+                    <a class="uk-button uk-text-right" style="background: #32d296; color: white;">
+                        <span uk-icon="icon: check;"></span>
+                    </a>
+                {% endif %}
+                </div>
+        </div>
     {% endif %}
-</div>
-</div>
+{% endif %}
+
+
 </div>
 </div>
         {% endfor %}
     </div>
      <script>
-            function deleteView(pk){
+           function deleteView(pk){
                 if (window.confirm("Вы дуйствительно хотите удалить данную запись?")) {
                     window.open("/automobile/AutomobileRequest/delete/"+pk);
             }

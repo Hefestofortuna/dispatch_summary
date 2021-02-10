@@ -5,12 +5,18 @@
 {% block content %}
 
  <div class="uk-container uk-container-small uk-position-relative">
+ <div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-small-top" >
+            <h3 class="uk-card-title">Заявка на автотранспорт</h3>
     {{form.media}}
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input class="uk-button uk-button-primary " style="background-color: #27475c; right: auto" type="submit" value="Добавить">
     </form>
+</div>
+ </div>
+ </div>
  <script>
             jQuery(document).ready(function () {
                 jQuery('#id_automobile_request_date_of_travel').datetimepicker();
@@ -24,5 +30,4 @@
         });
             });
         </script>
-</div>
 {% endblock %}

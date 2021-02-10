@@ -1,6 +1,6 @@
 from django.contrib.admin.widgets import AdminSplitDateTime, AdminTimeWidget
 from django.forms import ModelForm, Textarea, Select, ModelChoiceField, SplitDateTimeField, TextInput, RadioSelect, \
-    ChoiceField
+    ChoiceField, CharField
 from django.utils.translation import ugettext_lazy as _
 
 from subdivisions.models import Subdivision
@@ -27,6 +27,7 @@ class AutomobileRequestForm(ModelForm):
 
     def __init__(self, user, *args, **kwargs):
         super(AutomobileRequestForm, self).__init__(*args, **kwargs)
+        self.fields['automobile_request_executor'].required = False
         self.fields['automobile_request_client'].initial = user.pk
         self.fields['automobile_request_subdivision'].initial = user.subdivision
 
