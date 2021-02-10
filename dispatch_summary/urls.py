@@ -25,6 +25,7 @@ urlpatterns = [
     path('subdivision/', include('subdivisions.urls')),
     path('feed/', include('feeds.urls')),
     path('main/', include('main.urls')),
+    path('kips/', include('kips.urls')),
     path('journal/', include('journals.urls')),
     path('automobile/', include('automobiles.urls')),
     path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),

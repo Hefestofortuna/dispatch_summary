@@ -1,0 +1,25 @@
+<h2 class="form-title">KipDevice</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>KipDevice</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for KipDevice in object_list %}
+        <tr>
+            <td>{{ KipDevice }}</td>
+            <td><a href="{% url "KipDevice_detail" KipDevice.id %}">view</a></td>
+            <td><a href="{% url "KipDevice_update" KipDevice.id %}">edit</a></td>
+            <td><a href="{% url "KipDevice_delete" KipDevice.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "kip_device_create" %}">New</a>
+</div>

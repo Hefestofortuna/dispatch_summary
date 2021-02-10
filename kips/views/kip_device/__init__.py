@@ -1,0 +1,5 @@
+from .kip_device_delete import KipDeviceDeleteView
+from .kip_device_update import KipDeviceUpdateView
+from .kip_device_detail import KipDeviceDetailView
+from .kip_device_create import KipDeviceCreateView
+from .kip_device_list import KipDeviceListView
