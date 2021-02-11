@@ -154,6 +154,11 @@ STATICFILES_DIRS = [
 
 AUTH_USER_MODEL = 'users.User'
 
-LOGIN_REDIRECT_URL = '/feed/index/'
+LOGIN_REDIRECT_URL = '/'
 
-LOGOUT_REDIRECT_URL = '/main/login/'
+LOGOUT_REDIRECT_URL = '/login/'
+
+MATERIAL_ADMIN_SITE = {
+    'MAIN_BG_COLOR':  '#27475c',  # Admin site main color, css color should be specified
+    'MAIN_HOVER_COLOR':  '#27475c',
+}

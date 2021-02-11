@@ -6,7 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dispatch_summary/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automobiles/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dga/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/dga/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatch_summary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatch_summary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedbacks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/feedbacks/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +60,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\AutomobileRequest" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalEMSU" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\css" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\js" />
-      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\feeds\templates\feeds" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\main\templates\main" />
       <recent name="C:\Users\karatui\Documents\WEB\dispatch_summary\subdivisions\templates\subddivisions" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary" />
       <recent name="C:\Users\karatui\Documents\WEB\Dispatch-Summary\Dispatch_Summary" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles\templates\AutomobileRequest" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\journals\templates\JournalEMSU" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\css" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\static\js" />
+      <recent name="C:\Users\Ivan\Documents\WEB\dispatch_summary\automobiles" />
     </key>
   </component>
   <component name="RunManager">
@@ -197,7 +205,8 @@
       <workItem from="1612917834183" duration="1303000" />
       <workItem from="1612949769252" duration="4122000" />
       <workItem from="1612970669168" duration="1092000" />
-      <workItem from="1612974813304" duration="2281000" />
+      <workItem from="1612974813304" duration="4776000" />
+      <workItem from="1612981098455" duration="1313000" />
     </task>
     <servers />
   </component>

@@ -19,9 +19,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic import RedirectView
 from django.views.i18n import JavaScriptCatalog
-
+admin.site.site_header = 'Диспетчерская сводка'
+admin.site.site_url = False
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('subdivision/', include('subdivisions.urls')),
     path('feed/', include('feeds.urls')),
     path('main/', include('main.urls')),
@@ -30,6 +31,6 @@ urlpatterns = [
     path('automobile/', include('automobiles.urls')),
     path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),
     path('tinymce/', include('tinymce.urls')),
-    path('', RedirectView.as_view(url='/feed/index/'), name='index'),
+    path('feed/index/', RedirectView.as_view(url='/feed/index/'), name='index'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

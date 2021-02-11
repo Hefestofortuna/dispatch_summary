@@ -7,6 +7,7 @@ class FeedBackAdmin(admin.ModelAdmin):
     list_display_links = ('feedback_theme',)
 
 
+admin.site.site_header = 'My administration'
 admin.site.register(FeedBack, FeedBackAdmin)
 
 
