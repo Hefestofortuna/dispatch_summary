@@ -1,5 +1,0 @@
-from .kip_device_delete_test import KipDeviceDeleteTestCase
-from .kip_device_update_test import KipDeviceUpdateTestCase
-from .kip_device_detail_test import KipDeviceDetailTestCase
-from .kip_device_create_test import KipDeviceCreateTestCase
-from .kip_device_list_test import KipDeviceListTestCase
