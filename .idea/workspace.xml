@@ -7,55 +7,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/templates/AutomobileRequest/agree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/templates/AutomobileRequest/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/templates/AutomobileRequest/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/templates/AutomobileRequest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/templates/AutomobileRequest/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/templates/AutomobileRequest/view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatch_summary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/templates/feeds/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/templates/feeds/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/templates/feeds/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/templates/feeds/pagination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/templates/feeds/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/templates/feeds/view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/feeds/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalEMSU/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalEMSU/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalEMSU/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalEMSU/print.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalEMSU/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalEMSU/view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork/print.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/templates/JournalFactoryOfWork/view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/templates/kip_device/kip_device_create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/templates/kip_device/kip_device_delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/templates/kip_device/kip_device_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/templates/kip_device/kip_device_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/templates/kip_device/kip_device_update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/kip_device/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/kip_device/kip_device_create_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/kip_device/kip_device_delete_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/kip_device/kip_device_detail_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/kip_device/kip_device_list_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/tests/kip_device/kip_device_update_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organizations/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/organizations/migrations/0002_auto_20201106_2359.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/organizations/migrations/0003_contractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/organizations/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subdivisions/templates/subddivisions/subdivisions_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automobiles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automobiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatch_summary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeds/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/feeds/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journals/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kips/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kips/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subdivisions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdivisions/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subdivisions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdivisions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +215,7 @@
       <workItem from="1613312099608" duration="18000" />
       <workItem from="1613312176864" duration="10000" />
       <workItem from="1613312288161" duration="30000" />
-      <workItem from="1613312709699" duration="7809000" />
+      <workItem from="1613312709699" duration="8957000" />
     </task>
     <servers />
   </component>

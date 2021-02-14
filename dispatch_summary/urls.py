@@ -23,14 +23,5 @@ admin.site.site_header = 'Диспетчерская сводка'
 admin.site.site_url = False
 urlpatterns = [
     path('', admin.site.urls),
-    path('subdivision/', include('subdivisions.urls')),
-    path('feed/', include('feeds.urls')),
-    path('main/', include('main.urls')),
-    path('kips/', include('kips.urls')),
-    path('journal/', include('journals.urls')),
-    path('automobile/', include('automobiles.urls')),
-    path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),
-    path('tinymce/', include('tinymce.urls')),
-    path('feed/index/', RedirectView.as_view(url='/feed/index/'), name='index'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

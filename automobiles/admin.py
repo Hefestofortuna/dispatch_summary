@@ -1,10 +1,6 @@
 from django.contrib import admin
 from .models import Automobile, AutomobileType, AutomobileClass, AutomobileFuel, AutomobileRequest
 from .forms import AutomobileRequestForm
-import self as self
-from django.shortcuts import redirect, render
-from django.urls import reverse
-import urllib
 
 
 class AutomobileAdmin(admin.ModelAdmin):
