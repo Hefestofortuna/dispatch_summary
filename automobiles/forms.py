@@ -20,10 +20,6 @@ class AutomobileRequestForm(ModelForm):
                                                           label=_('Водитель'),
                                                           empty_label=None)
     automobile_request_agreed = ChoiceField(label=_('Согласованно'),choices=((True,'Нет'),(False,'Да'),(None, 'Неизвестно')))
-    automobile_request_client.widget.attrs.update({'class': 'uk-select', })
-    automobile_request_agreed.widget.attrs.update({'class': 'uk-select', })
-    automobile_request_subdivision.widget.attrs.update({'class': 'uk-select', })
-    automobile_request_executor.widget.attrs.update({'class': 'uk-select', })
 
     def __init__(self, user, *args, **kwargs):
         super(AutomobileRequestForm, self).__init__(*args, **kwargs)
@@ -37,26 +33,4 @@ class AutomobileRequestForm(ModelForm):
                   'automobile_request_mission', 'automobile_request_executor', 'automobile_request_automobile',
                   'automobile_request_arrival_time', 'automobile_request_return_time', 'automobile_request_return_time',
                   'automobile_request_odometer', 'automobile_request_agreed']
-        widgets = {
-            "automobile_request_mission": Textarea(attrs={
-                'class': 'uk-textarea',
-                'placeholder': 'Введите описание'
-            }),
-            "automobile_request_odometer": TextInput(attrs={
-                'class': 'uk-input',
-            }),
-            "automobile_request_automobile": Select(attrs={
-                'class': 'uk-select',
-            }),
-            "automobile_request_date_of_travel": TextInput(attrs={
-                'class': 'uk-input',
-            }),
-            "automobile_request_arrival_time": TextInput(attrs={
-                'class': 'uk-input',
-            }),
-            "automobile_request_return_time": TextInput(attrs={
-                'class': 'uk-input',
-            }),
-
-        }
 

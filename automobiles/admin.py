@@ -1,5 +1,10 @@
 from django.contrib import admin
 from .models import Automobile, AutomobileType, AutomobileClass, AutomobileFuel, AutomobileRequest
+from .forms import AutomobileRequestForm
+import self as self
+from django.shortcuts import redirect, render
+from django.urls import reverse
+import urllib
 
 
 class AutomobileAdmin(admin.ModelAdmin):
@@ -25,6 +30,17 @@ class AutomobileFuelAdmin(admin.ModelAdmin):
 class AutomobileRequestAdmin(admin.ModelAdmin):
     list_display = ('automobile_request_mission',)
     list_display_links = ('automobile_request_mission',)
+    form = AutomobileRequestForm
+
+    def get_form(self, request, obj=None, **kwargs):
+        foo_form = super(AutomobileRequestAdmin, self).get_form(request, obj, **kwargs)
+
+        class RequestFooForm(foo_form):
+            def __new__(cls, *args, **kwargs):
+                kwargs['user'] = request.user
+                return foo_form(*args, **kwargs)
+
+        return RequestFooForm
 
 
 admin.site.register(Automobile, AutomobileAdmin)
