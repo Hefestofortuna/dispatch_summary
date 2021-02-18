@@ -15,17 +15,6 @@ class JournalFactoryOfWorkForm(ModelForm):
     journal_factory_of_work_classifier = ModelChoiceField(queryset=ClassifierOfWork.objects.all(),
                                                           label=_('Классификация записи'),
                                                           empty_label=None)
-    """journal_factory_of_work_who_added = ModelChoiceField(queryset=User.objects.
-                                                    filter(subdivision__organization__short_title='ИрЦУАТ'),
-                                                    label=_('Кто добавил'),
-                                                    empty_label=None)"""
-    """journal_factory_of_work_who_added.widget = HiddenInput()"""
-
-    """def __init__(self, user, *args, **kwargs):
-        super(JournalFactoryOfWorkForm, self).__init__(*args, **kwargs)
-        self.fields['journal_factory_of_work_user'].initial = user.pk
-        self.fields['journal_factory_of_work_who_added'].initial = user.pk
-        """
 
     class Meta:
         model = JournalFactoryOfWork

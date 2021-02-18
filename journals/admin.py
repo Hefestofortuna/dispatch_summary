@@ -1,5 +1,9 @@
+import datetime
+
 from django.contrib import admin
 from django.http import request
+from django.shortcuts import redirect
+from django.utils.http import urlencode
 
 from .forms import JournalFactoryOfWorkForm
 from .models import JournalContractor, JournalNotice, JournalOrder, JournalInspector, TypeOfWork, JournalEMSU, \
@@ -57,6 +61,7 @@ class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
                     'journal_factory_of_work_note', 'journal_factory_of_work_subdibision',
                     'journal_factory_of_work_who_added')
     icon_name = 'directions_walk'
+    date_hierarchy = 'journal_factory_of_work_date_start'
     form = JournalFactoryOfWorkForm
 
     def get_form(self, request, obj=None, change=False, **kwargs):
@@ -68,6 +73,18 @@ class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
         super(JournalFactoryOfWorkAdmin, self).save_model(request, obj, form, change)
         obj.journal_factory_of_work_who_added = request.user
         obj.save()
+
+    def changelist_view(self, request, extra_context=None):
+        if request.GET:
+            return super().changelist_view(request, extra_context=extra_context)
+        date = datetime.datetime.now()
+        params = ['day', 'month', 'year']
+        field_keys = ['{}__{}'.format(self.date_hierarchy, i) for i in params]
+        field_values = [getattr(date, i) for i in params]
+        query_params = dict(zip(field_keys, field_values))
+        url = '{}?{}'.format(request.path, urlencode(query_params))
+        url = '{}?{}'.format(request.path, urlencode(query_params))
+        return redirect(url)
 
 
 class JournalDisconnectionAdmin(admin.ModelAdmin):

@@ -90,7 +90,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'dispatch_summary.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 

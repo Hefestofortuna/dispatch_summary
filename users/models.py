@@ -4,6 +4,8 @@ from django.utils.translation import ugettext_lazy as _
 import subdivisions.models
 import organizations.models
 
+path = lambda instance, filename: '{username}/{filename}'.format(
+        username=instance.pk, filename=filename)
 
 class User(AbstractUser):
     middle_name = models.CharField(_('Отчество'), max_length=150, blank=True, null=True)
@@ -13,6 +15,8 @@ class User(AbstractUser):
     email = models.EmailField(_('Электронная почта'), blank=True, null=True)
     working = models.BooleanField(_('Работает'), default=True)
     remark = models.TextField(_('Примечание'), blank=True, null=True)
+    avatar = models.ImageField(_('Аватар'), blank=True, null=True, upload_to=path)
+
     def get_fio(self):
         return '%s %s %s' % (self.last_name, self.first_name, self.middle_name)
     get_fio.short_description = "ФИО"
