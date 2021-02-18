@@ -9,6 +9,7 @@ class FeedAdmin(admin.ModelAdmin):
     filter_horizontal = ('feed_tags', 'feed_file',)
     fields = ['feed_title', 'feed_text', 'feed_file', 'feed_tags', ]
     form = FeedForm
+    icon_name = 'chat_bubble_outline'
 
 
 class TagAdmin(admin.ModelAdmin):

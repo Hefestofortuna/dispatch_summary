@@ -8,15 +8,12 @@
     <list default="true" id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automobiles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automobiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatch_summary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeds/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/feeds/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journals/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kips/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kips/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subdivisions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdivisions/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subdivisions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdivisions/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automobiles/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automobiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/automobiles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeds/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/feeds/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journals/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journals/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journals/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +212,13 @@
       <workItem from="1613312099608" duration="18000" />
       <workItem from="1613312176864" duration="10000" />
       <workItem from="1613312288161" duration="30000" />
-      <workItem from="1613312709699" duration="8957000" />
+      <workItem from="1613312709699" duration="9571000" />
+      <workItem from="1613348662576" duration="2501000" />
+      <workItem from="1613388794857" duration="326000" />
+      <workItem from="1613453873591" duration="12807000" />
+      <workItem from="1613610408904" duration="3112000" />
+      <workItem from="1613639765409" duration="3529000" />
+      <workItem from="1613647106462" duration="14902000" />
     </task>
     <servers />
   </component>

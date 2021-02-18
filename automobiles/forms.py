@@ -17,15 +17,14 @@ class AutomobileRequestForm(ModelForm):
                                                            empty_label=None)
     automobile_request_executor = ModelChoiceField(queryset=User.objects.
                                                            filter(groups__name='Водители'),
-                                                          label=_('Водитель'),
-                                                          empty_label=None)
-    automobile_request_agreed = ChoiceField(label=_('Согласованно'),choices=((True,'Нет'),(False,'Да'),(None, 'Неизвестно')))
+                                                          label=_('Водитель'), blank=True)
+    automobile_request_agreed = ChoiceField(label=_('Согласованно'), choices=((True, 'Да'), (False, 'Нет'),
+                                                                              (None, 'Неизвестно')))
 
-    def __init__(self, user, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super(AutomobileRequestForm, self).__init__(*args, **kwargs)
         self.fields['automobile_request_executor'].required = False
-        self.fields['automobile_request_client'].initial = user.pk
-        self.fields['automobile_request_subdivision'].initial = user.subdivision
+        self.fields['automobile_request_agreed'].required = False
 
     class Meta:
         model = AutomobileRequest

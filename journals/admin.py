@@ -1,4 +1,7 @@
 from django.contrib import admin
+from django.http import request
+
+from .forms import JournalFactoryOfWorkForm
 from .models import JournalContractor, JournalNotice, JournalOrder, JournalInspector, TypeOfWork, JournalEMSU, \
     AmperageType, JournalFactoryOfWork, ClassifierOfWork, JournalDisconnection, JournalFireSystem, JournalCable
 
@@ -30,6 +33,7 @@ class JournalEMSUAdmin(admin.ModelAdmin):
     list_display = ('journal_emsu_date_setup', 'journal_emsu_station', 'journal_emsu_switch_number',
                     'journal_emsu_power_supply', 'journal_emsu_engine_number', 'journal_emsu_date_create',)
     list_display_links = ('journal_emsu_engine_number',)
+    icon_name = 'settings_applications'
 
 
 class JournalInspectorAdmin(admin.ModelAdmin):
@@ -43,18 +47,33 @@ class JournalInspectorAdmin(admin.ModelAdmin):
 
 
 class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
-    list_display = ('journal_factory_of_work_note', 'journal_factory_of_work_user',
-                    'journal_factory_of_work_date_start',
-                    'journal_factory_of_work_date_finish','journal_factory_of_work_classifier',
-                    'journal_factory_of_work_subdibision',
-                    'journal_factory_of_work_pub_date',)
+    list_display = ('journal_factory_of_work_user', 'journal_factory_of_work_date_start',
+                    'journal_factory_of_work_date_finish', 'journal_factory_of_work_classifier',
+                    'journal_factory_of_work_note', 'journal_factory_of_work_subdibision',
+                    'journal_factory_of_work_who_added')
     list_display_links = ('journal_factory_of_work_note',)
+    list_filter = ('journal_factory_of_work_user', 'journal_factory_of_work_date_start',
+                    'journal_factory_of_work_date_finish', 'journal_factory_of_work_classifier',
+                    'journal_factory_of_work_note', 'journal_factory_of_work_subdibision',
+                    'journal_factory_of_work_who_added')
+    icon_name = 'directions_walk'
+    form = JournalFactoryOfWorkForm
+
+    def get_form(self, request, obj=None, change=False, **kwargs):
+        journal_form = super(JournalFactoryOfWorkAdmin, self).get_form(request, obj, **kwargs)
+        journal_form.base_fields['journal_factory_of_work_user'].initial = request.user.pk
+        return journal_form
+
+    def save_model(self, request, obj, form, change):
+        super(JournalFactoryOfWorkAdmin, self).save_model(request, obj, form, change)
+        obj.journal_factory_of_work_who_added = request.user
+        obj.save()
 
 
 class JournalDisconnectionAdmin(admin.ModelAdmin):
     list_display = ('journal_disconnection_date', 'journal_disconnection_time_start',
                     'journal_disconnection_time_finish',
-                    'journal_disconnection_time_station','journal_disconnection_what_disconnected',
+                    'journal_disconnection_time_station', 'journal_disconnection_what_disconnected',
                     'journal_disconnection_description',
                     'journal_disconnection_user',)
     list_display_links = ('journal_disconnection_description',)
@@ -82,7 +101,7 @@ class JournalCableAdmin(admin.ModelAdmin):
 
 
 class ClassifierOfWorkAdmin(admin.ModelAdmin):
-    list_display = ('classifier_of_work_short_title','classifier_of_work_title',)
+    list_display = ('classifier_of_work_short_title', 'classifier_of_work_title',)
     list_display_links = ('classifier_of_work_title',)
 
 

@@ -73,9 +73,9 @@ class AutomobileRequest(models.Model):
                                                     related_name='+', verbose_name='Исполнитель')
     automobile_request_automobile = models.ForeignKey('Automobile',
                                                     on_delete=models.SET_NULL, null=True, blank=True, verbose_name='Автотранспорт')
-    automobile_request_date_of_travel = models.DateTimeField(_('Дата поездки'), null=True, blank=False)
-    automobile_request_put_date = models.DateTimeField(_('Дата формирования заявки'),
-                                                       default=datetime.datetime.now())
+    automobile_request_date_of_travel = models.DateField(_('Дата поездки'), null=True, blank=False)
+    automobile_request_put_date = models.DateField(_('Дата формирования заявки'),
+                                                   auto_now_add=True)
     automobile_request_arrival_time = models.TimeField(_('Время прибытия'), null=True, blank=True)
     automobile_request_return_time = models.TimeField(_('Время возвращения'), null=True, blank=True)
     automobile_request_odometer = models.IntegerField(_('Одометр'), null=True, blank=True)

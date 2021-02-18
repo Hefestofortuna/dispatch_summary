@@ -244,6 +244,8 @@ class JournalFactoryOfWork(models.Model):
     journal_factory_of_work_subdibision = models.ForeignKey(subdivisions.models.Subdivision,
                                                             on_delete=models.SET_NULL,
                                                             null=True, blank=False, verbose_name='Подразделение')
+    journal_factory_of_work_who_added = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True,
+                                                          blank=False, verbose_name='Кто добавил', related_name='+')
     journal_factory_of_work_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
 
     def __str__(self):
