@@ -4,9 +4,9 @@ from .models import User
 
 
 class UserAdmin(UserAdmin):
-    list_display = ('get_fio', 'email', 'subdivision', 'get_organization', 'get_groups', 'phone', 'working',)
-    list_display_links = ('get_fio',)
-    list_filter = ('working','is_active','groups',)
+    list_display = ('get_fio', 'email', 'subdivision', 'get_groups', 'phone', 'working',)
+    list_display_links = ('get_fio', 'get_groups',)
+    list_filter = ('working', 'groups','subdivision',)
     fieldsets = (
         (('Аватар'), {'fields': ('avatar',)}),
         (('Данные пользователя'), {'fields': ('username', 'password',)}),

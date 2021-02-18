@@ -246,6 +246,7 @@ class JournalFactoryOfWork(models.Model):
                                                             null=True, blank=False, verbose_name='Подразделение')
     journal_factory_of_work_who_added = models.ForeignKey(users.models.User, on_delete=models.SET_NULL, null=True,
                                                           blank=False, verbose_name='Кто добавил', related_name='+')
+    journal_factory_of_work_today = models.DateField(_('Дата публикации'), null=True, blank=False)
     journal_factory_of_work_pub_date = models.DateTimeField(_('Дата публикации'), auto_now=True)
 
     def __str__(self):

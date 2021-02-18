@@ -13,7 +13,7 @@ class Subdivision(models.Model):
                                               null=True, related_name='Начальник', verbose_name='Лидер')
 
     def __str__(self):
-        return self.subdivision_title
+        return self.subdivision_title + " - " + self.organization.short_title
 
     class Meta:
         verbose_name_plural = "Подразделения"

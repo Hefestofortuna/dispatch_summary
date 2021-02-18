@@ -61,7 +61,7 @@ class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
                     'journal_factory_of_work_note', 'journal_factory_of_work_subdibision',
                     'journal_factory_of_work_who_added')
     icon_name = 'directions_walk'
-    date_hierarchy = 'journal_factory_of_work_date_start'
+    date_hierarchy = 'journal_factory_of_work_today'
     form = JournalFactoryOfWorkForm
 
     def get_form(self, request, obj=None, change=False, **kwargs):
@@ -72,7 +72,17 @@ class JournalFactoryOfWorkAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         super(JournalFactoryOfWorkAdmin, self).save_model(request, obj, form, change)
         obj.journal_factory_of_work_who_added = request.user
+        obj.journal_factory_of_work_today = obj.journal_factory_of_work_date_start
         obj.save()
+        x = obj.journal_factory_of_work_date_finish
+        y = obj.journal_factory_of_work_date_start
+        days = (x-y).days
+        for i in range(days):
+            obj.pk = None
+            obj.journal_factory_of_work_who_added = request.user
+            obj.journal_factory_of_work_today = obj.journal_factory_of_work_date_start + datetime.timedelta(i)
+            print(obj.journal_factory_of_work_date_start + datetime.timedelta(i))
+            obj.save()
 
     def changelist_view(self, request, extra_context=None):
         if request.GET:

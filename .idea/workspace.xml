@@ -7,9 +7,18 @@
   <component name="ChangeListManager">
     <list default="true" id="cce7bde2-6a90-4c31-a1a0-242697cbe23f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatch_summary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch_summary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/files/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/files/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/folders/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folders/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/folders/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journals/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journals/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journals/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/journals/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/ИрЦУАТ/Отдел обучения/УУКЖТ/Ведомость_БЛАНК.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/organizations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/organizations/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subdivisions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdivisions/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +224,8 @@
       <workItem from="1613453873591" duration="12807000" />
       <workItem from="1613610408904" duration="3112000" />
       <workItem from="1613639765409" duration="3529000" />
-      <workItem from="1613647106462" duration="19428000" />
+      <workItem from="1613647106462" duration="20842000" />
+      <workItem from="1613670038695" duration="4608000" />
     </task>
     <servers />
   </component>

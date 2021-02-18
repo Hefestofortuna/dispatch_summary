@@ -5,6 +5,7 @@ from .models import Organization, Contractor
 class OrganizationAdmin(admin.ModelAdmin):
     list_display = ('organization_title', 'short_title', 'asui_code')
     list_display_links = ('organization_title',)
+    icon_name = 'business'
 
 
 class ContractorAdmin(admin.ModelAdmin):
