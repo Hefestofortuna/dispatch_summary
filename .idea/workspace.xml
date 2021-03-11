@@ -31,7 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/journals/models.py" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="JupyterTrust" id="0dd7765f-efa1-4971-b36a-bae32aa0bb56" />
+  <component name="JupyterTrust" id="08c5fae3-5254-48cf-8ba6-90a1fa196e10" />
   <component name="ProjectId" id="1jrJfPgJ0qEyj8n6vjfVja1wQPc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/automobiles/templates/AutomobileRequest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -216,6 +216,7 @@
       <workItem from="1613693424856" duration="1920000" />
       <workItem from="1614518997811" duration="12207000" />
       <workItem from="1615377080586" duration="893000" />
+      <workItem from="1615427571772" duration="59000" />
     </task>
     <servers />
   </component>

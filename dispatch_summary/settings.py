@@ -17,7 +17,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-#test_comment
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -96,9 +95,9 @@ WSGI_APPLICATION = 'dispatch_summary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '176.215.255.196',
-        'USER': 'postgres',
-        'PASSWORD': 'Ms34901351',
+        'HOST': 'localhost',
+        'USER': 'dispatch',
+        'PASSWORD': 'FmrLer_38M',
         'NAME': 'dispatch_summary',
     }
 }
