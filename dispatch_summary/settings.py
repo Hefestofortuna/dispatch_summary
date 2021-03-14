@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'dispatch_summary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '176.215.255.196',
+        'HOST': '194.67.104.146',
         'USER': 'postgres',
         'PASSWORD': 'Ms34901351',
         'NAME': 'dispatch_summary',
