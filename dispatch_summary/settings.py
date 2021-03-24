@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8l68xnp#qsyr(m5f@+3#iwm%8u_e(l%w_pw0q5u^)tz2%e%t=g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'dispatch_summary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '194.67.104.146',
+        'HOST': 'localhost',
         'USER': 'postgres',
         'PASSWORD': 'Ms34901351',
         'NAME': 'dispatch_summary',
@@ -147,9 +147,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 AUTH_USER_MODEL = 'users.User'
 
