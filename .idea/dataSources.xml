@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="dispatch_summary@localhost" uuid="d74eed98-7c76-47ae-a50d-9556db6d46f5">
+    <data-source source="LOCAL" name="dispatch@176.215.255.196" uuid="e4c3125f-f930-4d00-b7a9-e2db2275624c">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>dispatch</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/dispatch_summary</jdbc-url>
+      <jdbc-url>jdbc:postgresql://176.215.255.196:5432/dispatch</jdbc-url>
     </data-source>
   </component>
 </project>

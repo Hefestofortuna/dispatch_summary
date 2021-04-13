@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Dispatch-Summary.iml" filepath="$PROJECT_DIR$/.idea/Dispatch-Summary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dispatch_summary.iml" filepath="$PROJECT_DIR$/.idea/dispatch_summary.iml" />
     </modules>
   </component>
 </project>
