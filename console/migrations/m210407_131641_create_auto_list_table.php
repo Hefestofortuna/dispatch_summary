@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%autolist}}`.
+ * Handles the creation of table `{{%auto_list}}`.
  */
-class m210407_131641_create_autolist_table extends Migration
+class m210407_131641_create_auto_list_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%autolist}}', [
+        $this->createTable('{{%auto_list}}', [
             'id' => $this->primaryKey(),
             'organization_id' => $this->integer()->notNull()->comment('Предприятие'),
             'putdate' => $this->date()->notNull()->comment('Дата'),
@@ -26,14 +26,14 @@ class m210407_131641_create_autolist_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-autolist-user_id',
-            'autolist',
+            'idx-auto_list-user_id',
+            'auto_list',
             'user_id'
         );
 
         $this->addForeignKey(
-            'fk-autolist-user_id',
-            'autolist',
+            'fk-auto_list-user_id',
+            'auto_list',
             'user_id',
             'user',
             'id',
@@ -41,14 +41,14 @@ class m210407_131641_create_autolist_table extends Migration
         );
 
         $this->createIndex(
-            'idx-autolist-auto_id',
-            'autolist',
+            'idx-auto_list-auto_id',
+            'auto_list',
             'auto_id'
         );
 
         $this->addForeignKey(
-            'fk-autolist-auto_id',
-            'autolist',
+            'fk-auto_list-auto_id',
+            'auto_list',
             'auto_id',
             'spr_auto',
             'id',
@@ -56,14 +56,14 @@ class m210407_131641_create_autolist_table extends Migration
         );
 
         $this->createIndex(
-            'idx-autolist-organization_id',
-            'autolist',
+            'idx-auto_list-organization_id',
+            'auto_list',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-autolist-organization_id',
-            'autolist',
+            'fk-auto_list-organization_id',
+            'auto_list',
             'organization_id',
             'organization',
             'id',
@@ -76,6 +76,6 @@ class m210407_131641_create_autolist_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%autolist}}');
+        $this->dropTable('{{%auto_list}}');
     }
 }

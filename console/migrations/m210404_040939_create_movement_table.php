@@ -14,14 +14,14 @@ class m210404_040939_create_movement_table extends Migration
     {
         $this->createTable('{{%movement}}', [
             'id' => $this->primaryKey(),
-            'pubdate' => $this->date()->notNull(),
-            'subdivision_id' => $this->integer()->notNull(),
-            'user_id' => $this->integer()->notNull(),
-            'status_id' => $this->integer()->notNull(),
-            'work1' => $this->text(),
-            'work2' => $this->text(),
-            'duty' => $this->boolean()->notNull(),
-            'organization_id' => $this->integer()->notNull(),
+            'pubdate' => $this->date()->notNull()->comment('Дата'),
+            'subdivision_id' => $this->integer()->notNull()->comment('Подразделение'),
+            'user_id' => $this->integer()->notNull()->comment('Пользователь'),
+            'status_id' => $this->integer()->notNull()->comment('Состояние'),
+            'work1' => $this->text()->comment('Нахождение работника и выполняемая работа (ДО ОБЕДА)'),
+            'work2' => $this->text()->comment('Нахождение работника и выполняемая работа (ПОСЛЕ ОБЕДА)'),
+            'duty' => $this->boolean()->notNull()->comment('Дежурство'),
+            'organization_id' => $this->integer()->notNull()->comment('Предприятие'),
         ]);
 
         $this->createIndex(

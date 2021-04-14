@@ -14,7 +14,7 @@ class m210404_142006_create_status_table extends Migration
     {
         $this->createTable('{{%status}}', [
             'id' => $this->primaryKey(),
-            'title' => $this->string()->notNull(),
+            'title' => $this->string()->notNull()->comment('Состояние'),
         ]);
     }
 

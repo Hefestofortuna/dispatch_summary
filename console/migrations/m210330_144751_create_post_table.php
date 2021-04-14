@@ -14,8 +14,8 @@ class m210330_144751_create_post_table extends Migration
     {
         $this->createTable('{{%post}}', [
             'id' => $this->primaryKey(),
-            'title' => $this->string()->notNull(),
-            'short_title' => $this->string()->notNull(),
+            'title' => $this->string()->notNull()->comment('Должность'),
+            'short_title' => $this->string()->notNull()->comment('Шифр'),
         ]);
     }
 

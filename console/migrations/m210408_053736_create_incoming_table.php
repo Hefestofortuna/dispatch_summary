@@ -1,4 +1,4 @@
-<?php
+x<?php
 
 use yii\db\Migration;
 

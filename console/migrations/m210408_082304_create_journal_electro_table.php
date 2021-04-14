@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%journalelectro}}`.
+ * Handles the creation of table `{{%journal_electro}}`.
  */
-class m210408_082304_create_journalelectro_table extends Migration
+class m210408_082304_create_journal_electro_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%journalelectro}}', [
+        $this->createTable('{{%journal_electro}}', [
             'id' => $this->primaryKey(),
             'putdate' => $this->date()->notNull()->comment('Дата передачи показания'),
             'indication' => $this->integer()->notNull()->comment('Показание счетчика'),
@@ -22,14 +22,14 @@ class m210408_082304_create_journalelectro_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-journalelectro-organization_id',
-            'journalelectro',
+            'idx-journal_electro-organization_id',
+            'journal_electro',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-journalelectro-organization_id',
-            'journalelectro',
+            'fk-journal_electro-organization_id',
+            'journal_electro',
             'organization_id',
             'organization',
             'id',
@@ -37,14 +37,14 @@ class m210408_082304_create_journalelectro_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalelectro-sprelectro_id',
-            'journalelectro',
+            'idx-journal_electro-sprelectro_id',
+            'journal_electro',
             'sprelectro_id'
         );
 
         $this->addForeignKey(
-            'fk-journalelectro-sprelectro_id',
-            'journalelectro',
+            'fk-journal_electro-sprelectro_id',
+            'journal_electro',
             'sprelectro_id',
             'sprelectro',
             'id',
@@ -52,14 +52,14 @@ class m210408_082304_create_journalelectro_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalelectro-user_id',
-            'journalelectro',
+            'idx-journal_electro-user_id',
+            'journal_electro',
             'user_id'
         );
 
         $this->addForeignKey(
-            'fk-journalelectro-user_id',
-            'journalelectro',
+            'fk-journal_electro-user_id',
+            'journal_electro',
             'user_id',
             'user',
             'id',
@@ -72,6 +72,6 @@ class m210408_082304_create_journalelectro_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%journalelectro}}');
+        $this->dropTable('{{%journal_electro}}');
     }
 }

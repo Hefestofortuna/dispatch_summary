@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%kipdevice}}`.
+ * Handles the creation of table `{{%kip_device}}`.
  */
-class m210408_163505_create_kipdevice_table extends Migration
+class m210408_163505_create_kip_device_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%kipdevice}}', [
+        $this->createTable('{{%kip_device}}', [
             'id' => $this->primaryKey(),
             'station_id' => $this->integer()->defaultValue(null)->comment('Станция'),
             'subdivision_id' => $this->integer()->notNull()->comment('Подразделение'),
@@ -24,14 +24,14 @@ class m210408_163505_create_kipdevice_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-kipdevice-station_id',
-            'kipdevice',
+            'idx-kip_device-station_id',
+            'kip_device',
             'station_id'
         );
 
         $this->addForeignKey(
-            'fk-kipdevice-station_id',
-            'kipdevice',
+            'fk-kip_device-station_id',
+            'kip_device',
             'station_id',
             'station',
             'id',
@@ -39,14 +39,14 @@ class m210408_163505_create_kipdevice_table extends Migration
         );
 
         $this->createIndex(
-            'idx-kipdevice-organization_id',
-            'kipdevice',
+            'idx-kip_device-organization_id',
+            'kip_device',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-kipdevice-organization_id',
-            'kipdevice',
+            'fk-kip_device-organization_id',
+            'kip_device',
             'organization_id',
             'organization',
             'id',
@@ -54,14 +54,14 @@ class m210408_163505_create_kipdevice_table extends Migration
         );
 
         $this->createIndex(
-            'idx-kipdevice-subdivision_id',
-            'kipdevice',
+            'idx-kip_device-subdivision_id',
+            'kip_device',
             'subdivision_id'
         );
 
         $this->addForeignKey(
-            'fk-kipdevice-subdivision_id',
-            'kipdevice',
+            'fk-kip_device-subdivision_id',
+            'kip_device',
             'subdivision_id',
             'subdivision',
             'id',
@@ -74,6 +74,6 @@ class m210408_163505_create_kipdevice_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%kipdevice}}');
+        $this->dropTable('{{%kip_device}}');
     }
 }

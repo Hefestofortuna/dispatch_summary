@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%incomingsam}}`.
+ * Handles the creation of table `{{%incoming_sam}}`.
  */
-class m210408_074527_create_incomingsam_table extends Migration
+class m210408_074527_create_incoming_sam_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%incomingsam}}', [
+        $this->createTable('{{%incoming_sam}}', [
             'id' => $this->primaryKey(),
             'docs' => $this->integer()->notNull()->comment('Заголовок'),
             'date' => $this->date()->notNull()->comment('Срок устранения'),
@@ -22,14 +22,14 @@ class m210408_074527_create_incomingsam_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-incomingsam-isp_user_id',
-            'incomingsam',
+            'idx-incoming_sam-isp_user_id',
+            'incoming_sam',
             'isp_user_id'
         );
 
         $this->addForeignKey(
-            'fk-incomingsam-isp_user_id',
-            'incomingsam',
+            'fk-incoming_sam-isp_user_id',
+            'incoming_sam',
             'isp_user_id',
             'user',
             'id',
@@ -42,6 +42,6 @@ class m210408_074527_create_incomingsam_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%incomingsam}}');
+        $this->dropTable('{{%incoming_sam}}');
     }
 }

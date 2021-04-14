@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%journalrevisionot}}`.
+ * Handles the creation of table `{{%journal_revision_ot}}`.
  */
-class m210408_132937_create_journalrevisionot_table extends Migration
+class m210408_132937_create_journal_revision_ot_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%journalrevisionot}}', [
+        $this->createTable('{{%journal_revision_ot}}', [
             'id' => $this->primaryKey(),
             'date_create' => $this->date()->notNull()->comment('Дата назначения'),
             'station_id' => $this->integer()->notNull()->comment('Станция/перегон'),
@@ -33,14 +33,14 @@ class m210408_132937_create_journalrevisionot_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-journalrevisionot-organization_id',
-            'journalrevisionot',
+            'idx-journal_revision_ot-organization_id',
+            'journal_revision_ot',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-journalrevisionot-organization_id',
-            'journalrevisionot',
+            'fk-journal_revision_ot-organization_id',
+            'journal_revision_ot',
             'organization_id',
             'organization',
             'id',
@@ -48,14 +48,14 @@ class m210408_132937_create_journalrevisionot_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalrevisionot-second_kom_user_id',
-            'journalrevisionot',
+            'idx-journal_revision_ot-second_kom_user_id',
+            'journal_revision_ot',
             'first_kom_user_id'
         );
 
         $this->addForeignKey(
-            'fk-journalrevisionot-second_kom_user_id',
-            'journalrevisionot',
+            'fk-journal_revision_ot-second_kom_user_id',
+            'journal_revision_ot',
             'second_kom_user_id',
             'user',
             'id',
@@ -63,14 +63,14 @@ class m210408_132937_create_journalrevisionot_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalrevisionot-first_kom_user_id',
-            'journalrevisionot',
+            'idx-journal_revision_ot-first_kom_user_id',
+            'journal_revision_ot',
             'first_kom_user_id'
         );
 
         $this->addForeignKey(
-            'fk-journalrevisionot-first_kom_user_id',
-            'journalrevisionot',
+            'fk-journal_revision_ot-first_kom_user_id',
+            'journal_revision_ot',
             'first_kom_user_id',
             'user',
             'id',
@@ -78,14 +78,14 @@ class m210408_132937_create_journalrevisionot_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalrevisionot-subdivision_id',
-            'journalrevisionot',
+            'idx-journal_revision_ot-subdivision_id',
+            'journal_revision_ot',
             'subdivision_id'
         );
 
         $this->addForeignKey(
-            'fk-journalrevisionot-subdivision_id',
-            'journalrevisionot',
+            'fk-journal_revision_ot-subdivision_id',
+            'journal_revision_ot',
             'subdivision_id',
             'subdivision',
             'id',
@@ -93,14 +93,14 @@ class m210408_132937_create_journalrevisionot_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalrevisionot-station_id',
-            'journalrevisionot',
+            'idx-journal_revision_ot-station_id',
+            'journal_revision_ot',
             'station_id'
         );
 
         $this->addForeignKey(
-            'fk-journalrevisionot-station_id',
-            'journalrevisionot',
+            'fk-journal_revision_ot-station_id',
+            'journal_revision_ot',
             'station_id',
             'station',
             'id',
@@ -114,6 +114,6 @@ class m210408_132937_create_journalrevisionot_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%journalrevisionot}}');
+        $this->dropTable('{{%journal_revision_ot}}');
     }
 }

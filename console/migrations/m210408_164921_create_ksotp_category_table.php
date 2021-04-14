@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%ksotpcategory}}`.
+ * Handles the creation of table `{{%ksotp_category}}`.
  */
-class m210408_164921_create_ksotpcategory_table extends Migration
+class m210408_164921_create_ksotp_category_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%ksotpcategory}}', [
+        $this->createTable('{{%ksotp_category}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string()->notNull()->comment('Описание несоответствия'),
             'parent_id' => $this->integer()->notNull()->defaultValue('0')->comment('Описание несоответствия'),
@@ -22,14 +22,14 @@ class m210408_164921_create_ksotpcategory_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-ksotpcategory-parent_id',
-            'ksotpcategory',
+            'idx-ksotp_category-parent_id',
+            'ksotp_category',
             'parent_id'
         );
 
         $this->addForeignKey(
-            'fk-ksotpcategory-parent_id',
-            'ksotpcategory',
+            'fk-ksotp_category-parent_id',
+            'ksotp_category',
             'parent_id',
             'ksotpcategory',
             'id',
@@ -43,6 +43,6 @@ class m210408_164921_create_ksotpcategory_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%ksotpcategory}}');
+        $this->dropTable('{{%ksotp_category}}');
     }
 }

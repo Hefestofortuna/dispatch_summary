@@ -21,11 +21,11 @@ class m210407_160614_create_fail_table extends Migration
             'time_finish' => $this->time()->notNull()->defaultValue('00:00:00')->comment('Время окончания'),
             'service_id' => $this->integer()->notNull()->comment('Служба'),
             'description' => $this->string()->notNull()->comment('Причина'),
-            'subdivision_id' => $this->integer()->notNull()->comment('Цех'),
+            'subdivision_id' => $this->integer()->notNull()->comment('Подразделение'),
             'user_id' => $this->integer()->notNull()->comment('Автор'),
             'character' => $this->string()->notNull()->comment('Характер'),
             'station_id' => $this->integer()->notNull()->comment('Характер'),
-            'finder_user_id' => $this->string()->comment('Кто расследовал'),
+            'fail_user_id' => $this->string()->comment('Кто расследовал'),
             'organization_id' => $this->integer()->notNull()->comment('Предприятие'),
             'system' => $this->boolean()->notNull()->defaultValue(true)->comment('КАСАНТ'),
         ]);
@@ -46,16 +46,16 @@ class m210407_160614_create_fail_table extends Migration
         );
 
         $this->createIndex(
-            'idx-fail-finder_user_id',
+            'idx-fail-fail_user_id',
             'fail',
-            'finder_user_id'
+            'fail_user_id'
         );
 
         $this->addForeignKey(
-            'fk-fail-finder_user_id',
+            'fk-fail-fail_user_id',
             'fail',
             'finder_user_id',
-            'user',
+            'fail_user',
             'id',
             'CASCADE'
         );

@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%autoservice}}`.
+ * Handles the creation of table `{{%auto_service}}`.
  */
-class m210407_135155_create_autoservice_table extends Migration
+class m210407_135155_create_auto_service_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%autoservice}}', [
+        $this->createTable('{{%auto_service}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string()->notNull()->comment('Наименование'),
             'period_odometr' => $this->integer()->comment('Периодичность по одометру'),
@@ -25,6 +25,6 @@ class m210407_135155_create_autoservice_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%autoservice}}');
+        $this->dropTable('{{%auto_service}}');
     }
 }

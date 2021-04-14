@@ -14,11 +14,11 @@ class m210405_163831_create_station_table extends Migration
     {
         $this->createTable('{{%station}}', [
             'id' => $this->primaryKey(),
-            'title' => $this->string()->notNull(),
-            'subdivision_id' => $this->integer()->notNull(),
-            'dga_id' => $this->integer()->notNull(),
-            'stType' => $this->boolean()->notNull(),
-            'organization_id' => $this->boolean()->notNull(),
+            'title' => $this->string()->notNull()->comment('Станция'),
+            'subdivision_id' => $this->integer()->notNull()->comment('Подразделение'),
+            'dga_id' => $this->integer()->notNull()->comment('ДГА'),
+            'stType' => $this->boolean()->notNull()->comment('Станция/Перегон'),
+            'organization_id' => $this->boolean()->notNull()->comment('Предприятие'),
         ]);
 
         $this->createIndex(

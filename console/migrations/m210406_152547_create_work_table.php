@@ -14,14 +14,14 @@ class m210406_152547_create_work_table extends Migration
     {
         $this->createTable('{{%work}}', [
             'id' => $this->primaryKey(),
-            'code' => $this->string()->notNull(),
-            'doc' => $this->string()->notNull(),
-            'tkarta' => $this->string()->notNull(),
-            'text' => $this->string()->notNull(),
-            'period' => $this->string()->notNull(),
-            'type' => $this->string(),
-            'category' => $this->tinyInteger()->notNull(),
-            'organization_id' => $this->integer()->notNull(),
+            'code' => $this->string()->notNull()->comment('Шифр'),
+            'doc' => $this->string()->notNull()->comment('Инструкция'),
+            'tkarta' => $this->string()->notNull()->comment('Раздел/Пункт'),
+            'text' => $this->string()->notNull()->comment('Наименование работ'),
+            'period' => $this->string()->notNull()->comment('Период'),
+            'type' => $this->string()->comment('Вид'),
+            'category' => $this->tinyInteger()->notNull()->comment('Категория'),
+            'organization_id' => $this->integer()->notNull()->comment('Предприятие'),
         ]);
 
         $this->createIndex(

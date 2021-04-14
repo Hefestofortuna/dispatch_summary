@@ -14,17 +14,17 @@ class m210406_160207_create_window_table extends Migration
     {
         $this->createTable('{{%window}}', [
             'id' => $this->primaryKey(),
-            'putdate' => $this->date()->notNull(),
-            'organization' => $this->string()->notNull(),
-            'work' => $this->string()->notNull(),
-            'place' => $this->string()->notNull(),
-            'plan' => $this->string(),
-            'hozed' => $this->string(),
-            'leader' => $this->string(),
-            'spec' => $this->string(),
-            'description' => $this->string(),
-            'transfer_user_id' => $this->integer(),
-            'user_id' => $this->integer()->notNull(),
+            'putdate' => $this->date()->notNull()->comment('Дата'),
+            'organization' => $this->string()->notNull()->comment('Предприятие'),
+            'work' => $this->string()->notNull()->comment('Работа'),
+            'place' => $this->string()->notNull()->comment('Место'),
+            'plan' => $this->string()->comment('План. время'),
+            'hozed' => $this->string()->comment('Хоз. ед'),
+            'leader' => $this->string()->comment('Руководитель'),
+            'spec' => $this->string()->comment('Особые требования'),
+            'description' => $this->string()->comment('Примечание'),
+            'transfer_user_id' => $this->integer()->comment('Передано'),
+            'user_id' => $this->integer()->notNull()->comment('Пользователь'),
         ]);
 
         $this->createIndex(

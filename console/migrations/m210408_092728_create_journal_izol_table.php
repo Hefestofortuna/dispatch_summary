@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%journalizol}}`.
+ * Handles the creation of table `{{%journal_izol}}`.
  */
-class m210408_092728_create_journalizol_table extends Migration
+class m210408_092728_create_journal_izol_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%journalizol}}', [
+        $this->createTable('{{%journal_izol}}', [
             'id' => $this->primaryKey(),
             'station_id' => $this->integer()->notNull()->comment('Станция/Перегон'),
             'place' => $this->string()->notNull()->comment('Место'),
@@ -26,19 +26,19 @@ class m210408_092728_create_journalizol_table extends Migration
             'status' => $this->boolean()->notNull()->defaultValue(false)->comment('Статус'),
             'r_izol_end' => $this->float('10,3')->comment('Текущее R изоляции'),
             'date_next' => $this->date()->comment('Дата след. проверки'),
-            'izDevice' => $this->boolean()->defaultValue(false)->notNull()->comment('Кабель/Устройство'),
+            'isDevice' => $this->boolean()->defaultValue(false)->notNull()->comment('Кабель/Устройство'),
             'organization_id' => $this->boolean()->notNull()->comment('Кабель/Устройство'),
         ]);
 
         $this->createIndex(
-            'idx-journalizol-organization_id',
-            'journalizol',
+            'idx-journal_izol-organization_id',
+            'journal_izol',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-journalizol-organization_id',
-            'journalizol',
+            'fk-journal_izol-organization_id',
+            'journal_izol',
             'organization_id',
             'organization',
             'id',
@@ -46,14 +46,14 @@ class m210408_092728_create_journalizol_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalizol-shns_user_id',
-            'journalizol',
+            'idx-journal_izol-shns_user_id',
+            'journal_izol',
             'shns_user_id'
         );
 
         $this->addForeignKey(
-            'fk-journalizol-shns_user_id',
-            'journalizol',
+            'fk-journal_izol-shns_user_id',
+            'journal_izol',
             'shns_user_id',
             'user',
             'id',
@@ -61,14 +61,14 @@ class m210408_092728_create_journalizol_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalizol-station_id',
-            'journalizol',
+            'idx-journal_izol-station_id',
+            'journal_izol',
             'station_id'
         );
 
         $this->addForeignKey(
-            'fk-journalizol-station_id',
-            'journalizol',
+            'fk-journal_izol-station_id',
+            'journal_izol',
             'station_id',
             'station',
             'id',
@@ -82,6 +82,6 @@ class m210408_092728_create_journalizol_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%journalizol}}');
+        $this->dropTable('{{%journal_izol}}');
     }
 }

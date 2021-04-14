@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%journalsiz}}`.
+ * Handles the creation of table `{{%journal_siz}}`.
  */
-class m210408_142636_create_journalsiz_table extends Migration
+class m210408_142636_create_journal_siz_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%journalsiz}}', [
+        $this->createTable('{{%journal_siz}}', [
             'id' => $this->primaryKey(),
             'station_id' => $this->integer()->notNull()->comment('Станция'),
             'subdivision_id' => $this->integer()->notNull()->comment('Подразделение'),
@@ -23,14 +23,14 @@ class m210408_142636_create_journalsiz_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-journalsiz-organization_id',
-            'journalsiz',
+            'idx-journal_siz-organization_id',
+            'journal_siz',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-journalsiz-organization_id',
-            'journalsiz',
+            'fk-journal_siz-organization_id',
+            'journal_siz',
             'organization_id',
             'organization',
             'id',
@@ -38,14 +38,14 @@ class m210408_142636_create_journalsiz_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalsiz-subdivision_id',
-            'journalsiz',
+            'idx-journal_siz-subdivision_id',
+            'journal_siz',
             'subdivision_id'
         );
 
         $this->addForeignKey(
-            'fk-journalsiz-subdivision_id',
-            'journalsiz',
+            'fk-journal_siz-subdivision_id',
+            'journal_siz',
             'subdivision_id',
             'subdivision',
             'id',
@@ -53,14 +53,14 @@ class m210408_142636_create_journalsiz_table extends Migration
         );
 
         $this->createIndex(
-            'idx-journalsiz-station_id',
-            'journalsiz',
+            'idx-journal_siz-station_id',
+            'journal_siz',
             'station_id'
         );
 
         $this->addForeignKey(
-            'fk-journalsiz-station_id',
-            'journalsiz',
+            'fk-journal_siz-station_id',
+            'journal_siz',
             'station_id',
             'station',
             'id',
@@ -73,6 +73,6 @@ class m210408_142636_create_journalsiz_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%journalsiz}}');
+        $this->dropTable('{{%journal_siz}}');
     }
 }

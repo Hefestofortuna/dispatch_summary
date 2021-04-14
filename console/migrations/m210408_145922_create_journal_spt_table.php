@@ -3,22 +3,22 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%journalspt}}`.
+ * Handles the creation of table `{{%journal_spt}}`.
  */
-class m210408_145922_create_journalspt_table extends Migration
+class m210408_145922_create_journal_spt_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%journalspt}}', [
+        $this->createTable('{{%journal_spt}}', [
             'id' => $this->primaryKey(),
             'date_create' => $this->date()->notNull()->comment('Дата регистрации'),
             'time_create' => $this->time()->notNull()->comment('Время регистрации'),
             'character' => $this->string()->notNull()->comment('Характер неисправности'),
             'reported' => $this->string()->notNull()->comment('Сообщил'),
-            'sprspt_id' => $this->integer()->notNull()->comment('Объект'),
+            'spr_spt_id' => $this->integer()->notNull()->comment('Объект'),
             'date_to' => $this->date()->defaultValue(null)->comment('Дата оповещения о неисправности'),
             'time_to' => $this->time()->defaultValue(null)->comment('Время оповещения о неисправности'),
             'pers_to' => $this->string()->defaultValue(null)->comment('ФИО/Должность'),
@@ -32,29 +32,29 @@ class m210408_145922_create_journalspt_table extends Migration
         ]);
 
         $this->createIndex(
-            'idx-journalspt-sprspt_id',
-            'journalspt',
-            'sprspt_id'
+            'idx-journal_spt-spr_spt_id',
+            'journal_spt',
+            'spr_spt_id'
         );
 
         $this->addForeignKey(
-            'fk-journalspt-sprspt_id',
-            'journalspt',
-            'sprspt_id',
-            'sprspt',
+            'fk-journal_spt-spr_spt_id',
+            'journal_spt',
+            'spr_spt_id',
+            'spr_spt',
             'id',
             'CASCADE'
         );
 
         $this->createIndex(
-            'idx-journalspt-organization_id',
-            'journalspt',
+            'idx-journal_spt-organization_id',
+            'journal_spt',
             'organization_id'
         );
 
         $this->addForeignKey(
-            'fk-journalspt-organization_id',
-            'journalspt',
+            'fk-journal_spt-organization_id',
+            'journal_spt',
             'organization_id',
             'organization',
             'id',
@@ -68,6 +68,6 @@ class m210408_145922_create_journalspt_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%journalspt}}');
+        $this->dropTable('{{%journal_spt}}');
     }
 }
