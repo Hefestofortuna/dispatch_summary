@@ -25,100 +25,10 @@ class m210407_160614_create_fail_table extends Migration
             'user_id' => $this->integer()->notNull()->comment('Автор'),
             'character' => $this->string()->notNull()->comment('Характер'),
             'station_id' => $this->integer()->notNull()->comment('Характер'),
-            'fail_user_id' => $this->string()->comment('Кто расследовал'),
+            'fail_user_id' => $this->integer()->comment('Кто расследовал'),
             'organization_id' => $this->integer()->notNull()->comment('Предприятие'),
             'system' => $this->boolean()->notNull()->defaultValue(true)->comment('КАСАНТ'),
         ]);
-
-        $this->createIndex(
-            'idx-fail-organization_id',
-            'fail',
-            'organization_id'
-        );
-
-        $this->addForeignKey(
-            'fk-fail-organization_id',
-            'fail',
-            'organization_id',
-            'organization',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-fail-fail_user_id',
-            'fail',
-            'fail_user_id'
-        );
-
-        $this->addForeignKey(
-            'fk-fail-fail_user_id',
-            'fail',
-            'finder_user_id',
-            'fail_user',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-fail-station_id',
-            'fail',
-            'station_id'
-        );
-
-        $this->addForeignKey(
-            'fk-fail-station_id',
-            'fail',
-            'station_id',
-            'station',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-fail-user_id',
-            'fail',
-            'user_id'
-        );
-
-        $this->addForeignKey(
-            'fk-fail-user_id',
-            'fail',
-            'user_id',
-            'user',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-fail-subdivision_id',
-            'fail',
-            'subdivision_id'
-        );
-
-        $this->addForeignKey(
-            'fk-fail-subdivision_id',
-            'fail',
-            'subdivision_id',
-            'subdivision',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-fail-service_id',
-            'fail',
-            'service_id'
-        );
-
-        $this->addForeignKey(
-            'fk-fail-service_id',
-            'fail',
-            'service_id',
-            'service',
-            'id',
-            'CASCADE'
-        );
     }
 
     /**

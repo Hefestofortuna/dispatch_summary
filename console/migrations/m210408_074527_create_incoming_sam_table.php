@@ -16,25 +16,10 @@ class m210408_074527_create_incoming_sam_table extends Migration
             'id' => $this->primaryKey(),
             'docs' => $this->integer()->notNull()->comment('Заголовок'),
             'date' => $this->date()->notNull()->comment('Срок устранения'),
-            'isp_user_id' => $this->string()->notNull()->comment('Исполнитель'),
+            'isp_user_id' => $this->integer()->notNull()->comment('Исполнитель'),
             'description' => $this->string()->notNull()->comment('Описание'),
             'status' => $this->boolean()->notNull()->defaultValue(false)->comment('Статус'),
         ]);
-
-        $this->createIndex(
-            'idx-incoming_sam-isp_user_id',
-            'incoming_sam',
-            'isp_user_id'
-        );
-
-        $this->addForeignKey(
-            'fk-incoming_sam-isp_user_id',
-            'incoming_sam',
-            'isp_user_id',
-            'user',
-            'id',
-            'CASCADE'
-        );
     }
 
     /**

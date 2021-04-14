@@ -22,51 +22,6 @@ class m210408_163505_create_kip_device_table extends Migration
             'name' => $this->string()->notNull()->comment('Наименование'),
             'organization_id' => $this->integer()->notNull()->comment('Предприятие'),
         ]);
-
-        $this->createIndex(
-            'idx-kip_device-station_id',
-            'kip_device',
-            'station_id'
-        );
-
-        $this->addForeignKey(
-            'fk-kip_device-station_id',
-            'kip_device',
-            'station_id',
-            'station',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-kip_device-organization_id',
-            'kip_device',
-            'organization_id'
-        );
-
-        $this->addForeignKey(
-            'fk-kip_device-organization_id',
-            'kip_device',
-            'organization_id',
-            'organization',
-            'id',
-            'CASCADE'
-        );
-
-        $this->createIndex(
-            'idx-kip_device-subdivision_id',
-            'kip_device',
-            'subdivision_id'
-        );
-
-        $this->addForeignKey(
-            'fk-kip_device-subdivision_id',
-            'kip_device',
-            'subdivision_id',
-            'subdivision',
-            'id',
-            'CASCADE'
-        );
     }
 
     /**
