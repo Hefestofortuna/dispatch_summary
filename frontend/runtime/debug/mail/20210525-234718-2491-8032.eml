@@ -1,0 +1,63 @@
+Message-ID: <4156879dd910a9e6120ee1d4371f3a60@y2aa-frontend.test>
+Date: Tue, 25 May 2021 23:47:17 +0000
+Subject: Password reset for =?utf-8?Q?=D0=94=D0=B8=D1=81=D0=BF?=
+ =?utf-8?Q?=D0=B5=D1=82=D1=87=D1=80=D0=B5=D1=81=D0=BA=D0=B0?=
+ =?utf-8?Q?=D1=8F_=D1=81=D0=B2=D0=BE=D0=B4=D0=BA=D0=B0?=
+From: =?utf-8?Q?=D0=94=D0=B8=D1=81=D0=BF=D0=B5=D1=82=D1=87=D1=80?=
+ =?utf-8?Q?=D0=B5=D1=81=D0=BA=D0=B0=D1=8F_=D1=81=D0=B2?=
+ =?utf-8?Q?=D0=BE=D0=B4=D0=BA=D0=B0?= robot <di_KaratuevIN@esrr.rzd>
+To: di_KaratuevIN@esrr.rzd
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1621986437_7dae2dc962cd4135ab9cc03ef9496e3b_=_"
+
+
+--_=_swift_1621986437_7dae2dc962cd4135ab9cc03ef9496e3b_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello di_KaratuevIN,
+
+Follow the link below to reset your password:=
+
+
+http://10.111.26.240/site/reset-password?token=3Ds5H6bCulseHQXD5JIBEK=
+sdBy1lgZ5dNX_1621986437
+
+--_=_swift_1621986437_7dae2dc962cd4135ab9cc03ef9496e3b_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"password-reset">
+    <p>=D0=97=D0=B4=D1=80=D0=B0=D0=
+=B2=D1=81=D1=82=D0=B2=D1=83=D0=B9=D1=82=D0=B5, Karatuev Ivan Nikolaevich,</=
+p>
+
+    <p>=D0=9F=D0=B5=D1=80=D0=B5=D0=B9=D0=B4=D0=B8=D1=82=D0=B5 =
+=D0=BF=D0=BE =D1=81=D1=81=D1=8B=D0=BB=D0=BA=D0=B5 =D0=BD=D0=B8=D0=B6=D0=
+=B5, =D1=87=D1=82=D0=BE=D0=B1=D1=8B =D1=81=D0=B1=D1=80=D0=BE=D1=81=D0=B8=
+=D1=82=D1=8C =D0=BF=D0=B0=D1=80=D0=BE=D0=BB=D1=8C: </p>
+
+    <p><a href=
+=3D"http://10.111.26.240/site/reset-password?token=3Ds5H6bCulseHQXD5JIBEKsd=
+By1lgZ5dNX_1621986437">http://10.111.26.240/site/reset-password?token=3Ds5H=
+6bCulseHQXD5JIBEKsdBy1lgZ5dNX_1621986437</a></p>
+</div>
+    </body>
+<=
+/html>
+
+
+--_=_swift_1621986437_7dae2dc962cd4135ab9cc03ef9496e3b_=_--

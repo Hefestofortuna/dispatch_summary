@@ -1,0 +1,410 @@
+2021-05-20 15:25:11 [-][-][-][error][yii\base\NotSupportedException] yii\base\NotSupportedException: Connection does not support reading schema information for 'postgres' DBMS. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php:867
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Component.php(140): yii\db\Connection->getSchema()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\base\Component->__get('schema')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#4 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#13 {main}
+2021-05-20 15:25:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history1'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-S56392E'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-S56392E'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'LOGONSERVER' => '\\\\DESKTOP-S56392E'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S56392E'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Karatui\\.dotnet\\tools;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin'
+    'PROCESSOR_LEVEL' => '21'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Desktop'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '0200'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => '039e01df-6476-4710-8727-a8e4bbb50b78'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1621517111.2443
+    'REQUEST_TIME' => 1621517111
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-05-20 15:25:25 [-][-][-][error][yii\base\NotSupportedException] yii\base\NotSupportedException: Connection does not support reading schema information for 'postgresql ' DBMS. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php:867
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Component.php(140): yii\db\Connection->getSchema()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\base\Component->__get('schema')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#4 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#13 {main}
+2021-05-20 15:25:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history1'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-S56392E'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-S56392E'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'LOGONSERVER' => '\\\\DESKTOP-S56392E'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S56392E'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Karatui\\.dotnet\\tools;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin'
+    'PROCESSOR_LEVEL' => '21'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Desktop'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '0200'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => '039e01df-6476-4710-8727-a8e4bbb50b78'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1621517125.2647
+    'REQUEST_TIME' => 1621517125
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-05-21 18:20:50 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migration/create". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migration/creat...', Array)
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migration/creat...', Array)
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migration/create". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migration/creat...', Array)
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#3 {main}
+2021-05-21 18:20:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history2'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-S56392E'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-S56392E'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'LOGONSERVER' => '\\\\DESKTOP-S56392E'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S56392E'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Karatui\\.dotnet\\tools;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin'
+    'PROCESSOR_LEVEL' => '21'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Desktop'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '0200'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => '515f8a7e-17af-44a4-88a4-fc896b0dc8b9'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1621614050.1165
+    'REQUEST_TIME' => 1621614050
+    'argv' => [
+        0 => 'yii'
+        1 => 'migration/create'
+        2 => 'create_file_news_table'
+    ]
+    'argc' => 3
+]
+2021-05-21 18:30:31 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migration". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migration', Array)
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migration', Array)
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migration". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migration', Array)
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#3 {main}
+2021-05-21 18:30:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history2'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-S56392E'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-S56392E'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'LOGONSERVER' => '\\\\DESKTOP-S56392E'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S56392E'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Karatui\\.dotnet\\tools;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin'
+    'PROCESSOR_LEVEL' => '21'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Desktop'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '0200'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => '515f8a7e-17af-44a4-88a4-fc896b0dc8b9'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1621614631.0598
+    'REQUEST_TIME' => 1621614631
+    'argv' => [
+        0 => 'yii'
+        1 => 'migration'
+    ]
+    'argc' => 2
+]
+2021-05-21 20:24:38 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "mirate". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('mirate', Array)
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('mirate', Array)
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "mirate". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('mirate', Array)
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#3 {main}
+2021-05-21 20:24:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history5'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-S56392E'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-S56392E'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'LOGONSERVER' => '\\\\DESKTOP-S56392E'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S56392E'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Karatui\\.dotnet\\tools;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin'
+    'PROCESSOR_LEVEL' => '21'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Desktop'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '0200'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => 'e97e6d12-99d3-40bc-80c6-fbb4d0092683'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1621621478.8815
+    'REQUEST_TIME' => 1621621478
+    'argv' => [
+        0 => 'yii'
+        1 => 'mirate'
+    ]
+    'argc' => 2
+]

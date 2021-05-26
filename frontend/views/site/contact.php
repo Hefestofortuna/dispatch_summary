@@ -1,21 +1,20 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
+/* @var $form yii\bootstrap4\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap4\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Обратная связь';
 ?>
 <div class="site-contact">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+        Если у вас есть деловые или другие вопросы, заполните следующую форму, чтобы связаться с нами. Спасибо.
     </p>
 
     <div class="row">
@@ -35,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]) ?>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                    <?= Html::submitButton('Отправить сообщение ', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                 </div>
 
             <?php ActiveForm::end(); ?>

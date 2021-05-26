@@ -12,23 +12,14 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
-    'controllerMap' => [
-        'user' => [
-            'class' => 'andrewdanilov\adminpanel\controllers\UserController',
-            'viewPath' => '@backend/someotherlocation/views/user', // optional, custom UserController views location
-        ],
-    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'class' => 'yii\web\User',
-            'identityClass' => 'andrewdanilov\adminpanel\models\User',
-            'accessChecker' => 'andrewdanilov\adminpanel\AccessChecker',
+            'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
-            'loginUrl' => ['user/login'],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend

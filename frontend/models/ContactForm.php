@@ -32,13 +32,18 @@ class ContactForm extends Model
         ];
     }
 
+
     /**
      * {@inheritdoc}
      */
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'verifyCode' => 'Капча',
+            'name' => 'Ваше имя',
+            'email' => 'Ваша почта',
+            'subject' => 'Тема сообщения',
+            'body' => 'Содержание',
         ];
     }
 

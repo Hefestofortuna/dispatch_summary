@@ -13,8 +13,14 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
-
-
+    public $is_admin;
+    public $reinstruction;
+    public $subdivision_id;
+    public $organization_id;
+    public $name;
+    public $post_id;
+    public $phone;
+    public $description;
     /**
      * {@inheritdoc}
      */
@@ -34,6 +40,40 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
+
+            [['is_admin', 'reinstruction'], 'required'],
+            [['is_admin', 'reinstruction'], 'boolean'],
+            ['is_admin', 'default', 'value' => false],
+
+            ['name', 'required'],
+            [['name'], 'string', 'max' => 64],
+
+            [['description'], 'string', 'max' => 256],
+
+            [['description'], 'integer', 'max' => 256],
+
+            [['subdivision_id', 'organization_id','post_id'], 'required'],
+            ['post_id', 'integer', 'max' => 255],
+            [['subdivision_id'], 'exist', 'skipOnError' => true, 'targetClass' => Subdivision::className(), 'targetAttribute' => ['subdivision_id' => 'id']],
+            [['organization_id'], 'exist', 'skipOnError' => true, 'targetClass' => Organization::className(), 'targetAttribute' => ['organization_id' => 'id']],
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'username' => 'Логин',
+            'password' => 'Пароль',
+            'email' => 'Почта',
+            'is_admin' => 'Адмитристратор',
+            'subdivision_id' => 'Подразделение',
+            'organization_id' => 'Предприятие',
+            'name' => 'ФИО',
+            'post_id' => 'Должность',
+            'description' => 'Описание',
+            'phone' => 'Номер телефона',
+            'reinstruction' => 'Повторный инструктаж',
         ];
     }
 
@@ -51,6 +91,13 @@ class SignupForm extends Model
         $user = new User();
         $user->username = $this->username;
         $user->email = $this->email;
+        $user->reinstruction = $this->reinstruction;
+        $user->subdivision_id = $this->subdivision_id;
+        $user->organization_id = $this->organization_id;
+        $user->name = $this->name;
+        $user->post_id = $this->post_id;
+        $user->description = $this->description;
+        $user->phone = $this->phone;
         $user->setPassword($this->password);
         $user->generateAuthKey();
         $user->generateEmailVerificationToken();

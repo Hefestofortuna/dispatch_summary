@@ -5,7 +5,6 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
-use yii\base\Model;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -155,7 +154,7 @@ class SiteController extends Controller
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            Yii::$app->session->setFlash('success', 'Спасибо за регистрацию. Пожалуйста, проверьте свой почтовый ящик на наличие подтверждающего письма.');
             return $this->goHome();
         }
 
@@ -258,22 +257,4 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
-
-    /*
-    public function actionLol()
-    {
-        $user = new \common\models\User();
-        $user->username = 'admin';
-        $user->email = 'ircuat@gmail.com';
-        $user->status = \common\models\User::STATUS_ACTIVE;
-        $user->setPassword('admin');
-        $user->generateAuthKey();
-        $user->is_admin = true;
-        $user->name = 'Каратуев Иван Николаевич';
-        $user->id_post = 0;
-        $user->reinstruction = true;
-        $user->save();
-        echo "ALL RIGHT!";
-    }
-    */
 }
