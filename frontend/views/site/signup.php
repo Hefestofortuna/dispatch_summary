@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap4\ActiveForm */
 /* @var $model \frontend\models\SignupForm */
+/* @var $data \frontend\controllers\SiteController */
 
 use frontend\models\Subdivision;
 use yii\helpers\ArrayHelper;
@@ -19,32 +20,31 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>Пожалуйста, заполните следующие поля для регистрации:</p>
 
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 
                 <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
-                <?= $form->field($model, 'email') ?>
-
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
-                <?= $form->field($model, 'reinstruction')->checkbox() ?>
-
-                <?= $form->field($model, 'organization_id')->dropdownList(ArrayHelper::map(Organization::find()->all(),'id','title')) ?>
-
-                <?= $form->field($model, 'subdivision_id')->dropdownList(ArrayHelper::map(Subdivision::find()->all(),'id','title')) ?>
+                <?= $form->field($model, 'email') ?>
 
                 <?= $form->field($model, 'name')->textInput() ?>
+        </div>
 
-                <?= $form->field($model, 'post_id')->textInput() ?>
+        <div class="col-lg-6">
+            <?php $model->organization_id = $data; ?>
+            <?= $form->field($model, 'organization_id')->dropdownList(ArrayHelper::map(Organization::find()->all(),'id','title')) ?>
 
-                <?= $form->field($model, 'description')->textInput() ?>
+            <?= $form->field($model, 'subdivision_id')->dropdownList(ArrayHelper::map(Subdivision::find()->all(),'id','title')) ?>
 
-                <?= $form->field($model, 'phone')->textInput() ?>
+            <?= $form->field($model, 'post_id')->textInput() ?>
 
-                <div class="form-group">
-                    <?= Html::submitButton('Регистрация', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
-                </div>
+            <?= $form->field($model, 'phone')->textInput() ?>
+
+            <div class="form-group">
+                <?= Html::submitButton('Регистрация', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+            </div>
 
             <?php ActiveForm::end(); ?>
         </div>

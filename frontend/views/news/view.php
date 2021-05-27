@@ -25,7 +25,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
-
     <table class="table table-striped table-bordered detail-view">
         <tbody>
             <tr>
@@ -46,6 +45,4 @@ $this->params['breadcrumbs'][] = $this->title;
             </tr>
         </tbody>
     </table>
-
-
 </div>

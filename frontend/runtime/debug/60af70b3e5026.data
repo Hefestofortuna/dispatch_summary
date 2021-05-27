@@ -1,0 +1,406 @@
+a:14:{s:6:"config";s:2085:"a:5:{s:10:"phpVersion";s:5:"8.0.6";s:10:"yiiVersion";s:8:"2.0.42.1";s:11:"application";a:8:{s:3:"yii";s:8:"2.0.42.1";s:4:"name";s:39:"Диспетчреская сводка";s:7:"version";s:3:"1.0";s:8:"language";s:5:"ru-RU";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:5:"8.0.6";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:7:{s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.1.17.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:80:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/yiisoft/yii2-debug/src";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:80:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/yiisoft/yii2-faker/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.1.4.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:78:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/yiisoft/yii2-gii/src";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.1.2.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:86:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/yiisoft/yii2-swiftmailer/src";}}s:23:"yiisoft/yii2-bootstrap4";a:3:{s:4:"name";s:23:"yiisoft/yii2-bootstrap4";s:7:"version";s:8:"2.0.10.0";s:5:"alias";a:1:{s:15:"@yii/bootstrap4";s:85:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/yiisoft/yii2-bootstrap4/src";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:87:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/kartik-v/yii2-krajee-base/src";}}s:21:"kartik-v/yii2-editors";a:3:{s:4:"name";s:21:"kartik-v/yii2-editors";s:7:"version";s:10:"dev-master";s:5:"alias";a:1:{s:15:"@kartik/editors";s:83:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor/kartik-v/yii2-editors/src";}}}}";s:7:"request";s:4850:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:16:{s:4:"host";s:9:"localhost";s:10:"connection";s:10:"keep-alive";s:13:"cache-control";s:9:"max-age=0";s:9:"sec-ch-ua";s:64:"" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"";s:16:"sec-ch-ua-mobile";s:2:"?0";s:25:"upgrade-insecure-requests";s:1:"1";s:10:"user-agent";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36";s:6:"accept";s:135:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";s:14:"sec-fetch-site";s:11:"same-origin";s:14:"sec-fetch-mode";s:8:"navigate";s:14:"sec-fetch-user";s:2:"?1";s:14:"sec-fetch-dest";s:8:"document";s:7:"referer";s:40:"http://localhost/frontend/web/site/login";s:15:"accept-encoding";s:17:"gzip, deflate, br";s:15:"accept-language";s:35:"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7";s:6:"cookie";s:462:"_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f0e223cc169f135e8ecfa7572b065a5e61f68c7c6fda932058a3418bf14f415aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222AUzySbNO8FIq88xbsS8HsQSREkWxnfP%22%3B%7D; advanced-frontend=bvovgmae5isrg07qd2h12d8so2";}s:15:"responseHeaders";a:8:{s:12:"X-Powered-By";s:9:"PHP/8.0.6";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"60af70b3e5026";s:16:"X-Debug-Duration";s:3:"192";s:12:"X-Debug-Link";s:50:"/frontend/web/debug/default/view?tag=60af70b3e5026";}s:5:"route";s:11:"site/signup";s:6:"action";s:51:"frontend\controllers\SiteController::actionSignup()";s:12:"actionParams";a:0:{}s:7:"general";a:5:{s:6:"method";s:3:"GET";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:0:{}s:6:"SERVER";a:31:{s:13:"DOCUMENT_ROOT";s:50:"C:\Users\Karatui\Documents\GitHub\dispatch_summary";s:11:"REMOTE_ADDR";s:3:"::1";s:11:"REMOTE_PORT";s:5:"57491";s:15:"SERVER_SOFTWARE";s:28:"PHP 8.0.6 Development Server";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_PORT";s:2:"80";s:11:"REQUEST_URI";s:25:"/frontend/web/site/signup";s:14:"REQUEST_METHOD";s:3:"GET";s:11:"SCRIPT_NAME";s:23:"/frontend/web/index.php";s:15:"SCRIPT_FILENAME";s:73:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php";s:9:"PATH_INFO";s:12:"/site/signup";s:8:"PHP_SELF";s:35:"/frontend/web/index.php/site/signup";s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:14:"HTTP_SEC_CH_UA";s:64:"" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"";s:21:"HTTP_SEC_CH_UA_MOBILE";s:2:"?0";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_USER_AGENT";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36";s:11:"HTTP_ACCEPT";s:135:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:19:"HTTP_SEC_FETCH_MODE";s:8:"navigate";s:19:"HTTP_SEC_FETCH_USER";s:2:"?1";s:19:"HTTP_SEC_FETCH_DEST";s:8:"document";s:12:"HTTP_REFERER";s:40:"http://localhost/frontend/web/site/login";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:35:"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7";s:11:"HTTP_COOKIE";s:462:"_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f0e223cc169f135e8ecfa7572b065a5e61f68c7c6fda932058a3418bf14f415aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222AUzySbNO8FIq88xbsS8HsQSREkWxnfP%22%3B%7D; advanced-frontend=bvovgmae5isrg07qd2h12d8so2";s:18:"REQUEST_TIME_FLOAT";d:1622110387.888085;s:12:"REQUEST_TIME";i:1622110387;}s:3:"GET";a:0:{}s:4:"POST";a:0:{}s:6:"COOKIE";a:3:{s:17:"_identity-backend";s:157:"856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:"_identity-backend";i:1;s:46:"[1,"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6",2592000]";}";s:14:"_csrf-frontend";s:140:"f0e223cc169f135e8ecfa7572b065a5e61f68c7c6fda932058a3418bf14f415aa:2:{i:0;s:14:"_csrf-frontend";i:1;s:32:"2AUzySbNO8FIq88xbsS8HsQSREkWxnfP";}";s:17:"advanced-frontend";s:26:"bvovgmae5isrg07qd2h12d8so2";}s:5:"FILES";a:0:{}s:7:"SESSION";a:1:{s:7:"__flash";a:0:{}}}";s:6:"router";s:1261:"a:3:{s:8:"messages";a:6:{i:6;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1622110387.948393;i:4;a:0:{}i:5;i:4450592;}i:7;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1622110387.948453;i:4;a:0:{}i:5;i:4451344;}i:8;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1622110387.948492;i:4;a:0:{}i:5;i:4452096;}i:9;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1622110387.948515;i:4;a:0:{}i:5;i:4453168;}i:10;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1622110387.948536;i:4;a:0:{}i:5;i:4453920;}i:11;a:6:{i:0;s:55:"No matching URL rules. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1622110387.948546;i:4;a:0:{}i:5;i:4454296;}}s:5:"route";s:11:"site/signup";s:6:"action";s:51:"frontend\controllers\SiteController::actionSignup()";}";s:3:"log";s:8911:"a:1:{s:8:"messages";a:16:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1622110387.913322;i:4;a:0:{}i:5;i:2517624;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1622110387.913411;i:4;a:0:{}i:5;i:2518800;}i:2;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1622110387.932086;i:4;a:0:{}i:5;i:3559576;}i:3;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1622110387.937407;i:4;a:0:{}i:5;i:3736512;}i:4;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1622110387.942554;i:4;a:0:{}i:5;i:4100896;}i:5;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1622110387.943127;i:4;a:0:{}i:5;i:4125216;}i:12;a:6:{i:0;s:30:"Route requested: 'site/signup'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1622110387.948571;i:4;a:0:{}i:5;i:4454032;}i:13;a:6:{i:0;s:25:"Route to run: site/signup";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1622110387.95194;i:4;a:0:{}i:5;i:4596440;}i:14;a:6:{i:0;s:67:"Running action: frontend\controllers\SiteController::actionSignup()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1622110387.958032;i:4;a:0:{}i:5;i:4980448;}i:15;a:6:{i:0;s:102:"Rendering view file: C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1622110387.965008;i:4;a:1:{i:0;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:5251528;}i:16;a:6:{i:0;s:28:"SELECT * FROM "organization"";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.017166;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7752960;}i:17;a:6:{i:0;s:67:"Opening DB connection: pgsql:host=localhost;dbname=dispatch_summary";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1622110388.01724;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7756416;}i:22;a:6:{i:0;s:2878:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) OR attidentity != '' AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'organization'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.038793;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7778976;}i:25;a:6:{i:0;s:901:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='organization'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.056422;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7820464;}i:28;a:6:{i:0;s:27:"SELECT * FROM "subdivision"";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.067009;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:35;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7866872;}i:31;a:6:{i:0;s:103:"Rendering view file: C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\layouts\main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1622110388.07421;i:4;a:1:{i:0;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7899016;}}}";s:9:"profiling";s:13346:"a:3:{s:6:"memory";i:8249864;s:4:"time";d:0.19698691368103027;s:8:"messages";a:10:{i:18;a:6:{i:0;s:67:"Opening DB connection: pgsql:host=localhost;dbname=dispatch_summary";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1622110388.017269;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7757920;}i:19;a:6:{i:0;s:67:"Opening DB connection: pgsql:host=localhost;dbname=dispatch_summary";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1622110388.031498;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7760224;}i:20;a:6:{i:0;s:28:"SELECT * FROM "organization"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.031564;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7761080;}i:21;a:6:{i:0;s:28:"SELECT * FROM "organization"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.036597;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7764312;}i:23;a:6:{i:0;s:2878:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) OR attidentity != '' AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'organization'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.038887;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7790056;}i:24;a:6:{i:0;s:2878:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) OR attidentity != '' AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'organization'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.054018;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7801552;}i:26;a:6:{i:0;s:901:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='organization'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.056461;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7825400;}i:27;a:6:{i:0;s:901:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='organization'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.063817;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7828216;}i:29;a:6:{i:0;s:27:"SELECT * FROM "subdivision"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.067054;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:35;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7868856;}i:30;a:6:{i:0;s:27:"SELECT * FROM "subdivision"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.070513;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:35;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7870896;}}}";s:2:"db";s:12061:"a:1:{s:8:"messages";a:8:{i:20;a:6:{i:0;s:28:"SELECT * FROM "organization"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.031564;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7761080;}i:21;a:6:{i:0;s:28:"SELECT * FROM "organization"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.036597;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7764312;}i:23;a:6:{i:0;s:2878:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) OR attidentity != '' AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'organization'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.038887;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7790056;}i:24;a:6:{i:0;s:2878:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) OR attidentity != '' AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'organization'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.054018;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7801552;}i:26;a:6:{i:0;s:901:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='organization'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.056461;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7825400;}i:27;a:6:{i:0;s:901:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='organization'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.063817;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:33;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7828216;}i:29;a:6:{i:0;s:27:"SELECT * FROM "subdivision"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.067054;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:35;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7868856;}i:30;a:6:{i:0;s:27:"SELECT * FROM "subdivision"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1622110388.070513;i:4;a:2:{i:0;a:5:{s:4:"file";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php";s:4:"line";i:35;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:90:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php";s:4:"line";i:166;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:7870896;}}}";s:5:"event";s:7355:"a:42:{i:0;a:5:{s:4:"time";d:1622110387.947507;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:1;a:5:{s:4:"time";d:1622110387.9522;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:2;a:5:{s:4:"time";d:1622110387.957986;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:35:"frontend\controllers\SiteController";}i:3;a:5:{s:4:"time";d:1622110387.96499;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:4;a:5:{s:4:"time";d:1622110387.973221;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:25:"yii\bootstrap4\ActiveForm";}i:5;a:5:{s:4:"time";d:1622110388.004321;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:6;a:5:{s:4:"time";d:1622110388.03148;s:4:"name";s:9:"afterOpen";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:7;a:5:{s:4:"time";d:1622110388.038113;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"frontend\models\Organization";}i:8;a:5:{s:4:"time";d:1622110388.06552;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"frontend\models\Organization";}i:9;a:5:{s:4:"time";d:1622110388.065552;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"frontend\models\Organization";}i:10;a:5:{s:4:"time";d:1622110388.06556;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"frontend\models\Organization";}i:11;a:5:{s:4:"time";d:1622110388.066886;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:12;a:5:{s:4:"time";d:1622110388.073548;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:25:"yii\bootstrap4\ActiveForm";}i:13;a:5:{s:4:"time";d:1622110388.073919;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:25:"yii\bootstrap4\ActiveForm";}i:14;a:5:{s:4:"time";d:1622110388.073964;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:15;a:5:{s:4:"time";d:1622110388.074204;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:16;a:5:{s:4:"time";d:1622110388.075376;s:4:"name";s:9:"beginPage";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:17;a:5:{s:4:"time";d:1622110388.075452;s:4:"name";s:9:"beginBody";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:18;a:5:{s:4:"time";d:1622110388.076553;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"yii\bootstrap4\NavBar";}i:19;a:5:{s:4:"time";d:1622110388.07773;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\bootstrap4\Nav";}i:20;a:5:{s:4:"time";d:1622110388.077782;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\bootstrap4\Nav";}i:21;a:5:{s:4:"time";d:1622110388.078424;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\bootstrap4\Nav";}i:22;a:5:{s:4:"time";d:1622110388.078458;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"yii\bootstrap4\NavBar";}i:23;a:5:{s:4:"time";d:1622110388.079277;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"yii\bootstrap4\NavBar";}i:24;a:5:{s:4:"time";d:1622110388.080092;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:26:"yii\bootstrap4\Breadcrumbs";}i:25;a:5:{s:4:"time";d:1622110388.080112;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:26:"yii\bootstrap4\Breadcrumbs";}i:26;a:5:{s:4:"time";d:1622110388.080198;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:26:"yii\bootstrap4\Breadcrumbs";}i:27;a:5:{s:4:"time";d:1622110388.080561;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:20:"common\widgets\Alert";}i:28;a:5:{s:4:"time";d:1622110388.080573;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:20:"common\widgets\Alert";}i:29;a:5:{s:4:"time";d:1622110388.080592;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:20:"common\widgets\Alert";}i:30;a:5:{s:4:"time";d:1622110388.081294;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:20:"yii\bootstrap4\Modal";}i:31;a:5:{s:4:"time";d:1622110388.081393;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:20:"yii\bootstrap4\Modal";}i:32;a:5:{s:4:"time";d:1622110388.081434;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:20:"yii\bootstrap4\Modal";}i:33;a:5:{s:4:"time";d:1622110388.082061;s:4:"name";s:7:"endBody";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:34;a:5:{s:4:"time";d:1622110388.082361;s:4:"name";s:7:"endPage";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:35;a:5:{s:4:"time";d:1622110388.08256;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:36;a:5:{s:4:"time";d:1622110388.082595;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:35:"frontend\controllers\SiteController";}i:37;a:5:{s:4:"time";d:1622110388.082605;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:38;a:5:{s:4:"time";d:1622110388.082616;s:4:"name";s:12:"afterRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:39;a:5:{s:4:"time";d:1622110388.082625;s:4:"name";s:10:"beforeSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:40;a:5:{s:4:"time";d:1622110388.083093;s:4:"name";s:12:"afterPrepare";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:41;a:5:{s:4:"time";d:1622110388.083271;s:4:"name";s:9:"afterSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}}";s:6:"assets";s:3260:"a:7:{s:30:"yii\validators\ValidationAsset";a:9:{s:10:"sourcePath";s:77:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.validation.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:79:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\assets\aa1dbce4";s:7:"baseUrl";s:29:"/frontend/web/assets/aa1dbce4";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\web\YiiAsset";a:9:{s:10:"sourcePath";s:77:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:6:"yii.js";}s:7:"depends";a:1:{i:0;s:19:"yii\web\JqueryAsset";}s:8:"basePath";s:79:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\assets\aa1dbce4";s:7:"baseUrl";s:29:"/frontend/web/assets/aa1dbce4";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:81:"C:\Users\Karatui\Documents\GitHub\dispatch_summary/vendor/bower-asset/jquery/dist";s:2:"js";a:1:{i:0;s:9:"jquery.js";}s:8:"basePath";s:79:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\assets\4850f001";s:7:"baseUrl";s:29:"/frontend/web/assets/4850f001";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:27:"yii\widgets\ActiveFormAsset";a:9:{s:10:"sourcePath";s:77:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.activeForm.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:79:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\assets\aa1dbce4";s:7:"baseUrl";s:29:"/frontend/web/assets/aa1dbce4";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:24:"frontend\assets\AppAsset";a:9:{s:8:"basePath";s:63:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web";s:7:"baseUrl";s:13:"/frontend/web";s:3:"css";a:1:{i:0;s:12:"css/site.css";}s:2:"js";a:0:{}s:7:"depends";a:2:{i:0;s:16:"yii\web\YiiAsset";i:1;s:29:"yii\bootstrap4\BootstrapAsset";}s:10:"sourcePath";N;s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:29:"yii\bootstrap4\BootstrapAsset";a:9:{s:10:"sourcePath";s:82:"C:\Users\Karatui\Documents\GitHub\dispatch_summary/vendor/npm-asset/bootstrap/dist";s:3:"css";a:1:{i:0;s:17:"css/bootstrap.css";}s:8:"basePath";s:79:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\assets\522a4099";s:7:"baseUrl";s:29:"/frontend/web/assets/522a4099";s:7:"depends";a:0:{}s:2:"js";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:35:"yii\bootstrap4\BootstrapPluginAsset";a:9:{s:10:"sourcePath";s:82:"C:\Users\Karatui\Documents\GitHub\dispatch_summary/vendor/npm-asset/bootstrap/dist";s:2:"js";a:1:{i:0;s:22:"js/bootstrap.bundle.js";}s:7:"depends";a:2:{i:0;s:19:"yii\web\JqueryAsset";i:1;s:29:"yii\bootstrap4\BootstrapAsset";}s:8:"basePath";s:79:"C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\assets\522a4099";s:7:"baseUrl";s:29:"/frontend/web/assets/522a4099";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1622110387.891823;s:3:"end";d:1622110388.090044;s:6:"memory";i:8249864;}";s:4:"user";s:2:"N;";s:4:"dump";s:6:"a:0:{}";s:7:"summary";a:12:{s:3:"tag";s:13:"60af70b3e5026";s:3:"url";s:41:"http://localhost/frontend/web/site/signup";s:4:"ajax";i:0;s:6:"method";s:3:"GET";s:2:"ip";s:3:"::1";s:4:"time";d:1622110387.888085;s:10:"statusCode";i:200;s:8:"sqlCount";i:4;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:8249864;s:14:"processingTime";d:0.19698691368103027;}s:10:"exceptions";a:0:{}}

@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\Organization;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -13,7 +14,7 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use frontend\components\Verification;
 
 /**
  * Site controller
@@ -152,7 +153,9 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
+        $verification = new Verification();
         $model = new SignupForm();
+        $data = $verification->IpVerification("10.110.72.30");
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'Спасибо за регистрацию. Пожалуйста, проверьте свой почтовый ящик на наличие подтверждающего письма.');
             return $this->goHome();
@@ -160,6 +163,7 @@ class SiteController extends Controller
 
         return $this->render('signup', [
             'model' => $model,
+            'data' => $data,
         ]);
     }
 
