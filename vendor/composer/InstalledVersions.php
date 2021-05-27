@@ -138,12 +138,12 @@ private static $installed = array (
     ),
     'codeception/module-yii2' => 
     array (
-      'pretty_version' => '1.1.2',
-      'version' => '1.1.2.0',
+      'pretty_version' => '1.1.3',
+      'version' => '1.1.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7e2eaeb414315271d545e17c330b3aaf08911927',
+      'reference' => '09853feb15ad5e80e472c6881793a22f273a9921',
     ),
     'codeception/phpunit-wrapper' => 
     array (
@@ -225,6 +225,25 @@ private static $installed = array (
       array (
       ),
       'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
+    ),
+    'kartik-v/yii2-editors' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '1.0.x-dev',
+      ),
+      'reference' => '86d6d0bd2dbcee05c9c816c221c23674f8abaa6d',
+    ),
+    'kartik-v/yii2-krajee-base' => 
+    array (
+      'pretty_version' => 'v2.0.6',
+      'version' => '2.0.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9b6bc8335e8e561e3953826efefd57b1df7bdce0',
     ),
     'myclabs/deep-copy' => 
     array (

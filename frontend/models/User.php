@@ -20,10 +20,10 @@ use Yii;
  * @property int|null $subdivision_id
  * @property int|null $organization_id
  * @property string $name
- * @property int $post_id
+ * @property int|null $post_id
  * @property string|null $description
  * @property int|null $phone
- * @property bool $reinstruction
+ * @property bool|null $reinstruction
  * @property string|null $verification_token
  *
  * @property AutoList[] $autoLists
@@ -87,7 +87,7 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['username', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at', 'is_admin', 'name', 'post_id', 'reinstruction'], 'required'],
+            [['username', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at', 'name'], 'required'],
             [['status', 'created_at', 'updated_at', 'subdivision_id', 'organization_id', 'post_id', 'phone'], 'default', 'value' => null],
             [['status', 'created_at', 'updated_at', 'subdivision_id', 'organization_id', 'post_id', 'phone'], 'integer'],
             [['is_admin', 'reinstruction'], 'boolean'],
@@ -127,10 +127,6 @@ class User extends \yii\db\ActiveRecord
             'reinstruction' => 'Reinstruction',
             'verification_token' => 'Verification Token',
         ];
-    }
-
-    public function getShortName(){
-        return preg_replace('~^(\S++)\s++(\S)\S++\s++(\S)\S++$~u', '$1 $2.$3.', $this->name);
     }
 
     /**

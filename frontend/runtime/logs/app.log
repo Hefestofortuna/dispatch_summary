@@ -11957,3 +11957,2578 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1621999005.7778
     'REQUEST_TIME' => 1621999005
 ]
+2021-05-27 03:08:31 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\db\Exception] PDOException: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php:719
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php(719): PDO->__construct()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php(1059): yii\db\Connection->open()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php(1046): yii\db\Connection->getMasterPdo()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(33): yii\db\ActiveQuery->all()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#15 [internal function]: frontend\controllers\SiteController->actionSignup()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php:649
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php(1059): yii\db\Connection->open()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Connection.php(1046): yii\db\Connection->getMasterPdo()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(33): yii\db\ActiveQuery->all()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 08006
+    [1] => 7
+    [2] => could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+)
+
+2021-05-27 03:08:27 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52697'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622084907.165
+    'REQUEST_TIME' => 1622084907
+]
+2021-05-27 03:12:35 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $form in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php:8
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php(8): yii\base\ErrorHandler->handleError()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(77): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 03:12:35 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53061'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/frontend/web/index.php/site/index'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622085155.2143
+    'REQUEST_TIME' => 1622085155
+]
+2021-05-27 03:12:36 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $form in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php:8
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php(8): yii\base\ErrorHandler->handleError()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(77): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 03:12:36 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53062'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/frontend/web/index.php/site/index'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622085156.2111
+    'REQUEST_TIME' => 1622085156
+]
+2021-05-27 03:19:55 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $form in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php:9
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php(9): yii\base\ErrorHandler->handleError()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(77): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 03:19:55 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53483'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/frontend/web/index.php/site/index'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622085595.6254
+    'REQUEST_TIME' => 1622085595
+]
+2021-05-27 03:20:30 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][Error] Error: Class "kartik\icons\FontAwesomeAsset" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\layouts\main.php:26
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(425): yii\base\View->renderFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\Controller->renderContent()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(77): yii\base\Controller->render()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2021-05-27 03:20:30 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53495'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/frontend/web/index.php/site/index'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622085630.7805
+    'REQUEST_TIME' => 1622085630
+]
+2021-05-27 03:22:12 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You must install 'yiisoft/yii2-bootstrap' extension for Bootstrap 3.x version support. Dependency to 'yii2-bootstrap' has not been included with 'yii2-krajee-base'. To resolve, you must add 'yiisoft/yii2-bootstrap' to the 'require' section of your application's composer.json file and then run 'composer update'.
+
+NOTE: This dependency change has been done since v2.0 of 'yii2-krajee-base' because only one of 'yiisoft/yii2-bootstrap' OR 'yiisoft/bootstrap4' bootstrap extensions can be installed. The developer can thus choose and control which bootstrap extension library to install. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\BootstrapTrait.php:194
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(105): kartik\base\InputWidget->initBsVersion()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php(21): yii\widgets\ActiveField->widget()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\create.php(17): yii\base\View->render()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(86): yii\base\Controller->render()
+#18 [internal function]: frontend\controllers\NewsController->actionCreate()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#22 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#23 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#24 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#25 {main}
+2021-05-27 03:22:12 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53537'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622085732.4286
+    'REQUEST_TIME' => 1622085732
+]
+2021-05-27 03:46:05 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You must install 'yiisoft/yii2-bootstrap' extension for Bootstrap 3.x version support. Dependency to 'yii2-bootstrap' has not been included with 'yii2-krajee-base'. To resolve, you must add 'yiisoft/yii2-bootstrap' to the 'require' section of your application's composer.json file and then run 'composer update'.
+
+NOTE: This dependency change has been done since v2.0 of 'yii2-krajee-base' because only one of 'yiisoft/yii2-bootstrap' OR 'yiisoft/bootstrap4' bootstrap extensions can be installed. The developer can thus choose and control which bootstrap extension library to install. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\BootstrapTrait.php:194
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(105): kartik\base\InputWidget->initBsVersion()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php(21): yii\widgets\ActiveField->widget()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\create.php(17): yii\base\View->render()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(86): yii\base\Controller->render()
+#18 [internal function]: frontend\controllers\NewsController->actionCreate()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#22 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#23 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#24 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#25 {main}
+2021-05-27 03:46:05 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54634'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622087165.6171
+    'REQUEST_TIME' => 1622087165
+]
+2021-05-27 03:46:12 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You must install 'yiisoft/yii2-bootstrap' extension for Bootstrap 3.x version support. Dependency to 'yii2-bootstrap' has not been included with 'yii2-krajee-base'. To resolve, you must add 'yiisoft/yii2-bootstrap' to the 'require' section of your application's composer.json file and then run 'composer update'.
+
+NOTE: This dependency change has been done since v2.0 of 'yii2-krajee-base' because only one of 'yiisoft/yii2-bootstrap' OR 'yiisoft/bootstrap4' bootstrap extensions can be installed. The developer can thus choose and control which bootstrap extension library to install. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\BootstrapTrait.php:194
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(105): kartik\base\InputWidget->initBsVersion()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php(24): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\create.php(17): yii\base\View->render()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(86): yii\base\Controller->render()
+#17 [internal function]: frontend\controllers\NewsController->actionCreate()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#22 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#23 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2021-05-27 03:46:11 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54637'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622087171.9348
+    'REQUEST_TIME' => 1622087171
+]
+2021-05-27 03:57:29 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\News::html_content in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\helpers\BaseHtml.php(2248): yii\db\BaseActiveRecord->__get()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(130): yii\helpers\BaseHtml::getAttributeValue()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(109): kartik\base\InputWidget->initInputWidget()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#5 [internal function]: yii\base\BaseObject->__construct()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php(27): yii\base\Widget::widget()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\create.php(17): yii\base\View->render()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(86): yii\base\Controller->render()
+#20 [internal function]: frontend\controllers\NewsController->actionCreate()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#22 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#23 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#24 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#25 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#26 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2021-05-27 03:57:28 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55207'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622087848.9563
+    'REQUEST_TIME' => 1622087848
+]
+2021-05-27 04:13:06 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You must install 'yiisoft/yii2-bootstrap' extension for Bootstrap 3.x version support. Dependency to 'yii2-bootstrap' has not been included with 'yii2-krajee-base'. To resolve, you must add 'yiisoft/yii2-bootstrap' to the 'require' section of your application's composer.json file and then run 'composer update'.
+
+NOTE: This dependency change has been done since v2.0 of 'yii2-krajee-base' because only one of 'yiisoft/yii2-bootstrap' OR 'yiisoft/bootstrap4' bootstrap extensions can be installed. The developer can thus choose and control which bootstrap extension library to install. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\BootstrapTrait.php:194
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(105): kartik\base\InputWidget->initBsVersion()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php(15): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(77): yii\base\Controller->render()
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2021-05-27 04:13:06 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56661'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/frontend/web/index.php/site/index'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622088786.5719
+    'REQUEST_TIME' => 1622088786
+]
+2021-05-27 04:13:56 [::1][-][29onvv7a191bk7pll6t9coe6l7][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You must install 'yiisoft/yii2-bootstrap' extension for Bootstrap 3.x version support. Dependency to 'yii2-bootstrap' has not been included with 'yii2-krajee-base'. To resolve, you must add 'yiisoft/yii2-bootstrap' to the 'require' section of your application's composer.json file and then run 'composer update'.
+
+NOTE: This dependency change has been done since v2.0 of 'yii2-krajee-base' because only one of 'yiisoft/yii2-bootstrap' OR 'yiisoft/bootstrap4' bootstrap extensions can be installed. The developer can thus choose and control which bootstrap extension library to install. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\BootstrapTrait.php:194
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(105): kartik\base\InputWidget->initBsVersion()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\index.php(15): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(77): yii\base\Controller->render()
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2021-05-27 04:13:56 [::1][-][29onvv7a191bk7pll6t9coe6l7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => '29onvv7a191bk7pll6t9coe6l7'
+    '_csrf-frontend' => 'af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56759'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/frontend/web/index.php/site/index'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=29onvv7a191bk7pll6t9coe6l7; _csrf-frontend=af8130de5507686ae79ecefd0f6ade24248e5f18aeab526221c3351ee6b8f47ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22X2w1AeZFVzUE3E36HK8ac4fb2TmR7RZc%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622088836.7664
+    'REQUEST_TIME' => 1622088836
+]
+2021-05-27 04:53:20 [::1][-][hn5833v39uoaeg6p249o02tukg][error][Error] Error: Class "frontend\models\News" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\NewsController->actionCreate()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2021-05-27 04:53:20 [::1][-][hn5833v39uoaeg6p249o02tukg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'hn5833v39uoaeg6p249o02tukg'
+    '_identity-frontend' => '638b4e1e3fea4818843e801db90cd7f21849d613c6c4d55209a14975d1b044e8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    '_csrf-frontend' => 'b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '79fwQNuPXWz2YuI-G-k6ba5tITJRReL6'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59732'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=hn5833v39uoaeg6p249o02tukg; _identity-frontend=638b4e1e3fea4818843e801db90cd7f21849d613c6c4d55209a14975d1b044e8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; _csrf-frontend=b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622091200.036
+    'REQUEST_TIME' => 1622091200
+]
+2021-05-27 04:58:57 [::1][-][hn5833v39uoaeg6p249o02tukg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "пшш". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2021-05-27 04:58:57 [::1][-][hn5833v39uoaeg6p249o02tukg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'hn5833v39uoaeg6p249o02tukg'
+    '_csrf-frontend' => 'b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '79fwQNuPXWz2YuI-G-k6ba5tITJRReL6'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59999'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/%D0%BF%D1%88%D1%88'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/пшш'
+    'PHP_SELF' => '/frontend/web/index.php/пшш'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=hn5833v39uoaeg6p249o02tukg; _csrf-frontend=b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622091537.0511
+    'REQUEST_TIME' => 1622091537
+]
+2021-05-27 05:20:50 [::1][-][hn5833v39uoaeg6p249o02tukg][error][yii\db\IntegrityException] PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "name" of relation "user" violates not-null constraint
+DETAIL:  Failing row contains (1, di_KaratuevIN, _bhehZ5c8Ell2Csb4NJDfF0jR6yIK3lB, $2y$13$WUVolq2WVUFLs8yUV3ZeYO3LP2Zzyr8lHc0M109bW7XspYiddpWka, null, di_KaratuevIN@esrr.rzd, 9, 1622092850, 1622092850, f, null, null, null, null, null, null, null, -3r-g7KbCZ_XwiTEYSfwlLKfao7ciLEu_1622092850). in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(88): yii\db\BaseActiveRecord->save()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "name" of relation "user" violates not-null constraint
+DETAIL:  Failing row contains (1, di_KaratuevIN, _bhehZ5c8Ell2Csb4NJDfF0jR6yIK3lB, $2y$13$WUVolq2WVUFLs8yUV3ZeYO3LP2Zzyr8lHc0M109bW7XspYiddpWka, null, di_KaratuevIN@esrr.rzd, 9, 1622092850, 1622092850, f, null, null, null, null, null, null, null, -3r-g7KbCZ_XwiTEYSfwlLKfao7ciLEu_1622092850).
+The SQL being executed was: INSERT INTO "user" ("username", "email", "reinstruction", "name", "post_id", "description", "phone", "password_hash", "auth_key", "verification_token", "status", "created_at", "updated_at") VALUES ('di_KaratuevIN', 'di_KaratuevIN@esrr.rzd', NULL, NULL, NULL, NULL, NULL, '$2y$13$WUVolq2WVUFLs8yUV3ZeYO3LP2Zzyr8lHc0M109bW7XspYiddpWka', '_bhehZ5c8Ell2Csb4NJDfF0jR6yIK3lB', '-3r-g7KbCZ_XwiTEYSfwlLKfao7ciLEu_1622092850', 9, 1622092850, 1622092850) RETURNING "id" in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(88): yii\db\BaseActiveRecord->save()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+Additional Information:
+Array
+(
+    [0] => 23502
+    [1] => 7
+    [2] => ERROR:  null value in column "name" of relation "user" violates not-null constraint
+DETAIL:  Failing row contains (1, di_KaratuevIN, _bhehZ5c8Ell2Csb4NJDfF0jR6yIK3lB, $2y$13$WUVolq2WVUFLs8yUV3ZeYO3LP2Zzyr8lHc0M109bW7XspYiddpWka, null, di_KaratuevIN@esrr.rzd, 9, 1622092850, 1622092850, f, null, null, null, null, null, null, null, -3r-g7KbCZ_XwiTEYSfwlLKfao7ciLEu_1622092850).
+)
+
+2021-05-27 05:20:49 [::1][-][hn5833v39uoaeg6p249o02tukg][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'rTuVdYatmKdTGlBbynBbkD7oZ2HIbgG6DswrSn7rBoj4VtgH2cLw4Ct7MTeNHgn2fZ4MCKwAe-9MtE0BGY1WxQ=='
+    'SignupForm' => [
+        'username' => 'di_KaratuevIN'
+        'email' => 'di_KaratuevIN@esrr.rzd'
+        'password' => 'Ms34901351'
+        'reinstruction' => '0'
+        'name' => 'Каратуев Иван Николаевич'
+        'post_id' => ''
+        'description' => ''
+        'phone' => ''
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'hn5833v39uoaeg6p249o02tukg'
+    '_csrf-frontend' => 'b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '79fwQNuPXWz2YuI-G-k6ba5tITJRReL6'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61393'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '509'
+    'HTTP_CONTENT_LENGTH' => '509'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=hn5833v39uoaeg6p249o02tukg; _csrf-frontend=b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622092849.8957
+    'REQUEST_TIME' => 1622092849
+]
+2021-05-27 05:21:09 [::1][-][hn5833v39uoaeg6p249o02tukg][error][yii\db\IntegrityException] PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "name" of relation "user" violates not-null constraint
+DETAIL:  Failing row contains (2, di_KaratuevIN, 6bgQI3Z7i8Z0wIEcfvXAiLD-qbcVBhsC, $2y$13$xIjvaYkRwF6enxNvjUAm4eqCcPheW/QEzvomK9ioLeCDEWoeqWQPG, null, di_KaratuevIN@esrr.rzd, 9, 1622092869, 1622092869, f, null, null, null, null, null, null, null, yTBUuA1cuyT2v03SeXm1-RBYJiiQTfeH_1622092869). in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(88): yii\db\BaseActiveRecord->save()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "name" of relation "user" violates not-null constraint
+DETAIL:  Failing row contains (2, di_KaratuevIN, 6bgQI3Z7i8Z0wIEcfvXAiLD-qbcVBhsC, $2y$13$xIjvaYkRwF6enxNvjUAm4eqCcPheW/QEzvomK9ioLeCDEWoeqWQPG, null, di_KaratuevIN@esrr.rzd, 9, 1622092869, 1622092869, f, null, null, null, null, null, null, null, yTBUuA1cuyT2v03SeXm1-RBYJiiQTfeH_1622092869).
+The SQL being executed was: INSERT INTO "user" ("username", "email", "reinstruction", "name", "post_id", "description", "phone", "password_hash", "auth_key", "verification_token", "status", "created_at", "updated_at") VALUES ('di_KaratuevIN', 'di_KaratuevIN@esrr.rzd', NULL, NULL, NULL, NULL, NULL, '$2y$13$xIjvaYkRwF6enxNvjUAm4eqCcPheW/QEzvomK9ioLeCDEWoeqWQPG', '6bgQI3Z7i8Z0wIEcfvXAiLD-qbcVBhsC', 'yTBUuA1cuyT2v03SeXm1-RBYJiiQTfeH_1622092869', 9, 1622092869, 1622092869) RETURNING "id" in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(88): yii\db\BaseActiveRecord->save()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+Additional Information:
+Array
+(
+    [0] => 23502
+    [1] => 7
+    [2] => ERROR:  null value in column "name" of relation "user" violates not-null constraint
+DETAIL:  Failing row contains (2, di_KaratuevIN, 6bgQI3Z7i8Z0wIEcfvXAiLD-qbcVBhsC, $2y$13$xIjvaYkRwF6enxNvjUAm4eqCcPheW/QEzvomK9ioLeCDEWoeqWQPG, null, di_KaratuevIN@esrr.rzd, 9, 1622092869, 1622092869, f, null, null, null, null, null, null, null, yTBUuA1cuyT2v03SeXm1-RBYJiiQTfeH_1622092869).
+)
+
+2021-05-27 05:21:08 [::1][-][hn5833v39uoaeg6p249o02tukg][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'RKMbjmk8lW-ZIzd7wj-RbuaOqKrXKivmjJvbs-T_-boRzlb8NlP9KOFCVheFUcMIpfjDw7NEUbPO4734g5mp9w=='
+    'SignupForm' => [
+        'username' => 'di_KaratuevIN'
+        'email' => 'di_KaratuevIN@esrr.rzd'
+        'password' => 'Ms34901351'
+        'reinstruction' => '0'
+        'name' => 'Каратуев Иван Николаевич'
+        'post_id' => ''
+        'description' => ''
+        'phone' => ''
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'hn5833v39uoaeg6p249o02tukg'
+    '_csrf-frontend' => 'b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '79fwQNuPXWz2YuI-G-k6ba5tITJRReL6'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61401'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '509'
+    'HTTP_CONTENT_LENGTH' => '509'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=hn5833v39uoaeg6p249o02tukg; _csrf-frontend=b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622092868.4168
+    'REQUEST_TIME' => 1622092868
+]
+2021-05-27 05:21:41 [::1][-][hn5833v39uoaeg6p249o02tukg][error][Swift_TransportException] Swift_TransportException: Connection could not be established with host uc.esrr.rzd :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:261
+Stack trace:
+#0 [internal function]: Swift_Transport_StreamBuffer->{closure}()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(264): stream_socket_client()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(113): Swift_Transport_AbstractSmtpTransport->start()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(156): yii\swiftmailer\Mailer->getSwiftMailer()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\mail\BaseMailer.php(263): yii\swiftmailer\Mailer->sendMessage()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\mail\BaseMessage.php(49): yii\mail\BaseMailer->send()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(110): yii\mail\BaseMessage->send()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(90): frontend\models\SignupForm->sendEmail()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2021-05-27 05:21:38 [::1][-][hn5833v39uoaeg6p249o02tukg][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'epz53H5Q-JVuhi_LJc8qV7YACCg-6RhLsI29PITLkX4v8bSuIT-Q0hbnTqdioXgx9XZjQVqHYh7y9dt3463BMw=='
+    'SignupForm' => [
+        'username' => 'di_KaratuevIN'
+        'email' => 'di_KaratuevIN@esrr.rzd'
+        'password' => 'Ms34901351'
+        'reinstruction' => '0'
+        'name' => 'Каратуев Иван Николаевич'
+        'post_id' => ''
+        'description' => ''
+        'phone' => ''
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'hn5833v39uoaeg6p249o02tukg'
+    '_csrf-frontend' => 'b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '79fwQNuPXWz2YuI-G-k6ba5tITJRReL6'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61416'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '509'
+    'HTTP_CONTENT_LENGTH' => '509'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=hn5833v39uoaeg6p249o02tukg; _csrf-frontend=b834cb121e66dbe1694744615eca03a8d3008134fe0221e2c4c036f8ee7749e3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UmMr_ohGxaalGnRfCvkidnzUBxfKgfPM%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622092898.9893
+    'REQUEST_TIME' => 1622092898
+]
+2021-05-27 05:24:17 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\captcha\Captcha.php:175
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\captcha\Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\contact.php(33): yii\widgets\ActiveField->widget()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(133): yii\base\Controller->render()
+#14 [internal function]: frontend\controllers\SiteController->actionContact()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+2021-05-27 05:24:17 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_identity-frontend' => '8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T\",2592000]\";}'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61656'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/contact'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/contact'
+    'PHP_SELF' => '/frontend/web/index.php/site/contact'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _identity-frontend=8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622093057.3874
+    'REQUEST_TIME' => 1622093057
+]
+2021-05-27 05:33:22 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\NewsSearch' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/NewsSearch.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(38): yii\BaseYii::autoload()
+#1 [internal function]: frontend\controllers\NewsController->actionIndex()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2021-05-27 05:33:22 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_identity-frontend' => '8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T\",2592000]\";}'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62350'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/'
+    'PHP_SELF' => '/frontend/web/index.php/news/'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _identity-frontend=8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622093602.5454
+    'REQUEST_TIME' => 1622093602
+]
+2021-05-27 05:33:47 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\models\News' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend/models/News.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\NewsSearch.php(12): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(293): include('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(38): yii\BaseYii::autoload()
+#3 [internal function]: frontend\controllers\NewsController->actionIndex()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2021-05-27 05:33:47 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_identity-frontend' => '8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T\",2592000]\";}'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62393'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/'
+    'PHP_SELF' => '/frontend/web/index.php/news/'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _identity-frontend=8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622093627.8406
+    'REQUEST_TIME' => 1622093627
+]
+2021-05-27 05:36:36 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\User' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/User.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\News.php(40): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\News->rules()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(817): yii\base\Model->scenarios()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(435): yii\base\Model->activeAttributes()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(495): yii\base\Model->getActiveValidators()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\ActiveField.php(929): yii\base\Model->isAttributeRequired()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\ActiveField.php(405): yii\widgets\ActiveField->addAriaAttributes()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php(15): yii\widgets\ActiveField->textInput()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\create.php(17): yii\base\View->render()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(86): yii\base\Controller->render()
+#19 [internal function]: frontend\controllers\NewsController->actionCreate()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#22 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#23 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#24 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#25 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+2021-05-27 05:36:36 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_identity-frontend' => '8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T\",2592000]\";}'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62709'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _identity-frontend=8856816ba9a4ead6ab54bb67e6c0a92ffccc5277fa90fed589a07ed9a0281785a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622093796.2779
+    'REQUEST_TIME' => 1622093796
+]
+2021-05-27 05:38:47 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][error][yii\db\Exception] PDOException: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(81): yii\db\BaseActiveRecord->save()
+#8 [internal function]: frontend\controllers\NewsController->actionCreate()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting.
+The SQL being executed was: INSERT INTO "news" ("putdate", "user_id", "title", "content") VALUES ('27.05.2021', 3, 'test', 'test') RETURNING "id" in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(81): yii\db\BaseActiveRecord->save()
+#8 [internal function]: frontend\controllers\NewsController->actionCreate()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 22008
+    [1] => 7
+    [2] => ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting.
+)
+
+2021-05-27 05:38:47 [::1][3][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '0FyVMO1AXQmlcxGpmsILKK_Z0jA7mWfsm2PynOMHd-60FMMGtBEXe9EWeez9704F2-CRd1TWV6HCBZz11007lw=='
+    'News' => [
+        'title' => 'test'
+        'content' => 'test'
+        'user_id' => '3'
+        'putdate' => '27.05.2021'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62850'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '200'
+    'HTTP_CONTENT_LENGTH' => '200'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622093927.7891
+    'REQUEST_TIME' => 1622093927
+]
+2021-05-27 05:41:35 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\Organization' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/Organization.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(33): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 05:41:35 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63132'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094095.1196
+    'REQUEST_TIME' => 1622094095
+]
+2021-05-27 05:41:36 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\Organization' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/Organization.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(33): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 05:41:36 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63136'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094096.5757
+    'REQUEST_TIME' => 1622094096
+]
+2021-05-27 05:41:37 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\Organization' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/Organization.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(33): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 05:41:37 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63140'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094097.3189
+    'REQUEST_TIME' => 1622094097
+]
+2021-05-27 05:41:38 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\Organization' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/Organization.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(33): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 05:41:38 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63144'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094098.2757
+    'REQUEST_TIME' => 1622094098
+]
+2021-05-27 05:42:48 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\Subdivision' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/Subdivision.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site\signup.php(35): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(162): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-27 05:42:47 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63184'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094167.9028
+    'REQUEST_TIME' => 1622094167
+]
+2021-05-27 05:43:28 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][error][Swift_TransportException] Swift_TransportException: Connection could not be established with host uc.esrr.rzd :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:261
+Stack trace:
+#0 [internal function]: Swift_Transport_StreamBuffer->{closure}()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(264): stream_socket_client()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(113): Swift_Transport_AbstractSmtpTransport->start()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(156): yii\swiftmailer\Mailer->getSwiftMailer()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\mail\BaseMailer.php(263): yii\swiftmailer\Mailer->sendMessage()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\mail\BaseMessage.php(49): yii\mail\BaseMailer->send()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(110): yii\mail\BaseMessage->send()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\SignupForm.php(90): frontend\models\SignupForm->sendEmail()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2021-05-27 05:43:27 [::1][-][ttma923u8bmkfjq0a9hr9hbgde][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'wN__DkyfSYB2Kv-GyHHDTtHYFWP88T2DWC-9s5fjb9ekl6k4Fc4D8gJPl8OvXIZjpeFWJJO-Dc4BSdPao6kjrg=='
+    'SignupForm' => [
+        'username' => 'di_KaratuevIN'
+        'email' => 'di_KaratuevIN@esrr.rzd'
+        'password' => 'Ms34901351'
+        'reinstruction' => '0'
+        'name' => 'Каратуев Иван Николаевич'
+        'post_id' => ''
+        'description' => ''
+        'phone' => ''
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'ttma923u8bmkfjq0a9hr9hbgde'
+    '_csrf-frontend' => 'f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'MgdL4xG1Bmigj8aoZ3HoeBh91JXV9X8T'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63225'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/site/signup'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/site/signup'
+    'PHP_SELF' => '/frontend/web/index.php/site/signup'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '509'
+    'HTTP_CONTENT_LENGTH' => '509'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=ttma923u8bmkfjq0a9hr9hbgde; _csrf-frontend=f9d9cc67de29ff170d88c41a10684394e57c68935690a25fe098ecf852832a8aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dHV6YQJrtehEg-E-t9CGoO0MYfni4JLy%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094207.1335
+    'REQUEST_TIME' => 1622094207
+]
+2021-05-27 05:44:49 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][error][yii\db\Exception] PDOException: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(81): yii\db\BaseActiveRecord->save()
+#8 [internal function]: frontend\controllers\NewsController->actionCreate()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting.
+The SQL being executed was: INSERT INTO "news" ("putdate", "user_id", "title", "content") VALUES ('27.05.2021', 1, 'test', 'tesssssssssssssst') RETURNING "id" in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(81): yii\db\BaseActiveRecord->save()
+#8 [internal function]: frontend\controllers\NewsController->actionCreate()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 22008
+    [1] => 7
+    [2] => ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting.
+)
+
+2021-05-27 05:44:49 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'dl0R6eLhz-b2nS-HmSOLiuGDNEg0Cp-nY93f6BCmIL9PcGKu06z8ocToQOTOR__e1rV4GlhHxt4CtZ68e_Rj1Q=='
+    'News' => [
+        'title' => 'test'
+        'content' => 'tesssssssssssssst'
+        'user_id' => '1'
+        'putdate' => '27.05.2021'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'od6ubs8ab6p52rpeafgq6mp7pa'
+    '_identity-frontend' => '059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT\",2592000]\";}'
+    '_csrf-frontend' => '88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9-sG1M3G2uocWdtT76LRlMYyahATkRCj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63329'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '213'
+    'HTTP_CONTENT_LENGTH' => '213'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=od6ubs8ab6p52rpeafgq6mp7pa; _identity-frontend=059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT%22%2C2592000%5D%22%3B%7D; _csrf-frontend=88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229-sG1M3G2uocWdtT76LRlMYyahATkRCj%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094289.6163
+    'REQUEST_TIME' => 1622094289
+]
+2021-05-27 05:45:34 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][error][yii\db\Exception] PDOException: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(81): yii\db\BaseActiveRecord->save()
+#8 [internal function]: frontend\controllers\NewsController->actionCreate()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[22008]: Datetime field overflow: 7 ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting.
+The SQL being executed was: INSERT INTO "news" ("putdate", "user_id", "title", "content") VALUES ('27.05.2021', 1, 'test', 'tesssssssssssssst') RETURNING "id" in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\pgsql\Schema.php(646): yii\db\Command->queryOne()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\pgsql\Schema->insert()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(81): yii\db\BaseActiveRecord->save()
+#8 [internal function]: frontend\controllers\NewsController->actionCreate()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 22008
+    [1] => 7
+    [2] => ERROR:  date/time field value out of range: "27.05.2021"
+HINT:  Perhaps you need a different "datestyle" setting.
+)
+
+2021-05-27 05:45:34 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'dl0R6eLhz-b2nS-HmSOLiuGDNEg0Cp-nY93f6BCmIL9PcGKu06z8ocToQOTOR__e1rV4GlhHxt4CtZ68e_Rj1Q=='
+    'News' => [
+        'title' => 'test'
+        'content' => 'tesssssssssssssst'
+        'user_id' => '1'
+        'putdate' => '27.05.2021'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'od6ubs8ab6p52rpeafgq6mp7pa'
+    '_identity-frontend' => '059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT\",2592000]\";}'
+    '_csrf-frontend' => '88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9-sG1M3G2uocWdtT76LRlMYyahATkRCj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63403'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/create'
+    'PHP_SELF' => '/frontend/web/index.php/news/create'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '213'
+    'HTTP_CONTENT_LENGTH' => '213'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=od6ubs8ab6p52rpeafgq6mp7pa; _identity-frontend=059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT%22%2C2592000%5D%22%3B%7D; _csrf-frontend=88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229-sG1M3G2uocWdtT76LRlMYyahATkRCj%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094334.0797
+    'REQUEST_TIME' => 1622094334
+]
+2021-05-27 05:46:27 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][error][Error] Error: Class "Summernote" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php:17
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\update.php(18): yii\base\View->render()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(106): yii\base\Controller->render()
+#9 [internal function]: frontend\controllers\NewsController->actionUpdate()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+2021-05-27 05:46:27 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'od6ubs8ab6p52rpeafgq6mp7pa'
+    '_identity-frontend' => '059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT\",2592000]\";}'
+    '_csrf-frontend' => '88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9-sG1M3G2uocWdtT76LRlMYyahATkRCj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63494'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/update?id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/update'
+    'PHP_SELF' => '/frontend/web/index.php/news/update'
+    'QUERY_STRING' => 'id=1'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/view?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=od6ubs8ab6p52rpeafgq6mp7pa; _identity-frontend=059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT%22%2C2592000%5D%22%3B%7D; _csrf-frontend=88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229-sG1M3G2uocWdtT76LRlMYyahATkRCj%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094387.6878
+    'REQUEST_TIME' => 1622094387
+]
+2021-05-27 05:46:33 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\News::html_content in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\helpers\BaseHtml.php(2248): yii\db\BaseActiveRecord->__get()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(130): yii\helpers\BaseHtml::getAttributeValue()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(109): kartik\base\InputWidget->initInputWidget()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#5 [internal function]: yii\base\BaseObject->__construct()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\_form.php(20): yii\base\Widget::widget()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\update.php(18): yii\base\View->render()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(106): yii\base\Controller->render()
+#20 [internal function]: frontend\controllers\NewsController->actionUpdate()
+#21 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#22 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#23 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#24 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#25 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#26 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2021-05-27 05:46:33 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'od6ubs8ab6p52rpeafgq6mp7pa'
+    '_identity-frontend' => '059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT\",2592000]\";}'
+    '_csrf-frontend' => '88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9-sG1M3G2uocWdtT76LRlMYyahATkRCj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63505'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/update?id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/update'
+    'PHP_SELF' => '/frontend/web/index.php/news/update'
+    'QUERY_STRING' => 'id=1'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/view?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=od6ubs8ab6p52rpeafgq6mp7pa; _identity-frontend=059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT%22%2C2592000%5D%22%3B%7D; _csrf-frontend=88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229-sG1M3G2uocWdtT76LRlMYyahATkRCj%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094393.6694
+    'REQUEST_TIME' => 1622094393
+]
+2021-05-27 05:53:52 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The attribute configuration requires the "attribute" element to determine the value and display label. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\DetailView.php:241
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\widgets\DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\DetailView->init()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Widget.php(138): yii\BaseYii::createObject()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news\view.php(41): yii\base\Widget::widget()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\controllers\NewsController.php(67): yii\base\Controller->render()
+#13 [internal function]: frontend\controllers\NewsController->actionView()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2021-05-27 05:53:52 [::1][1][od6ubs8ab6p52rpeafgq6mp7pa][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => '856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"79fwQNuPXWz2YuI-G-k6ba5tITJRReL6\",2592000]\";}'
+    'advanced-frontend' => 'od6ubs8ab6p52rpeafgq6mp7pa'
+    '_identity-frontend' => '059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT\",2592000]\";}'
+    '_csrf-frontend' => '88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9-sG1M3G2uocWdtT76LRlMYyahATkRCj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => '6l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64037'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'REQUEST_URI' => '/frontend/web/news/view?id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\frontend\\web\\index.php'
+    'PATH_INFO' => '/news/view'
+    'PHP_SELF' => '/frontend/web/index.php/news/view'
+    'QUERY_STRING' => 'id=1'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/news/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-backend=856ed4912401caa899a20cd1210c4cb50149756de3ac1b7ec3da8a3df2125a9fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2279fwQNuPXWz2YuI-G-k6ba5tITJRReL6%22%2C2592000%5D%22%3B%7D; advanced-frontend=od6ubs8ab6p52rpeafgq6mp7pa; _identity-frontend=059f375d7b1f82229be47a15fb216fcb33001f50acfbb87a05fa56d2c64a26f2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226l2HjxNa-M1r6kH-C4iOl4kwS4uwawiT%22%2C2592000%5D%22%3B%7D; _csrf-frontend=88b1c2bd1cf527f41d449c6b5e133018ddf2f827a34fe84fde7063e689a5850ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229-sG1M3G2uocWdtT76LRlMYyahATkRCj%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1622094832.213
+    'REQUEST_TIME' => 1622094832
+]

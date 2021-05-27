@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel frontend\models\NewsSearch */
+/* @var $searchModel app\models\NewsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'News';
@@ -29,10 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
-            'content',
+            'content:ntext',
             'user_id',
             'putdate',
-            //'file_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

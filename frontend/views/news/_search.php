@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\NewsSearch */
+/* @var $model app\models\NewsSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -27,8 +27,6 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'user_id') ?>
 
     <?= $form->field($model, 'putdate') ?>
-
-    <?php // echo $form->field($model, 'file_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

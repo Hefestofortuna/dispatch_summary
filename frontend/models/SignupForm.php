@@ -41,22 +41,8 @@ class SignupForm extends Model
             ['password', 'required'],
             ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
 
-            [['is_admin', 'reinstruction'], 'required'],
-            [['is_admin', 'reinstruction'], 'boolean'],
-            ['is_admin', 'default', 'value' => false],
-
             ['name', 'required'],
-            [['name'], 'string', 'max' => 64],
-
-            [['description'], 'string', 'max' => 256],
-
-            [['description'], 'integer', 'max' => 256],
-
-            [['subdivision_id', 'organization_id','post_id'], 'required'],
-            ['post_id', 'integer', 'max' => 255],
-            [['subdivision_id'], 'exist', 'skipOnError' => true, 'targetClass' => Subdivision::className(), 'targetAttribute' => ['subdivision_id' => 'id']],
-            [['organization_id'], 'exist', 'skipOnError' => true, 'targetClass' => Organization::className(), 'targetAttribute' => ['organization_id' => 'id']],
-        ];
+            [['name'], 'string', 'max' => 64],];
     }
 
     public function attributeLabels()
@@ -120,7 +106,7 @@ class SignupForm extends Model
             )
             ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
             ->setTo($this->email)
-            ->setSubject('Account registration at ' . Yii::$app->name)
+            ->setSubject('Регистрация аккаунта на ' . Yii::$app->name)
             ->send();
     }
 }

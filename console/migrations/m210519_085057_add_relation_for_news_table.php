@@ -26,21 +26,6 @@ class m210519_085057_add_relation_for_news_table extends Migration
             'id',
             'CASCADE'
         );
-
-        $this->createIndex(
-            'idx-news-file_id',
-            'news',
-            'file_id'
-        );
-
-        $this->addForeignKey(
-            'fk-news-file_id',
-            'news',
-            'file_id',
-            'file',
-            'id',
-            'CASCADE'
-        );
     }
 
     /**

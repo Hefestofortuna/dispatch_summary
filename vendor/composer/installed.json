@@ -556,17 +556,17 @@
         },
         {
             "name": "codeception/module-yii2",
-            "version": "1.1.2",
-            "version_normalized": "1.1.2.0",
+            "version": "1.1.3",
+            "version_normalized": "1.1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/module-yii2.git",
-                "reference": "7e2eaeb414315271d545e17c330b3aaf08911927"
+                "reference": "09853feb15ad5e80e472c6881793a22f273a9921"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/module-yii2/zipball/7e2eaeb414315271d545e17c330b3aaf08911927",
-                "reference": "7e2eaeb414315271d545e17c330b3aaf08911927",
+                "url": "https://api.github.com/repos/Codeception/module-yii2/zipball/09853feb15ad5e80e472c6881793a22f273a9921",
+                "reference": "09853feb15ad5e80e472c6881793a22f273a9921",
                 "shasum": ""
             },
             "require": {
@@ -574,7 +574,7 @@
                 "codeception/lib-innerbrowser": "^1.0",
                 "php": ">=5.6.0 <8.1"
             },
-            "time": "2020-12-21T15:21:56+00:00",
+            "time": "2021-05-24T20:05:32+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -605,7 +605,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/module-yii2/issues",
-                "source": "https://github.com/Codeception/module-yii2/tree/1.1.2"
+                "source": "https://github.com/Codeception/module-yii2/tree/1.1.3"
             },
             "install-path": "../codeception/module-yii2"
         },
@@ -1173,6 +1173,131 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "install-path": "../guzzlehttp/psr7"
+        },
+        {
+            "name": "kartik-v/yii2-editors",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-editors.git",
+                "reference": "86d6d0bd2dbcee05c9c816c221c23674f8abaa6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-editors/zipball/86d6d0bd2dbcee05c9c816c221c23674f8abaa6d",
+                "reference": "86d6d0bd2dbcee05c9c816c221c23674f8abaa6d",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": ">=2.0.0"
+            },
+            "time": "2021-01-10T05:00:51+00:00",
+            "default-branch": true,
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\editors\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Editor widgets Yii2 framework. Summernote WYSIWYG editor, Codemirror code editor and PlainText editor for Bootstrap 3.x & 4.x.",
+            "homepage": "https://github.com/kartik-v/yii2-editors",
+            "keywords": [
+                "bootstrap",
+                "code",
+                "codemirror",
+                "editor",
+                "extension",
+                "file",
+                "html",
+                "input",
+                "rich",
+                "summernote",
+                "widget",
+                "wysiwyg",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/kartik-v/yii2-editors/issues",
+                "source": "https://github.com/kartik-v/yii2-editors/tree/master"
+            },
+            "install-path": "../kartik-v/yii2-editors"
+        },
+        {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "v2.0.6",
+            "version_normalized": "2.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "9b6bc8335e8e561e3953826efefd57b1df7bdce0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/9b6bc8335e8e561e3953826efefd57b1df7bdce0",
+                "reference": "9b6bc8335e8e561e3953826efefd57b1df7bdce0",
+                "shasum": ""
+            },
+            "suggest": {
+                "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
+                "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version"
+            },
+            "time": "2021-04-08T18:07:22+00:00",
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/kartik-v/yii2-krajee-base/issues",
+                "source": "https://github.com/kartik-v/yii2-krajee-base/tree/v2.0.6"
+            },
+            "install-path": "../kartik-v/yii2-krajee-base"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5535,6 +5660,8 @@
         "doctrine/instantiator",
         "fakerphp/faker",
         "guzzlehttp/psr7",
+        "kartik-v/yii2-editors",
+        "kartik-v/yii2-krajee-base",
         "myclabs/deep-copy",
         "opis/closure",
         "phar-io/manifest",

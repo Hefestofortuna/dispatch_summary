@@ -21,10 +21,10 @@ class m130524_201442_init extends Migration
             'subdivision_id' => $this->integer()->null(),
             'organization_id' => $this->integer()->null(),
             'name' => $this->string(64)->notNull(),
-            'post_id' => $this->integer()->notNull(),
+            'post_id' => $this->integer()->null(),
             'description' => $this->string(256)->null(),
             'phone' => $this->integer(11)->null(),
-            'reinstruction' => $this->boolean()->notNull(),
+            'reinstruction' => $this->boolean()->null(),
 
         ]);
 

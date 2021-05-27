@@ -102,6 +102,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-bootstrap4" />
       <path value="$PROJECT_DIR$/vendor/npm-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-krajee-base" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-editors" />
     </include_path>
   </component>
   <component name="ProjectId" id="1snkFjH0HCA4zJrZa5CtbHFBFCS" />
@@ -148,6 +150,7 @@
       <workItem from="1621676436006" duration="1195000" />
       <workItem from="1621986839709" duration="607000" />
       <workItem from="1621987667372" duration="5682000" />
+      <workItem from="1622083034037" duration="10014000" />
     </task>
     <servers />
   </component>

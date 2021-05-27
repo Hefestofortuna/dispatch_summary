@@ -15,10 +15,9 @@ class m210414_031857_create_news_table extends Migration
         $this->createTable('{{%news}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string()->notNull()->comment('Заголовок'),
-            'content' => $this->string()->notNull()->comment('Содержание'),
+            'content' => $this->text()->notNull()->comment('Содержание'),
             'user_id' => $this->integer()->notNull()->comment('Автор'),
             'putdate' => $this->date()->notNull()->comment('Дата публикации'),
-            'file_id' => $this->integer()->defaultValue(null)->comment('Файлы'),
         ]);
     }
 

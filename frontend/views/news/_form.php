@@ -1,10 +1,11 @@
 <?php
 
+use kartik\editors\Summernote;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\News */
+/* @var $model app\models\News */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -14,9 +15,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content')->textInput(['maxlength' => true]) ?>
+    <?= Summernote::widget([
+        'model' => $model,
+        'attribute' => 'content',
+    ]); ?>
 
-    <?= $form->field($model, 'file_id')->textInput() ?>
+    <?= $form->field($model, 'user_id')->textInput() ?>
+
+    <?= $form->field($model, 'putdate')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

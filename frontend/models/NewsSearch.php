@@ -7,7 +7,7 @@ use yii\data\ActiveDataProvider;
 use frontend\models\News;
 
 /**
- * NewsSearch represents the model behind the search form of `frontend\models\News`.
+ * NewsSearch represents the model behind the search form of `app\models\News`.
  */
 class NewsSearch extends News
 {
@@ -17,7 +17,7 @@ class NewsSearch extends News
     public function rules()
     {
         return [
-            [['id', 'user_id', 'file_id'], 'integer'],
+            [['id', 'user_id'], 'integer'],
             [['title', 'content', 'putdate'], 'safe'],
         ];
     }
@@ -61,7 +61,6 @@ class NewsSearch extends News
             'id' => $this->id,
             'user_id' => $this->user_id,
             'putdate' => $this->putdate,
-            'file_id' => $this->file_id,
         ]);
 
         $query->andFilterWhere(['ilike', 'title', $this->title])
