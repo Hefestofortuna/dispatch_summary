@@ -73,7 +73,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <div class="float-left">&copy; <?= Html::encode(Yii::$app->name) ?><?= date('Y') ?></div>
+        <div class="float-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></div>
         <div class="float-right"><?php
             Modal::begin([
                 'title' => 'Команда сопровождения проекта',

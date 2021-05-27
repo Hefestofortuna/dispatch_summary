@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\helpers\StringHelper;
 
 /* @var $model frontend\models\News */
 
@@ -16,15 +17,15 @@ use yii\helpers\Url;
 
             <div class="card-body">
 
-                <p><?= Html::encode($model->content) ?></p>
+                <?= StringHelper::truncate(strip_tags($model->content),250,'...'); ?>
 
             </div>
             <div class="card-footer">
                 <div class="float-left">
                         <small class="text-muted">
-                            Автор <?= Html::encode($model->user->getShortName()) ?>
+                            Автор: <?= Html::encode($model->user->getShortName()) ?>
                             <br>
-                            Опубликованно <?= Yii::$app->formatter->asDate($model->putdate, 'dd.MM.yyyy')?>
+                            Опубликованно: <?= Yii::$app->formatter->asDate($model->putdate, 'dd.MM.yyyy')?>
                         </small>
                 </div>
 

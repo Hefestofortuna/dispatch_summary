@@ -14,6 +14,9 @@ use yii\filters\VerbFilter;
  */
 class NewsController extends Controller
 {
+
+    public $defaultAction = 'list';
+
     /**
      * {@inheritdoc}
      */
@@ -33,16 +36,6 @@ class NewsController extends Controller
      * Lists all News models.
      * @return mixed
      */
-    public function actionIndex()
-    {
-        $searchModel = new NewsSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
 
     public function actionList()
     {
@@ -118,7 +111,7 @@ class NewsController extends Controller
     {
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['list']);
     }
 
     /**

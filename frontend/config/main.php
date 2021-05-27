@@ -46,4 +46,5 @@ return [
         ],
     ],
     'params' => $params,
+    'defaultRoute' => 'news/list',
 ];
