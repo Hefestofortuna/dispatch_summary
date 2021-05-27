@@ -47,4 +47,9 @@ return [
     ],
     'params' => $params,
     'defaultRoute' => 'news/list',
+    'container' => [
+        'definitions' => [
+            \yii\widgets\LinkPager::class => \yii\bootstrap4\LinkPager::class,
+        ],
+    ],
 ];

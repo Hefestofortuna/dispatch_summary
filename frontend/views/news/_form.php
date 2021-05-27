@@ -20,10 +20,6 @@ use yii\widgets\ActiveForm;
         'attribute' => 'content',
     ]); ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
-
-    <?= $form->field($model, 'putdate')->textInput() ?>
-
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>

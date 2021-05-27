@@ -41,7 +41,7 @@ class NewsController extends Controller
     {
         $searchModel = new NewsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $dataProvider->pagination->pageSize=9;
         return $this->render('list', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

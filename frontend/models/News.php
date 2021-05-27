@@ -37,7 +37,8 @@ class News extends \yii\db\ActiveRecord
             [['user_id'], 'default', 'value' => null],
             [['user_id'], 'integer'],
             [['putdate'], 'safe'],
-            [['title'], 'string', 'max' => 255],
+            //[['title'], 'string', 'max' => 255],
+            [['title'], 'string', 'max' => 48],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
