@@ -10,6 +10,7 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\bootstrap4\ActiveForm;
 use frontend\models\Organization;
+use frontend\models\Post;
 
 $this->title = 'Регистрация';
 $this->params['breadcrumbs'][] = $this->title;
@@ -34,11 +35,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="col-lg-6">
             <?php $model->organization_id = $data; ?>
-            <?= $form->field($model, 'organization_id')->dropdownList(ArrayHelper::map(Organization::find()->all(),'id','title')) ?>
+            <?= $form->field($model, 'organization_id')->dropdownList(ArrayHelper::map(Organization::find()->all(),'id','code')) ?>
 
             <?= $form->field($model, 'subdivision_id')->dropdownList(ArrayHelper::map(Subdivision::find()->all(),'id','title')) ?>
 
-            <?= $form->field($model, 'post_id')->textInput() ?>
+            <?= $form->field($model, 'post_id')->dropdownList(ArrayHelper::map(Post::find()->all(),'id','title')) ?>
 
             <?= $form->field($model, 'phone')->textInput() ?>
 

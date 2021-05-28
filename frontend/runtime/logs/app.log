@@ -36052,3 +36052,3068 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1622183111.6365
     'REQUEST_TIME' => 1622183111
 ]
+2021-05-28 07:47:11 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 07:47:11 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 07:47:11 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '62598'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188030.9906
+    'REQUEST_TIME' => 1622188030
+]
+2021-05-28 07:47:11 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:90
+2021-05-28 07:47:11 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 07:47:11 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '62598'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188031.3399
+    'REQUEST_TIME' => 1622188031
+]
+2021-05-28 07:47:13 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 07:47:13 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 07:47:12 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '50900'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188032.8636
+    'REQUEST_TIME' => 1622188032
+]
+2021-05-28 07:47:31 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:125
+2021-05-28 07:47:31 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 07:47:31 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/signup'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '50900'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188051.7055
+    'REQUEST_TIME' => 1622188051
+]
+2021-05-28 07:47:32 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 07:47:31 [10.111.26.240][-][-][info][application] $_GET = [
+    'v' => '60b0a013ce4c16.23196563'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '50900'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/captcha?v=60b0a013ce4c16.23196563'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'v=60b0a013ce4c16.23196563'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188051.9038
+    'REQUEST_TIME' => 1622188051
+]
+2021-05-28 07:47:33 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 07:47:33 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 07:47:32 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '50900'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188052.8271
+    'REQUEST_TIME' => 1622188052
+]
+2021-05-28 08:01:44 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 08:01:44 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:01:44 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '52137'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188904.3324
+    'REQUEST_TIME' => 1622188904
+]
+2021-05-28 08:02:12 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 08:02:12 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:02:12 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '52137'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188932.1231
+    'REQUEST_TIME' => 1622188932
+]
+2021-05-28 08:02:21 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 08:02:21 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:02:20 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '52137'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622188940.7027
+    'REQUEST_TIME' => 1622188940
+]
+2021-05-28 08:03:30 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 08:03:30 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:03:29 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '52119'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189009.7679
+    'REQUEST_TIME' => 1622189009
+]
+2021-05-28 08:05:04 [10.111.26.240][-][cmp80ldgedjbql1rcfal8bfchc][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\Post' in file: E:\nginx\html\dispatch_summary/frontend/models/Post.php. Namespace missing? in E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 E:\nginx\html\dispatch_summary\frontend\views\site\signup.php(42): yii\BaseYii::autoload()
+#1 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#2 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#5 E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php(157): yii\base\Controller->render()
+#6 [internal function]: frontend\controllers\SiteController->actionSignup()
+#7 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#9 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#10 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#11 E:\nginx\html\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#12 E:\nginx\html\dispatch_summary\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2021-05-28 08:05:04 [10.111.26.240][-][cmp80ldgedjbql1rcfal8bfchc][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:05:04 [10.111.26.240][-][cmp80ldgedjbql1rcfal8bfchc][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:05:04 [10.111.26.240][-][cmp80ldgedjbql1rcfal8bfchc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '54187'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189104.2342
+    'REQUEST_TIME' => 1622189104
+]
+2021-05-28 08:05:37 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 08:05:37 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:05:37 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '54187'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189137.3716
+    'REQUEST_TIME' => 1622189137
+]
+2021-05-28 08:06:17 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:06:15 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'btYq-f1B7MtSO98ZDEwhpyuhLF7sHVqUZSrHxceVi_834UPOsgCukw1krS5APmqTZsdvZ9tJFKxSWJiNjNLGqw=='
+    'SignupForm' => [
+        'username' => 'di_KaratuevIN'
+        'password' => 'Ms34901351'
+        'email' => 'di_KaratuevIN@esrr.rzd'
+        'name' => '╨Ъ╨░╤А╨░╤В╤Г╨╡╨▓ ╨Ш╨▓╨░╨╜ ╨Э╨╕╨║╨╛╨╗╨░╨╡╨▓╨╕╤З'
+        'organization_id' => '15'
+        'subdivision_id' => '1'
+        'post_id' => '1'
+        'phone' => '89021633429'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    'success' => '╨б╨┐╨░╤Б╨╕╨▒╨╛ ╨╖╨░ ╤А╨╡╨│╨╕╤Б╤В╤А╨░╤Ж╨╕╤О. ╨Я╨╛╨╢╨░╨╗╤Г╨╣╤Б╤В╨░, ╨┐╤А╨╛╨▓╨╡╤А╤М╤В╨╡ ╤Б╨▓╨╛╨╣ ╨┐╨╛╤З╤В╨╛╨▓╤Л╨╣ ╤П╤Й╨╕╨║ ╨╜╨░ ╨╜╨░╨╗╨╕╤З╨╕╨╡ ╨┐╨╛╨┤╤В╨▓╨╡╤А╨╢╨┤╨░╤О╤Й╨╡╨│╨╛ ╨┐╨╕╤Б╤М╨╝╨░.'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/signup'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://dispatchsummary.esrr.oao.rzd'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '513'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '54187'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '513'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189175.19
+    'REQUEST_TIME' => 1622189175
+]
+2021-05-28 08:06:18 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:06:18 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:06:17 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/signup'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '54187'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189177.8614
+    'REQUEST_TIME' => 1622189177
+]
+2021-05-28 08:06:18 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:90
+2021-05-28 08:06:18 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:06:18 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/signup'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '54187'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189178.2013
+    'REQUEST_TIME' => 1622189178
+]
+2021-05-28 08:08:05 [10.110.72.30][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.110.72.30
+2021-05-28 08:08:04 [10.110.72.30][1][-][info][application] $_GET = [
+    'token' => '2WkqcFT9nBFF1mFvgszy0siiKa6McYnf_1622189177'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+    'success' => 'Your email has been confirmed!'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_RANGE' => 'bytes=18-18446744073709551615'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '33240'
+    'REMOTE_ADDR' => '10.110.72.30'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/verify-email?token=2WkqcFT9nBFF1mFvgszy0siiKa6McYnf_1622189177'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=2WkqcFT9nBFF1mFvgszy0siiKa6McYnf_1622189177'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189284.8711
+    'REQUEST_TIME' => 1622189284
+]
+2021-05-28 08:08:05 [10.110.72.30][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.110.72.30
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:08:05 [10.110.72.30][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.110.72.30
+2021-05-28 08:08:05 [10.110.72.30][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'ou1gkikbf4bi1ej4702mlvmpjq'
+    '_csrf-frontend' => '1131e0d3dbce6bcb9e84a084fc31e6ff6c4a6349b1cafda0ca4d12fabb435a39a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BhbQgV3J5rMQyCpkVa-gku4QdpZQW1hz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_RANGE' => 'bytes=18-18446744073709551615'
+    'HTTP_COOKIE' => 'advanced-frontend=ou1gkikbf4bi1ej4702mlvmpjq; _csrf-frontend=1131e0d3dbce6bcb9e84a084fc31e6ff6c4a6349b1cafda0ca4d12fabb435a39a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BhbQgV3J5rMQyCpkVa-gku4QdpZQW1hz%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '33240'
+    'REMOTE_ADDR' => '10.110.72.30'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189285.2204
+    'REQUEST_TIME' => 1622189285
+]
+2021-05-28 08:08:24 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:90
+2021-05-28 08:08:24 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:23 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '4NoAm7UVo3FJr6Q-wa0WG9OPseQQLgfSB7Xlacsx_Ve57Wms-lThKRbw1gmN310vnuny3Sd6Seowx7ohgHawAw=='
+    'LoginForm' => [
+        'username' => 'di_karatuevIN'
+        'password' => 'Ms34901351'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://dispatchsummary.esrr.oao.rzd'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '250'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '59380'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '250'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189303.9069
+    'REQUEST_TIME' => 1622189303
+]
+2021-05-28 08:08:33 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:31 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'GjewJ68ZZlba4vLL2HRipUVt7wHKEGdXpzIUMyqn1SdDANkQ4FgkDoW9gPyUBimRCAusOP1EKW-QQEt7YeCYcw=='
+    'LoginForm' => [
+        'username' => 'di_KaratuevIN'
+        'password' => 'Ms34901351'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmp80ldgedjbql1rcfal8bfchc'
+    '_csrf-frontend' => '5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Y7i7OABX__r7LrK4MfC97TN87r_HKGMT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=cmp80ldgedjbql1rcfal8bfchc; _csrf-frontend=5a5a2f528c5c02215408260c2e6de5881887ee16c072b0e65b004280ca166fdfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y7i7OABX__r7LrK4MfC97TN87r_HKGMT%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://dispatchsummary.esrr.oao.rzd'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '250'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '59380'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '250'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189311.7928
+    'REQUEST_TIME' => 1622189311
+]
+2021-05-28 08:08:34 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:08:34 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:33 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '59380'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189313.8414
+    'REQUEST_TIME' => 1622189313
+]
+2021-05-28 08:08:35 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:81
+2021-05-28 08:08:35 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:35 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '59380'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/news/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189315.6216
+    'REQUEST_TIME' => 1622189315
+]
+2021-05-28 08:08:40 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:08:40 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:40 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/news/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '51109'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/news/list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189320.5258
+    'REQUEST_TIME' => 1622189320
+]
+2021-05-28 08:08:41 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:137
+2021-05-28 08:08:41 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:41 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/news/list'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '51109'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/about'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189321.4485
+    'REQUEST_TIME' => 1622189321
+]
+2021-05-28 08:08:43 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:08:43 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:08:43 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/about'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '51109'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189323.0355
+    'REQUEST_TIME' => 1622189323
+]
+2021-05-28 08:09:32 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:125
+2021-05-28 08:09:32 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:31 [10.111.26.240][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '51109'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189371.7071
+    'REQUEST_TIME' => 1622189371
+]
+2021-05-28 08:09:32 [10.111.26.240][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:32 [10.111.26.240][1][-][info][application] $_GET = [
+    'v' => '60b0a53c004fd2.02910024'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'njiebo'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/captcha?v=60b0a53c004fd2.02910024'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'v=60b0a53c004fd2.02910024'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189372.0499
+    'REQUEST_TIME' => 1622189372
+]
+2021-05-28 08:09:34 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:33 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '83Eeh_4kwlwGbnR3ks4LLPRhU6bSHobA-ODu7OZYon2CM2a3lkLzBEoiBjDUhTJGwwtrwYMzsoPMjqiKtArSNQ=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rcka5pdle1ol55u0pgg38v5h6k'
+    '_identity-frontend' => 'abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+]
+
+$_SESSION = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-frontend=rcka5pdle1ol55u0pgg38v5h6k; _identity-frontend=abcaa1e5c0d9bc2df928311794e1d21f6518257054d5a8bfea4fa88c1f50434aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://dispatchsummary.esrr.oao.rzd'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '107'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/logout'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '107'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189373.7173
+    'REQUEST_TIME' => 1622189373
+]
+2021-05-28 08:09:34 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:09:34 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:34 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+    'advanced-frontend' => 'uql1jlubpdava6gbfu5sst5qdt'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D; advanced-frontend=uql1jlubpdava6gbfu5sst5qdt'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189374.0401
+    'REQUEST_TIME' => 1622189374
+]
+2021-05-28 08:09:34 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:90
+2021-05-28 08:09:34 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:34 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+    'advanced-frontend' => 'uql1jlubpdava6gbfu5sst5qdt'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D; advanced-frontend=uql1jlubpdava6gbfu5sst5qdt'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/contact'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189374.3571
+    'REQUEST_TIME' => 1622189374
+]
+2021-05-28 08:09:35 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\NewsController.php:49
+2021-05-28 08:09:35 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:35 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+    'advanced-frontend' => 'uql1jlubpdava6gbfu5sst5qdt'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D; advanced-frontend=uql1jlubpdava6gbfu5sst5qdt'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189375.5998
+    'REQUEST_TIME' => 1622189375
+]
+2021-05-28 08:09:36 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:90
+2021-05-28 08:09:36 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:35 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+    'advanced-frontend' => 'uql1jlubpdava6gbfu5sst5qdt'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D; advanced-frontend=uql1jlubpdava6gbfu5sst5qdt'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189375.9109
+    'REQUEST_TIME' => 1622189375
+]
+2021-05-28 08:09:37 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+    in E:\nginx\html\dispatch_summary\frontend\views\layouts\main.php:117
+    in E:\nginx\html\dispatch_summary\frontend\controllers\SiteController.php:157
+2021-05-28 08:09:37 [10.111.26.240][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.111.26.240
+2021-05-28 08:09:36 [10.111.26.240][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH\";}'
+    'advanced-frontend' => 'uql1jlubpdava6gbfu5sst5qdt'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Администратор\\AppData\\Roaming'
+    'CLIENTNAME' => 'DI-KARATUEVIN'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DISPATCHSUMMARY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Администратор'
+    'http_proxy' => 'proxy.esrr.oao.rzd:3128'
+    'LOCALAPPDATA' => 'C:\\Users\\Администратор\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DISPATCHSUMMARY'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\composer;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Администратор\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Администратор\\AppData\\Local\\atom\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.3.4\\bin;;E:\\php;C:\\Users\\Администратор\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\Users\\Администратор\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 45 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2d07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'RDP-Tcp#2'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'TMP' => 'C:\\Users\\836D~1\\AppData\\Local\\Temp\\2'
+    'USERDOMAIN' => 'DISPATCHSUMMARY'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DISPATCHSUMMARY'
+    'USERNAME' => 'Администратор'
+    'USERPROFILE' => 'C:\\Users\\Администратор'
+    'windir' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-frontend=4478ae4cba0f2a2708798536e634fda0c631d8e3d843073527dfb8db2a01b60ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qBx0hf1XLLrGFK9j7j8gQ-4C4nFfRRpH%22%3B%7D; advanced-frontend=uql1jlubpdava6gbfu5sst5qdt'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dispatchsummary.esrr.oao.rzd/site/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'dispatchsummary.esrr.oao.rzd'
+    'SCRIPT_FILENAME' => 'E:\\nginx/html/dispatch_summary/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-frontend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.111.26.240'
+    'REMOTE_PORT' => '57689'
+    'REMOTE_ADDR' => '10.111.26.240'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\nginx/html/dispatch_summary/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622189376.8744
+    'REQUEST_TIME' => 1622189376
+]
