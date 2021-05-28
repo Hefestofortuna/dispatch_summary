@@ -146,7 +146,7 @@ class SiteController extends Controller
     {
         $verification = new Verification();
         $model = new SignupForm();
-        $data = $verification->IpVerification("10.110.72.30");
+        $data = $verification->IpVerification($_SERVER['REMOTE_ADDR']);
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'Спасибо за регистрацию. Пожалуйста, проверьте свой почтовый ящик на наличие подтверждающего письма.');
             return $this->goHome();

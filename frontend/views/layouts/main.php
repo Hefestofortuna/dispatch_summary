@@ -81,7 +81,10 @@ AppAsset::register($this);
                 'bodyOptions' =>[
                         'style' => 'modal-xl',
                 ],
-                'toggleButton' => ['label' => 'click me'],
+                'toggleButton' => [
+                        'label' => 'Команда',
+                        'tag' => 'label',
+                ],
             ]);
             echo '
             <table class="table" style="margin-top: -16px;">
