@@ -11,7 +11,7 @@ $this->title = 'Диспетчерская сводка';
         <div class="row">
             <div class="col-lg-4">
                 <div class="card">
-                    <img class="card-img-top" src="/frontend/web/static/first_card.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/static/first_card.jpg" alt="Card image cap">
 
 
                     <div class="card-body">

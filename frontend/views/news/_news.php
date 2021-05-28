@@ -16,7 +16,7 @@ use yii\helpers\StringHelper;
         <?= StringHelper::truncate(strip_tags($model->content),250,'...'); ?>
 
     </div>
-    <div class="card-footer">
+    <div class="card-footer" style="height: 70px">
         <div class="float-left">
             <small class="text-muted">
                 Автор: <?= Html::encode($model->user->getShortName()) ?>

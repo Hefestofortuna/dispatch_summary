@@ -8,6 +8,7 @@ use frontend\models\NewsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use frontend\components\behaviors\AccessBehavior;
 
 /**
  * NewsController implements the CRUD actions for News model.
@@ -23,6 +24,7 @@ class NewsController extends Controller
     public function behaviors()
     {
         return [
+            'class' => AccessBehavior::className(),
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

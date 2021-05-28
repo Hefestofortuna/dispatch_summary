@@ -20,6 +20,7 @@ use yii\widgets\ActiveForm;
         'attribute' => 'content',
     ]); ?>
 
+    <br>
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>
