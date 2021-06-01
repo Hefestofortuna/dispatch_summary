@@ -6,11 +6,13 @@
 /* @var $data \frontend\controllers\SiteController */
 
 use frontend\models\Subdivision;
+use kartik\depdrop\DepDrop;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\bootstrap4\ActiveForm;
 use frontend\models\Organization;
 use frontend\models\Post;
+use yii\helpers\Url;
 
 $this->title = 'Регистрация';
 $this->params['breadcrumbs'][] = $this->title;
@@ -34,6 +36,22 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <div class="col-lg-6">
+            <?php /*echo $form->field($model, 'organization_id')->dropdownList(ArrayHelper::map(Organization::find()->all(),'id','code'),
+                ['id'=>'organization-id','prompt' =>'Выберите организацию']); */?>
+
+            <?php
+
+            /*echo $form->field($model, 'subdivision_id')->widget(DepDrop::classname(), [
+                'options'=>['id'=>'subdivision-id','prompt' =>'ahahah'],
+                'pluginOptions'=>[
+                    'depends'=>['organization-id'],
+                    'placeholder'=>'Select...',
+                    'url'=>Url::to(['/organization/subdivision'])
+                ]
+            ]);
+*/
+            ?>
+
             <?php $model->organization_id = $data; ?>
             <?= $form->field($model, 'organization_id')->dropdownList(ArrayHelper::map(Organization::find()->all(),'id','code')) ?>
 

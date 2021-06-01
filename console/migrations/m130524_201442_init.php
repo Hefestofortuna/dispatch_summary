@@ -23,7 +23,7 @@ class m130524_201442_init extends Migration
             'name' => $this->string(64)->notNull(),
             'post_id' => $this->integer()->null(),
             'description' => $this->string(256)->null(),
-            'phone' => $this->integer(11)->null(),
+            'phone' => $this->string(11)->null(),
             'reinstruction' => $this->boolean()->null(),
 
         ]);

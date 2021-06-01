@@ -539,3 +539,170 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2021-05-28 07:04:29 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migration/create". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migration/create". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#3 {main}
+2021-05-28 07:04:28 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history1'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PROCESSOR_LEVEL' => '6'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Desktop'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '8e0b'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => '0df24cc6-c63c-4e80-beee-894a435a2ddd'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => '%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'SCRIPT_NAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'PATH_TRANSLATED' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622185467.5033
+    'REQUEST_TIME' => 1622185467
+    'argv' => [
+        0 => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+        1 => 'migration/create'
+        2 => 'add_viewing_user_id_to_news_table'
+    ]
+    'argc' => 3
+]
+2021-06-01 03:22:59 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migration/create". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migration/create". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#3 {main}
+2021-06-01 03:22:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\Karatui\\AppData\\Local\\JetBrains\\PhpStorm2021.1\\terminal\\history\\dispatch_summary-history2'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'SystemDrive' => 'C:'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'OneDriveConsumer' => 'C:\\Users\\Karatui\\OneDrive'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'SystemRoot' => 'C:\\Windows'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'SESSIONNAME' => 'Console'
+    'ProgramFiles' => 'C:\\Program Files'
+    'HOMEDRIVE' => 'C:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'windir' => 'C:\\Windows'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PROCESSOR_LEVEL' => '6'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.1\\bin;'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\Users\\Karatui\\Documents\\GitHub'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_REVISION' => '8e0b'
+    'OS' => 'Windows_NT'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERNAME' => 'Karatui'
+    'ProgramW6432' => 'C:\\Program Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'TERM_SESSION_ID' => 'be217434-b298-4bf8-9e1d-7b2304e40550'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_SELF' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'SCRIPT_NAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'PATH_TRANSLATED' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622517779.3989
+    'REQUEST_TIME' => 1622517779
+    'argv' => [
+        0 => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\yii'
+        1 => 'migration/create'
+        2 => 'create_file_table'
+    ]
+    'argc' => 3
+]

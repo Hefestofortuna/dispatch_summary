@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2020
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2021
  * @package yii2-editors
- * @version 1.0.1
+ * @version 1.0.0
  */
 
 namespace kartik\editors;
@@ -34,7 +34,7 @@ class Summernote extends InputWidget
     /**
      * @inheritdoc
      */
-    public $pluginName = 'summernote';
+    public $pluginName = 'kvSummernote';
 
     /**
      * @var bool whether to use styles with span
@@ -93,7 +93,7 @@ class Summernote extends InputWidget
      * attributes are recognized:
      * - `tag`: _string_, the HTML tag used for rendering the container. Defaults to `div`.
      */
-    public $container = ['class' => 'form-control kv-editor-container'];
+    public $container = [];
 
     /**
      * @var array default Krajee presets for the summernote plugin
@@ -145,6 +145,9 @@ class Summernote extends InputWidget
         $tag = ArrayHelper::remove($this->container, 'tag', 'div');
         if (!isset($this->container['id'])) {
             $this->container['id'] = $this->options['id'] . '-container';
+        }
+        if (!isset($this->container['class'])) {
+            $this->container['class'] = 'form-control kv-editor-container';
         }
         $this->initKrajeePresets();
         $this->initHints();
@@ -244,19 +247,10 @@ class Summernote extends InputWidget
             ];
         }
         $this->pluginOptions['hint'] = $hint;
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getPluginScript($name, $element = null, $callback = null, $callbackCon = null)
-    {
-        $opts = Json::encode([
+        $this->pluginOptions['customOptions'] = [
             'enableHintEmojis' => $this->enableHintEmojis,
             'autoFormatCode' => $this->enableCodeView && $this->autoFormatCode,
-        ]);
-        $id = '$("#' . $this->options['id'] . '")';
-        return "{$id}.kvSummernote({$opts});\n" . parent::getPluginScript($name, $element, $callback, $callbackCon);
+        ];
     }
 
     /**

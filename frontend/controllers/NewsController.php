@@ -2,13 +2,16 @@
 
 namespace frontend\controllers;
 
+use app\models\File;
 use Yii;
 use frontend\models\News;
 use frontend\models\NewsSearch;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use frontend\components\behaviors\AccessBehavior;
+use yii\web\UploadedFile;
 
 /**
  * NewsController implements the CRUD actions for News model.
