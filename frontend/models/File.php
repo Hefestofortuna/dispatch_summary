@@ -11,6 +11,8 @@ use Yii;
  * @property int $news_id Новость
  * @property string $filename Имя файла
  * @property string $filepath Путь до файла
+ *
+ * @property News $news
  */
 class File extends \yii\db\ActiveRecord
 {
@@ -28,11 +30,12 @@ class File extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['news_id', 'filename', 'filepath'], 'required'],
+            [['news_id',  'filepath'], 'required'],
             [['news_id'], 'default', 'value' => null],
             [['news_id'], 'integer'],
             [['filename'], 'file','maxFiles'=>10],
             [['filepath'], 'string'],
+            [['news_id'], 'exist', 'skipOnError' => true, 'targetClass' => News::className(), 'targetAttribute' => ['news_id' => 'id']],
         ];
     }
 
@@ -47,5 +50,10 @@ class File extends \yii\db\ActiveRecord
             'filename' => 'Имя файла',
             'filepath' => 'Путь до файла',
         ];
+    }
+
+    public function getNews()
+    {
+        return $this->hasOne(News::className(), ['id' => 'news_id']);
     }
 }

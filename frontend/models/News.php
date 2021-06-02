@@ -14,6 +14,7 @@ use Yii;
  * @property int $user_id Автор
  * @property string $putdate Дата публикации
  *
+ * @property File[] $files
  * @property User $user
  */
 class News extends \yii\db\ActiveRecord
@@ -55,6 +56,16 @@ class News extends \yii\db\ActiveRecord
             'user_id' => 'Автор',
             'putdate' => 'Дата публикации',
         ];
+    }
+
+    /**
+     * Gets query for [[Files]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getFiles()
+    {
+        return $this->hasMany(File::className(), ['news_id' => 'id']);
     }
 
     /**

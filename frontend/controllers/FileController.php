@@ -10,6 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use frontend\components\RefinementOfLinks;
 
 /**
  * FileController implements the CRUD actions for File model.
@@ -96,13 +97,28 @@ class FileController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $refinement = new RefinementOfLinks();
+        $file_model = File::find()->select(['filepath'])->where(['id'=>$id])->asArray()->all();
+        $file_config = File::find()->where(['id'=>$id])->asArray()->all();
+        $file_model = $refinement->getLinkForFileInput($file_model);
+        if ($model->load(Yii::$app->request->post())) {
+            $names = UploadedFile::getInstances($model, 'filename');
+            foreach ($names as $name){
+                $random_name = Yii::$app->security->generateRandomString(12);
+                $path = 'uploads/' . Yii::$app->user->identity->organization_id . '/news/' . $random_name . '.' . $name->extension;
+                if ($name->saveAs($path)) {
+                    $filename = $name->baseName . '.' . $name->extension;
+                    $filepath = $path;
+                    Yii::$app->db->createCommand()->update('file',['filename'=>$filename,'filepath'=>$filepath,'news_id'=>$model->news_id],['id'=>$id])->execute();
+                }
+            }
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [
             'model' => $model,
+            'file_model' => $file_model,
+            'file_config' => $file_config[0],
         ]);
     }
 
@@ -115,8 +131,11 @@ class FileController extends Controller
      */
     public function actionDelete($id)
     {
+        $file = Yii::$app->basePath . '/web/'.$this->findModel($id)->filepath;
+        if(file_exists($file)){
+            unlink($file);
+        }
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
 

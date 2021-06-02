@@ -1,10 +1,12 @@
 <?php
 
+use kartik\file\FileInput;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\News */
+/* @var $model frontend\models\News */
+/* @var $file_model frontend\models\File */
 
 $this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => 'Новости', 'url' => ['list']];
@@ -42,6 +44,24 @@ $this->params['breadcrumbs'][] = $this->title;
             <tr>
                 <th><?= $model->getAttributeLabel('putdate') ?></th>
                 <td><?= Yii::$app->formatter->asDate($model->putdate, 'dd.MM.Y')  ?></td>
+            </tr>
+            <tr>
+                <th>Файлы</th>
+                <td> <?= FileInput::widget([
+                        'name' => 'input-ru[]',
+                        'pluginOptions' => [
+                            'initialPreview'=>$file_model,
+                            'initialPreviewAsData'=>true,
+                            'showCaption' => false,
+                            'showRemove' => false,
+                            'showUpload' => false,
+                            'showBrowse' => false,
+                            'preferIconicPreview' => true,
+                            'initialPreviewConfig'=>$file_config,
+                             ],
+                    ]);
+                    ?>
+                    </td>
             </tr>
         </tbody>
     </table>

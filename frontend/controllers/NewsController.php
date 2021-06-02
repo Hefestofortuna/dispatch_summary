@@ -2,10 +2,12 @@
 
 namespace frontend\controllers;
 
-use app\models\File;
+use frontend\components\RefinementOfLinks;
+use frontend\models\File;
 use Yii;
 use frontend\models\News;
 use frontend\models\NewsSearch;
+use yii\base\BaseObject;
 use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -61,8 +63,23 @@ class NewsController extends Controller
      */
     public function actionView($id)
     {
+        $refinement = new RefinementOfLinks();
+        $file_model = File::find()->select(['filepath'])->where(['news_id'=>$id])->asArray()->all();
+        $file_model = $refinement->getLinkForFileInput($file_model);
+        $file_config_query = File::find()->where(['news_id'=>$id])->asArray()->all();
+        $file_config = [];
+        foreach ($file_config_query as $item) {
+            array_push($file_config,[
+                'caption' => $item['filename'],
+                'url' => false,
+                'downloadUrl' => Url::base(true) . '/' . $item['filepath'],
+            ]);
+        }
+
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'file_model' => $file_model,
+            'file_config' => $file_config,
         ]);
     }
 
@@ -76,12 +93,31 @@ class NewsController extends Controller
         $model = new News();
         $model->putdate = date("m.d.Y");
         $model->user_id = Yii::$app->user->id;
+        $file_model = new File();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            if($file_model->load(Yii::$app->request->post())){
+                $names = UploadedFile::getInstances($file_model, 'filename');
+                foreach ($names as $name){
+                    $random_name = Yii::$app->security->generateRandomString(12);
+                    $path = 'uploads/' . Yii::$app->user->identity->organization_id . '/news/' . $random_name . '.' . $name->extension;
+                    if ($name->saveAs($path)) {
+                        $filename = $name->baseName . '.' . $name->extension;
+                        $filepath = $path;
+                        Yii::$app->db->createCommand()->insert('file',['filename'=>$filename,'filepath'=>$filepath,'news_id'=>$model->id])->execute();
+                        $file_model->save();
+                    }
+                }
+                return $this->redirect(['list']);
+            }
+            return $this->redirect(['list']);
+
+            #if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            #return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
             'model' => $model,
+            'file_model' => $file_model,
         ]);
     }
 
@@ -95,13 +131,20 @@ class NewsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        /*
+        $file_model = new File();
+        $refinement = new RefinementOfLinks();
+        $files = File::find()->select(['filepath'])->where(['news_id'=>$id])->asArray()->all();
+        $files = $refinement->getLinkForFileInput($files);
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id]);
-        }
+        }*/
 
         return $this->render('update', [
             'model' => $model,
+            'file_model' => $file_model,
+            'files' => $files,
         ]);
     }
 
