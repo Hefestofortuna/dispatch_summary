@@ -139,6 +139,16 @@ class FileController extends Controller
         return $this->redirect(['index']);
     }
 
+    public function actionAjaxdelete($id)
+    {
+        $file = Yii::$app->basePath . '/web/'.$this->findModel($id)->filepath;
+        if(file_exists($file)){
+            unlink($file);
+        }
+        $this->findModel($id)->delete();
+        return true;
+    }
+
     /**
      * Finds the File model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.

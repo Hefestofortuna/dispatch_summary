@@ -37,6 +37,7 @@ $this->params['breadcrumbs'][] = 'Update';
                 'browseLabel' => '',
                 'removeLabel' => '',
                 'mainClass' => 'input-group-lg',
+                'initialPreviewShowDelete' => false,
                 'initialPreviewConfig' =>[
                     [
                         'caption' => $file_config['filename'],

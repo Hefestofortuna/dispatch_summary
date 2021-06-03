@@ -58,6 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'showBrowse' => false,
                             'preferIconicPreview' => true,
                             'initialPreviewConfig'=>$file_config,
+                            'initialPreviewShowDelete' => false,
                              ],
                     ]);
                     ?>

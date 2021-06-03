@@ -107,12 +107,8 @@ class NewsController extends Controller
                         $file_model->save();
                     }
                 }
-                return $this->redirect(['list']);
             }
-            return $this->redirect(['list']);
-
-            #if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            #return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
@@ -131,20 +127,39 @@ class NewsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        /*
-        $file_model = new File();
-        $refinement = new RefinementOfLinks();
-        $files = File::find()->select(['filepath'])->where(['news_id'=>$id])->asArray()->all();
-        $files = $refinement->getLinkForFileInput($files);
+        $file_model_form = new File();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $names = UploadedFile::getInstances($file_model_form, 'filename');
+            foreach ($names as $name){
+                $random_name = Yii::$app->security->generateRandomString(12);
+                $path = 'uploads/' . Yii::$app->user->identity->organization_id . '/news/' . $random_name . '.' . $name->extension;
 
-            return $this->redirect(['view', 'id' => $model->id]);
-        }*/
+                if ($name->saveAs($path)) {
+                    $filename = $name->baseName . '.' . $name->extension;
+                    $filepath = $path;
+                    Yii::$app->db->createCommand()->insert('file',['filename'=>$filename,'filepath'=>$filepath,'news_id'=>$id])->execute();
+                }
+            }
+           return $this->redirect(['view', 'id' => $model->id]);
+        }
+        $refinement = new RefinementOfLinks();
+        $file_model = File::find()->select(['filepath'])->where(['news_id'=>$id])->asArray()->all();
+        $file_model = $refinement->getLinkForFileInput($file_model);
+        $file_config_query = File::find()->where(['news_id'=>$id])->asArray()->all();
+        $file_config = [];
+        foreach ($file_config_query as $item) {
+            array_push($file_config,[
+                'caption' => $item['filename'],
+                'url' => Url::base(true) .'/file/ajaxdelete?id=' . $item['id'],
+                'downloadUrl' => Url::base(true) . '/' . $item['filepath'],
+            ]);
+        }
 
         return $this->render('update', [
             'model' => $model,
             'file_model' => $file_model,
-            'files' => $files,
+            'file_model_form' => $file_model_form,
+            'file_config' => $file_config,
         ]);
     }
 
