@@ -32,7 +32,6 @@ $this->params['breadcrumbs'][] = 'Update';
             'model' => $model,
             'attribute' => 'content',
         ]); ?>
-        <?php var_dump($file_config); ?>
         <?= $form->field($file_model_form, 'filename[]')->widget(FileInput::className(),[
             'name' => 'attachment_51',
             'options' => [

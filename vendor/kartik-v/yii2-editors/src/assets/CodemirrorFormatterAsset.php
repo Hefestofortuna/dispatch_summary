@@ -26,7 +26,8 @@ class CodemirrorFormatterAsset extends BaseAsset
     /**
      * @inheritdoc
      */
-    public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0';
+    #public $baseUrl = '//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0';
+    public $baseUrl = '@web/codemirror';
 
     /**
      * @inheritdoc

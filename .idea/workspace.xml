@@ -16,6 +16,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer" />
@@ -120,7 +128,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/views/news" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/web" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -130,10 +138,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\css" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\emojis" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist\font" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\codemirror" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist\lang" />
       <recent name="E:\nginx\html\dispatch_summary\frontend\components" />
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news" />
     </key>
@@ -164,7 +177,7 @@
       <workItem from="1622160719965" duration="3984000" />
       <workItem from="1622176643467" duration="8510000" />
       <workItem from="1622472282124" duration="674000" />
-      <workItem from="1622514666715" duration="83199000" />
+      <workItem from="1622514666715" duration="105284000" />
     </task>
     <servers />
   </component>

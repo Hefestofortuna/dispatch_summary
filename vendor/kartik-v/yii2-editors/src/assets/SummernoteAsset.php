@@ -21,7 +21,8 @@ class SummernoteAsset extends BaseAsset
     /**
      * @inheritdoc
      */
-    public $baseUrl = '//cdn.jsdelivr.net/npm/summernote@0.8.18/dist';
+    #public $baseUrl = '//cdn.jsdelivr.net/npm/summernote@0.8.18/dist';
+    public $baseUrl = '@web/dist';
 
     /**
      * @inheritdoc
