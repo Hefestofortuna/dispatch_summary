@@ -1,6 +1,7 @@
 <?php
 
 use kartik\file\FileInput;
+use yii\bootstrap4\Modal;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use yii\widgets\Pjax;
@@ -31,7 +32,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]) ?>
         </div>
         <div class="float-right">
-                <?= Html::a('Список ознакомленных', ['', 'id' => $model->id], ['class' => 'btn btn-success ']) ?>
+            <?php
+
+            Modal::begin([
+                'title' => 'Список ознакомившихся',
+                'toggleButton' => ['label' => 'click me'],
+            ]);
+
+            foreach ($news_user_model as $item)
+                echo $item['name'] . "\n";
+
+            Modal::end();
+            ?>
             </p>
         </div>
     </div>
@@ -77,7 +89,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="d-flex flex-row-reverse">
         <?php Pjax::begin(['enablePushState' => false]); ?>
         <?php
-            if($news_user_model == 0){
+            if($news_user_submit_model == 0){
                 echo Html::a('Ознакомлен(а)', ['/news-user/create', 'news_id' => $model->id], ['class' => 'btn btn-success ']);
             }
         ?>
