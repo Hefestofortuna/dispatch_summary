@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use frontend\components\RefinementOfLinks;
 use frontend\models\File;
+use frontend\models\NewsUser;
 use Yii;
 use frontend\models\News;
 use frontend\models\NewsSearch;
@@ -63,6 +64,7 @@ class NewsController extends Controller
      */
     public function actionView($id)
     {
+        $news_user_model = NewsUser::find()->where(['news_id'=>$id, 'user_id' =>Yii::$app->user->id])->count();
         $refinement = new RefinementOfLinks();
         $file_model = File::find()->select(['filepath'])->where(['news_id'=>$id])->asArray()->all();
         $file_model = $refinement->getLinkForFileInput($file_model);
@@ -80,6 +82,7 @@ class NewsController extends Controller
             'model' => $this->findModel($id),
             'file_model' => $file_model,
             'file_config' => $file_config,
+            'news_user_model' => $news_user_model,
         ]);
     }
 

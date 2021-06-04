@@ -16,6 +16,8 @@ use Yii;
  *
  * @property File[] $files
  * @property User $user
+ * @property NewsUser[] $newsUsers
+ * @property User[] $users
  */
 class News extends \yii\db\ActiveRecord
 {
@@ -76,5 +78,25 @@ class News extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
+
+    /**
+     * Gets query for [[NewsUsers]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getNewsUsers()
+    {
+        return $this->hasMany(NewsUser::className(), ['news_id' => 'id']);
+    }
+
+    /**
+     * Gets query for [[Users]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUsers()
+    {
+        return $this->hasMany(User::className(), ['id' => 'user_id'])->viaTable('news_user', ['news_id' => 'id']);
     }
 }

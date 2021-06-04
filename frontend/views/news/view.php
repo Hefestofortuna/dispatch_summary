@@ -3,6 +3,7 @@
 use kartik\file\FileInput;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\News */
@@ -17,16 +18,23 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Обновить', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Удалить', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Вы уверены, что хотите удалить эту новость?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
+    <div>
+        <div class="float-left">
+            <p>
+                <?= Html::a('Обновить', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+                <?= Html::a('Удалить', ['delete', 'id' => $model->id], [
+                    'class' => 'btn btn-danger',
+                    'data' => [
+                        'confirm' => 'Вы уверены, что хотите удалить эту новость?',
+                        'method' => 'post',
+                    ],
+                ]) ?>
+        </div>
+        <div class="float-right">
+                <?= Html::a('Список ознакомленных', ['', 'id' => $model->id], ['class' => 'btn btn-success ']) ?>
+            </p>
+        </div>
+    </div>
     <table class="table table-striped table-bordered detail-view">
         <tbody>
             <tr>
@@ -66,4 +74,13 @@ $this->params['breadcrumbs'][] = $this->title;
             </tr>
         </tbody>
     </table>
+    <div class="d-flex flex-row-reverse">
+        <?php Pjax::begin(['enablePushState' => false]); ?>
+        <?php
+            if($news_user_model == 0){
+                echo Html::a('Ознакомлен(а)', ['/news-user/create', 'news_id' => $model->id], ['class' => 'btn btn-success ']);
+            }
+        ?>
+        <?php Pjax::end(); ?>
+    </div>
 </div>
