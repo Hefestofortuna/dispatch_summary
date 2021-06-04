@@ -36,12 +36,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
             Modal::begin([
                 'title' => 'Список ознакомившихся',
-                'toggleButton' => ['label' => 'click me'],
+                'toggleButton' => [
+                    'class' =>'btn btn-primary',
+                    'label' => 'Список ознакомившихся',
+                ],
             ]);
-
-            foreach ($news_user_model as $item)
-                echo $item['name'] . "\n";
-
+            if(!is_null($news_user_model)){
+                foreach ($news_user_model as $item)
+                    echo $item['name'] . "\n";
+            }
+            else{
+                echo "Пока с новостью никто не ознакомлен.";
+            }
             Modal::end();
             ?>
             </p>

@@ -66,7 +66,10 @@ class NewsController extends Controller
     {
         $news_user_submit_model = NewsUser::find()->where(['news_id'=>$id, 'user_id' =>Yii::$app->user->id])->count();
         #$news_user_model = NewsUser::find()->where(['news_id'=>$id])->asArray()->all();
-        $news_user_model = NewsUser::findOne($id)->getUser()->asArray()->all();
+        if(NewsUser::find()->where(['news_id'=>$id])->count() != 0)
+            $news_user_model = NewsUser::findOne($id)->getUser()->asArray()->all();
+        else
+            $news_user_model = null;
         $refinement = new RefinementOfLinks();
         $file_model = File::find()->select(['filepath'])->where(['news_id'=>$id])->asArray()->all();
         $file_model = $refinement->getLinkForFileInput($file_model);
