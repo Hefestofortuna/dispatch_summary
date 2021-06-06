@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ]);
             if(!is_null($news_user_model)){
                 foreach ($news_user_model as $item)
-                    echo $item['name'] . "\n";
+                    echo $item['name'] . "<hr>\n";
             }
             else{
                 echo "Пока с новостью никто не ознакомлен.";
