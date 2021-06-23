@@ -1,0 +1,20 @@
+<?php
+
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model backend\models\SprElectroType */
+
+$this->title = 'Create Spr Electro Type';
+$this->params['breadcrumbs'][] = ['label' => 'Spr Electro Types', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="spr-electro-type-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>

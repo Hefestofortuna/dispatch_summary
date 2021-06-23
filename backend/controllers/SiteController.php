@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use backend\components\DataSite;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -60,7 +61,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $fulllist = new DataSite();
+        $controllers = $fulllist->getControllersNames();
+        return $this->render('index',[
+            'controllers' => $controllers,
+        ]);
     }
 
     /**
