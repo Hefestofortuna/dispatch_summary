@@ -37,6 +37,15 @@ private static $installed = array (
   ),
   'versions' => 
   array (
+    'almasaeed2010/adminlte' => 
+    array (
+      'pretty_version' => 'v3.1.0',
+      'version' => '3.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c641d7f5716ed47e76f70ab16e05ae41420120b8',
+    ),
     'behat/gherkin' => 
     array (
       'pretty_version' => 'v4.8.0',
@@ -226,14 +235,32 @@ private static $installed = array (
       ),
       'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
     ),
-    'kartik-v/bootstrap-fileinput' => 
+    'hail812/yii2-adminlte-widgets' => 
     array (
-      'pretty_version' => 'v5.2.1',
-      'version' => '5.2.1.0',
+      'pretty_version' => 'v1.0.3',
+      'version' => '1.0.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '277dc8dfd5e1a89888129a4d252efdab9751b738',
+      'reference' => '67454f5e3dcfe62e689547efb4d32335bc67f58b',
+    ),
+    'hail812/yii2-adminlte3' => 
+    array (
+      'pretty_version' => 'v1.1.3',
+      'version' => '1.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3c82edef9a2db36b1fa074725978183fd2999516',
+    ),
+    'kartik-v/bootstrap-fileinput' => 
+    array (
+      'pretty_version' => 'v5.2.2',
+      'version' => '5.2.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c05214460c4f61fe34d9015a8939e3d3eb498435',
     ),
     'kartik-v/dependent-dropdown' => 
     array (
@@ -424,12 +451,12 @@ private static $installed = array (
     ),
     'phpunit/phpunit' => 
     array (
-      'pretty_version' => '8.5.15',
-      'version' => '8.5.15.0',
+      'pretty_version' => '8.5.17',
+      'version' => '8.5.17.0',
       'aliases' => 
       array (
       ),
-      'reference' => '038d4196d8e8cb405cd5e82cedfe413ad6eef9ef',
+      'reference' => '79067856d85421c56d413bd238d4e2cd6b0e54da',
     ),
     'psr/container' => 
     array (
@@ -616,12 +643,12 @@ private static $installed = array (
     ),
     'symfony/console' => 
     array (
-      'pretty_version' => 'v5.3.0',
-      'version' => '5.3.0.0',
+      'pretty_version' => 'v5.3.2',
+      'version' => '5.3.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '058553870f7809087fa80fa734704a21b9bcaeb2',
+      'reference' => '649730483885ff2ca99ca0560ef0e5f6b03f2ac1',
     ),
     'symfony/css-selector' => 
     array (
@@ -643,12 +670,12 @@ private static $installed = array (
     ),
     'symfony/dom-crawler' => 
     array (
-      'pretty_version' => 'v4.4.24',
-      'version' => '4.4.24.0',
+      'pretty_version' => 'v4.4.25',
+      'version' => '4.4.25.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'fc0bd1f215b0cd9f4efdc63bb66808f3417331bc',
+      'reference' => '41d15bb6d6b95d2be763c514bb2494215d9c5eef',
     ),
     'symfony/event-dispatcher' => 
     array (
@@ -776,21 +803,21 @@ private static $installed = array (
     ),
     'symfony/string' => 
     array (
-      'pretty_version' => 'v5.3.0',
-      'version' => '5.3.0.0',
+      'pretty_version' => 'v5.3.2',
+      'version' => '5.3.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a9a0f8b6aafc5d2d1c116dcccd1573a95153515b',
+      'reference' => '0732e97e41c0a590f77e231afc16a327375d50b0',
     ),
     'symfony/yaml' => 
     array (
-      'pretty_version' => 'v5.3.0',
-      'version' => '5.3.0.0',
+      'pretty_version' => 'v5.3.2',
+      'version' => '5.3.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3bbcf262fceb3d8f48175302e6ba0ac96e3a5a11',
+      'reference' => '71719ab2409401711d619765aa255f9d352a59b2',
     ),
     'theseer/tokenizer' => 
     array (

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5caf3672-d29c-40c4-8268-1a7995aabca1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +117,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/bootstrap-fileinput" />
       <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-fileinput" />
+      <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
+      <path value="$PROJECT_DIR$/vendor/hail812/yii2-adminlte-widgets" />
+      <path value="$PROJECT_DIR$/vendor/hail812/yii2-adminlte3" />
     </include_path>
   </component>
   <component name="ProjectId" id="1snkFjH0HCA4zJrZa5CtbHFBFCS" />
@@ -128,7 +132,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -137,19 +141,31 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\css" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\emojis" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist\font" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\codemirror" />
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist\lang" />
       <recent name="E:\nginx\html\dispatch_summary\frontend\components" />
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\views" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\css" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\emojis" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="codeception.yml" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -157,7 +173,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5caf3672-d29c-40c4-8268-1a7995aabca1" name="Default Changelist" comment="" />
@@ -179,10 +198,29 @@
       <workItem from="1622472282124" duration="674000" />
       <workItem from="1622514666715" duration="121970000" />
       <workItem from="1622989933449" duration="408000" />
+      <workItem from="1623048053714" duration="1731000" />
+      <workItem from="1623111143549" duration="4654000" />
+      <workItem from="1623224501528" duration="21829000" />
+      <workItem from="1623503190124" duration="143000" />
+      <workItem from="1623896322570" duration="1274000" />
+      <workItem from="1624428133157" duration="8167000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

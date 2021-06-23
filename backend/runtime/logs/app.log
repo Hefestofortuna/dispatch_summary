@@ -1,0 +1,879 @@
+2021-06-23 06:23:21 [::1][1][i3vmet3iuscuuj5rtqugn321nu][error][Error] Error: Class "app\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\models\News.php:43
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): app\models\News->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2021-06-23 06:23:21 [::1][1][i3vmet3iuscuuj5rtqugn321nu][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-backend' => 'M85SIvoZhP1BOYxXulAYKNgzjTqlxYXTcJFhwVVEaVUEgBRmlHrLpy1QyzrSF05Yt1T8UPOO14w61A2sFAkODw=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\News'
+        'searchModelClass' => 'app\\models\\NewsSearch'
+        'controllerClass' => 'app\\controllers\\NewsController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '57965'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/gii/crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/gii/crud'
+    'PHP_SELF' => '/index.php/gii/crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '555'
+    'HTTP_CONTENT_LENGTH' => '555'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624429401.4265
+    'REQUEST_TIME' => 1624429401
+]
+2021-06-23 06:23:38 [::1][1][i3vmet3iuscuuj5rtqugn321nu][error][Error] Error: Class "backend\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\models\News.php:43
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): backend\models\News->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2021-06-23 06:23:38 [::1][1][i3vmet3iuscuuj5rtqugn321nu][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-backend' => '2TpmQJPcffCJ8jr8Tpzf5NZh7e8vnvu9iV-xI476lPHudCAE_b8yquWbfZEm24mUuQachXnVqeLDGt1Oz7fzqw=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\News'
+        'searchModelClass' => 'backend\\models\\NewsSearch'
+        'controllerClass' => 'backend\\controllers\\NewsController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59044'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/gii/crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/gii/crud'
+    'PHP_SELF' => '/index.php/gii/crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '567'
+    'HTTP_CONTENT_LENGTH' => '567'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624429418.7825
+    'REQUEST_TIME' => 1624429418
+]
+2021-06-23 06:23:44 [::1][1][i3vmet3iuscuuj5rtqugn321nu][error][Error] Error: Class "backend\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\models\News.php:43
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): backend\models\News->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2021-06-23 06:23:44 [::1][1][i3vmet3iuscuuj5rtqugn321nu][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-backend' => 'awIOb5uWoqpXb_aOC7r7kxRzoIsPVKrOkr_gfB8Wa7lcTEgr9fXt8DsGseNj_a3jexTR4Vkf-JHY-owRXlsM4w=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\News'
+        'searchModelClass' => 'backend\\models\\NewsSearch'
+        'controllerClass' => 'backend\\controllers\\NewsController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59290'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/gii/crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/gii/crud'
+    'PHP_SELF' => '/index.php/gii/crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '567'
+    'HTTP_CONTENT_LENGTH' => '567'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624429424.5294
+    'REQUEST_TIME' => 1624429424
+]
+2021-06-23 06:48:58 [::1][1][i3vmet3iuscuuj5rtqugn321nu][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\views\site\index.php in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(410): yii\base\View->render()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\controllers\SiteController.php(63): yii\base\Controller->render()
+#3 [internal function]: backend\controllers\SiteController->actionIndex()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2021-06-23 06:48:58 [::1][1][i3vmet3iuscuuj5rtqugn321nu][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62055'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624430938.3888
+    'REQUEST_TIME' => 1624430938
+]
+2021-06-23 06:51:39 [::1][1][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-23 06:51:38 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51105'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624431098.9828
+    'REQUEST_TIME' => 1624431098
+]
+2021-06-23 06:51:54 [::1][1][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-23 06:51:54 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '65457'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624431114.2206
+    'REQUEST_TIME' => 1624431114
+]
+2021-06-23 06:51:57 [::1][1][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-23 06:51:56 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'i3vmet3iuscuuj5rtqugn321nu'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59335'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=i3vmet3iuscuuj5rtqugn321nu; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624431116.9961
+    'REQUEST_TIME' => 1624431116
+]
+2021-06-23 07:02:19 [::1][-][hd14a5oma8umc3tiui8nl9ctpf][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\views\layouts\blank.php in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(425): yii\base\View->renderFile()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\Controller->renderContent()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\controllers\SiteController.php(86): yii\base\Controller->render()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2021-06-23 07:02:18 [::1][-][hd14a5oma8umc3tiui8nl9ctpf][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+    'advanced-backend' => 'hd14a5oma8umc3tiui8nl9ctpf'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58340'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/site/login'
+    'PHP_SELF' => '/index.php/site/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D; advanced-backend=hd14a5oma8umc3tiui8nl9ctpf'
+    'REQUEST_TIME_FLOAT' => 1624431738.9617
+    'REQUEST_TIME' => 1624431738
+]
+2021-06-23 07:02:20 [::1][-][hd14a5oma8umc3tiui8nl9ctpf][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\views\layouts\blank.php in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(425): yii\base\View->renderFile()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\Controller->renderContent()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\controllers\SiteController.php(86): yii\base\Controller->render()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2021-06-23 07:02:20 [::1][-][hd14a5oma8umc3tiui8nl9ctpf][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+    'advanced-backend' => 'hd14a5oma8umc3tiui8nl9ctpf'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60473'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/site/login'
+    'PHP_SELF' => '/index.php/site/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D; advanced-backend=hd14a5oma8umc3tiui8nl9ctpf'
+    'REQUEST_TIME_FLOAT' => 1624431740.1014
+    'REQUEST_TIME' => 1624431740
+]
+2021-06-23 07:02:20 [::1][-][hd14a5oma8umc3tiui8nl9ctpf][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\views\layouts\blank.php in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(425): yii\base\View->renderFile()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\Controller->renderContent()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\controllers\SiteController.php(86): yii\base\Controller->render()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2021-06-23 07:02:20 [::1][-][hd14a5oma8umc3tiui8nl9ctpf][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    '_csrf-backend' => 'd374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7NFDncOZliGmhGVpogqjVKR_JElmAMgZ\";}'
+    'advanced-backend' => 'hd14a5oma8umc3tiui8nl9ctpf'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63483'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/site/login'
+    'PHP_SELF' => '/index.php/site/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; _csrf-backend=d374a90a1269714743ed6061bb2c0d3a9642ab0f1dbf920ca59c317ce8f7baa9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227NFDncOZliGmhGVpogqjVKR_JElmAMgZ%22%3B%7D; advanced-backend=hd14a5oma8umc3tiui8nl9ctpf'
+    'REQUEST_TIME_FLOAT' => 1624431740.7707
+    'REQUEST_TIME' => 1624431740
+]
+2021-06-23 07:22:08 [::1][1][kvv0nedbvvhmc3eqk571q4nu09][error][Error] Error: Class "backend\models\Organization" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\models\User.php:103
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): backend\models\User->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2021-06-23 07:22:08 [::1][1][kvv0nedbvvhmc3eqk571q4nu09][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-backend' => 'c7eiprKhDkTY6O7gCDp0S-EGonC2GOm4fGa1CskOAhcy-JLCwJU7Pe66tKdNUgcHkWvQItEgoswTD9JQnHl3ZQ=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\User'
+        'searchModelClass' => 'backend\\models\\UserSearch'
+        'controllerClass' => 'backend\\controllers\\UserController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"'
+    '_xsrf' => '2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059'
+    '_identity' => '998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'advanced-frontend' => '8fotqbeg6nlsigvjvdc26ept6u'
+    '_identity-frontend' => '432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[13,\"Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx\",2592000]\";}'
+    '_csrf-frontend' => '98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z\";}'
+    'advanced-backend' => 'kvv0nedbvvhmc3eqk571q4nu09'
+    '_identity-backend' => '6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0\",2592000]\";}'
+    '_csrf-backend' => 'cf207a0501f8ec86e9b030c1ee238971c3a826f990d1c6d5b602e54f8bc47904a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"AO0dr45y6RZGEhsLpmrRg8KtoigZUwur\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+    '__authKey' => 'HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51910'
+    'SERVER_SOFTWARE' => 'PHP 8.0.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/gii/crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Karatui\\Documents\\GitHub\\dispatch_summary\\backend\\web\\index.php'
+    'PATH_INFO' => '/gii/crud'
+    'PHP_SELF' => '/index.php/gii/crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '567'
+    'HTTP_CONTENT_LENGTH' => '567'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1623135059|23:username-localhost-8888|44:ZTc5ZmE0ODE5Y2QxNGNmOGI4NDQ2YzU1MGQ4YmE1ZGQ=|6438bff8e44e7b01d018f497d1ab823ea1f780266c82a795ba7048e10876afbb\"; _xsrf=2|99318af8|398ad57857eb44396cb8900581cfb492|1623135059; _identity=998835089297f86e2772f423775c7af5b745b8dc5b2184f95774df21a124b28ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; advanced-frontend=8fotqbeg6nlsigvjvdc26ept6u; _identity-frontend=432dc11b890f7d0cd4fd075e3e1bf7c15af0edcf027d1d3595cc6903a9f15298a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22Kh40M8M86XAtamRZq3m-JRHKAaXu61Vx%22%2C2592000%5D%22%3B%7D; _csrf-frontend=98f3a1f07fe598a6f76cd3ba3f5dcef990d8579d2bf9d50a58369607ac707698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KwNOxyQL0qU1tgrg1zd-uesuKH1-ya9z%22%3B%7D; advanced-backend=kvv0nedbvvhmc3eqk571q4nu09; _identity-backend=6cf67be1e2711ef3ab52c7edc58de54170cfbe29a57c78ba8ba150a983d89833a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22HIMy2Ewfh9Uevm8f3DycqIThd1EGEHC0%22%2C2592000%5D%22%3B%7D; _csrf-backend=cf207a0501f8ec86e9b030c1ee238971c3a826f990d1c6d5b602e54f8bc47904a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AO0dr45y6RZGEhsLpmrRg8KtoigZUwur%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1624432928.0412
+    'REQUEST_TIME' => 1624432928
+]

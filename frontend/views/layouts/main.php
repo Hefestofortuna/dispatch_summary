@@ -3,6 +3,8 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use kartik\date\DatePicker;
+use yii\bootstrap4\Dropdown;
 use yii\bootstrap4\Modal;
 use yii\helpers\Html;
 use yii\bootstrap4\Nav;
@@ -31,6 +33,7 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?php
+
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -39,7 +42,13 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => 'Новости', 'url' => ['/news/list']],
+        [
+            'label' => 'Модули',
+            'items' => [
+                ['label' => 'Новости', 'url' => ['/news/list']],
+                ['label' => 'Актуальная документация', 'url' => ['/site/about']],
+            ],
+        ],
         ['label' => 'О проекте', 'url' => ['/site/about']],
         ['label' => 'Обратная связь', 'url' => ['/site/contact']],
     ];
@@ -56,10 +65,12 @@ AppAsset::register($this);
             . Html::endForm()
             . '</li>';
     }
+
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,
     ]);
+
     NavBar::end();
     ?>
 

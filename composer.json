@@ -31,7 +31,8 @@
         "symfony/browser-kit": ">=2.7 <=4.2.4",
         "kartik-v/yii2-editors": "@dev",
         "kartik-v/yii2-widget-depdrop": "dev-master",
-        "kartik-v/yii2-widget-fileinput": "dev-master"
+        "kartik-v/yii2-widget-fileinput": "dev-master",
+        "hail812/yii2-adminlte3": "~1.1"
     },
     "config": {
         "process-timeout": 1800,
