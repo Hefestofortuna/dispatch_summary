@@ -62,6 +62,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $fulllist = new DataSite();
+        $adasd = $fulllist->getControllersNames();
         $controllers = $fulllist->getControllersNames();
         return $this->render('index',[
             'controllers' => $controllers,

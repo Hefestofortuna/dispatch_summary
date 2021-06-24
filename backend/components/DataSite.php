@@ -4,6 +4,7 @@
 namespace backend\components;
 use Yii;
 use yii\helpers\Url;
+use function GuzzleHttp\Psr7\str;
 
 class DataSite
 {
@@ -21,7 +22,14 @@ class DataSite
         asort($controllerlist);
         $fulllist = [];
         foreach ($controllerlist as $controller):
-            array_push($fulllist, strtolower(str_replace("Controller.php","", $controller)));
+            $reg = str_replace("Controller.php","", $controller);
+            $split = preg_split("/(?<=[a-z])(?![a-z])/", $reg, -1, PREG_SPLIT_NO_EMPTY);
+            $preorder = null;
+            foreach ($split as $item){
+                $preorder .= strtolower($item) . "-";
+            }
+            $preorder = substr($preorder, 0, -1);
+            array_push($fulllist, $preorder);
         endforeach;
         return $fulllist;
     }
