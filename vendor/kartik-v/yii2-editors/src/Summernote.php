@@ -146,9 +146,9 @@ class Summernote extends InputWidget
         if (!isset($this->container['id'])) {
             $this->container['id'] = $this->options['id'] . '-container';
         }
-        if (!isset($this->container['class'])) {
+        /*if (!isset($this->container['class'])) {
             $this->container['class'] = 'form-control kv-editor-container';
-        }
+        }*/
         $this->initKrajeePresets();
         $this->initHints();
         $this->registerAssets();

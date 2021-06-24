@@ -28,10 +28,15 @@ $this->params['breadcrumbs'][] = 'Update';
 
         <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
+
         <?= Summernote::widget([
             'model' => $model,
             'attribute' => 'content',
+            'container' => [
+
+            ],
         ]); ?>
+
         <?= $form->field($file_model_form, 'filename[]')->widget(FileInput::className(),[
             'name' => 'attachment_51',
             'options' => [

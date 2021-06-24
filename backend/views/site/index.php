@@ -1,4 +1,5 @@
 <?php
+/** @var Array[] $controllers */
 $this->title = 'Starter Page';
 $this->params['breadcrumbs'] = [['label' => $this->title]];
 ?>

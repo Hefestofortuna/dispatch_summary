@@ -1102,3 +1102,743 @@ $_SERVER = [
     ]
     'argc' => 3
 ]
+2021-06-24 07:52:18 [-][-][-][error][Error] Error: Class "app\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\News.php:45
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\News->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#11 [internal function]: yii\gii\console\GenerateAction->run()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#20 {main}
+2021-06-24 07:52:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521137.5064
+    'REQUEST_TIME' => 1624521137
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\NewsController'
+        3 => '--modelClass=frontend\\models\\News'
+        4 => '--searchModelClass=frontend\\models\\NewsSearch'
+        5 => '--viewPath=frontend\\views\\news'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:52:18 [-][-][-][error][Error] Error: Class "app\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\NewsUser.php:38
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\NewsUser->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#11 [internal function]: yii\gii\console\GenerateAction->run()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#20 {main}
+2021-06-24 07:52:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521137.6283
+    'REQUEST_TIME' => 1624521137
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\NewsUserController'
+        3 => '--modelClass=frontend\\models\\NewsUser'
+        4 => '--searchModelClass=frontend\\models\\NewsUserSearch'
+        5 => '--viewPath=frontend\\views\\news-user'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:52:19 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\User' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/User.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\Organization.php(74): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\Organization->rules()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#12 [internal function]: yii\gii\console\GenerateAction->run()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#21 {main}
+2021-06-24 07:52:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521138.918
+    'REQUEST_TIME' => 1624521138
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\OrganizationController'
+        3 => '--modelClass=frontend\\models\\Organization'
+        4 => '--searchModelClass=frontend\\models\\OrganizationSearch'
+        5 => '--viewPath=frontend\\views\\organization'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:52:24 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\User' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/User.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\Subdivision.php(59): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\Subdivision->rules()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#12 [internal function]: yii\gii\console\GenerateAction->run()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#21 {main}
+2021-06-24 07:52:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521144.332
+    'REQUEST_TIME' => 1624521144
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\SubdivisionController'
+        3 => '--modelClass=frontend\\models\\Subdivision'
+        4 => '--searchModelClass=frontend\\models\\SubdivisionSearch'
+        5 => '--viewPath=frontend\\views\\subdivision'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:57:58 [-][-][-][error][Error] Error: Class "app\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\News.php:45
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\News->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#11 [internal function]: yii\gii\console\GenerateAction->run()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#20 {main}
+2021-06-24 07:57:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521477.1743
+    'REQUEST_TIME' => 1624521477
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\NewsController'
+        3 => '--modelClass=frontend\\models\\News'
+        4 => '--searchModelClass=frontend\\models\\NewsSearch'
+        5 => '--viewPath=frontend\\views\\news'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:57:58 [-][-][-][error][Error] Error: Class "app\models\User" not found in C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\NewsUser.php:38
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\NewsUser->rules()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#11 [internal function]: yii\gii\console\GenerateAction->run()
+#12 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#20 {main}
+2021-06-24 07:57:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521477.337
+    'REQUEST_TIME' => 1624521477
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\NewsUserController'
+        3 => '--modelClass=frontend\\models\\NewsUser'
+        4 => '--searchModelClass=frontend\\models\\NewsUserSearch'
+        5 => '--viewPath=frontend\\views\\news-user'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:57:59 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\User' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/User.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\Organization.php(74): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\Organization->rules()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#12 [internal function]: yii\gii\console\GenerateAction->run()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#21 {main}
+2021-06-24 07:57:58 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521478.6977
+    'REQUEST_TIME' => 1624521478
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\OrganizationController'
+        3 => '--modelClass=frontend\\models\\Organization'
+        4 => '--searchModelClass=frontend\\models\\OrganizationSearch'
+        5 => '--viewPath=frontend\\views\\organization'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
+2021-06-24 07:58:04 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\User' in file: C:\Users\Karatui\Documents\GitHub\dispatch_summary/frontend/models/User.php. Namespace missing? in C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\models\Subdivision.php(59): yii\BaseYii::autoload()
+#1 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(465): frontend\models\Subdivision->rules()
+#2 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(421): yii\base\Model->createValidators()
+#3 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(190): yii\base\Model->getValidators()
+#4 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Model.php(796): yii\base\Model->scenarios()
+#5 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#6 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(348): require('...')
+#7 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#8 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile()
+#9 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render()
+#10 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(53): yii\gii\generators\crud\Generator->generate()
+#11 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2-gii\src\console\GenerateAction.php(36): yii\gii\console\GenerateAction->generateCode()
+#12 [internal function]: yii\gii\console\GenerateAction->run()
+#13 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array()
+#14 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams()
+#15 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction()
+#16 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction()
+#17 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction()
+#18 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction()
+#19 C:\Users\Karatui\Documents\GitHub\dispatch_summary\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest()
+#20 C:\Users\Karatui\Documents\GitHub\dispatch_summary\yii(23): yii\base\Application->run()
+#21 {main}
+2021-06-24 07:58:04 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Karatui\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8HT4QAU'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Karatui'
+    'LOCALAPPDATA' => 'C:\\Users\\Karatui\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8HT4QAU'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Karatui\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\PuTTY\\;C:\\composer;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\Karatui\\anaconda3;C:\\Users\\Karatui\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\usr\\bin;C:\\Users\\Karatui\\anaconda3\\Library\\bin;C:\\Users\\Karatui\\anaconda3\\Scripts;C:\\Users\\Karatui\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;;C:\\interpreter\\php-8\\;C:\\Users\\Karatui\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Karatui\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;;C:\\Users\\Karatui\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.2.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 11, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0b'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm' => 'C:\\Program Files\\JetBrains\\PyCharm 2021.1.2\\bin;'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Karatui\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8HT4QAU'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8HT4QAU'
+    'USERNAME' => 'Karatui'
+    'USERPROFILE' => 'C:\\Users\\Karatui'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\bin;'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1624521484.4352
+    'REQUEST_TIME' => 1624521484
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/crud'
+        2 => '--controllerClass=frontend\\controllers\\SubdivisionController'
+        3 => '--modelClass=frontend\\models\\Subdivision'
+        4 => '--searchModelClass=frontend\\models\\SubdivisionSearch'
+        5 => '--viewPath=frontend\\views\\subdivision'
+        6 => '--enablePjax=1'
+        7 => '--overwrite=1'
+    ]
+    'argc' => 8
+]
