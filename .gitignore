@@ -3,3 +3,6 @@
 /frontend/web/assets/
 .idea/workspace.xml
 /backend/web/assets/
+frontend/runtime/logs/app.log
+frontend/runtime/debug/index.data
+.idea/workspace.xml
