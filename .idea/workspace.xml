@@ -132,7 +132,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/views/news" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/views/site" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -141,18 +141,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\site" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend" />
+      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\codemirror" />
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\web\dist\lang" />
       <recent name="E:\nginx\html\dispatch_summary\frontend\components" />
       <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views\news" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend\views" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\frontend" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend\components" />
-      <recent name="C:\Users\Karatui\Documents\GitHub\dispatch_summary\backend" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,7 +203,8 @@
       <workItem from="1623224501528" duration="21829000" />
       <workItem from="1623503190124" duration="143000" />
       <workItem from="1623896322570" duration="1274000" />
-      <workItem from="1624428133157" duration="40648000" />
+      <workItem from="1624428133157" duration="41102000" />
+      <workItem from="1624602914641" duration="4642000" />
     </task>
     <servers />
   </component>
