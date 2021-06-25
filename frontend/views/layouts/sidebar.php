@@ -9,10 +9,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?=$assetDir?>/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                <img src="/user_icon.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="#" class="d-block"><?= preg_replace('~^(\S++)\s++(\S)\S++\s++(\S)\S++$~u', '$1 $2.$3.', Yii::$app->user->identity->name)  ?></a>
             </div>
         </div>
 
@@ -35,38 +35,37 @@
             echo \hail812\adminlte\widgets\Menu::widget([
                 'items' => [
                     [
-                        'label' => 'Starter Pages',
-                        'icon' => 'tachometer-alt',
+                        'label' => 'Новости',
+                        'icon' => 'digital-tachograph',
                         'badge' => '<span class="right badge badge-info">2</span>',
                         'items' => [
-                            ['label' => 'Active Page', 'url' => ['site/index'], 'iconStyle' => 'far'],
-                            ['label' => 'Inactive Page', 'iconStyle' => 'far'],
+                            ['label' => 'Новости', 'url' => ['news/list'], 'iconStyle' => 'far'],
+                            ['label' => 'Окна', 'url' => ['windows/index'], 'iconStyle' => 'far'],
+                            ['label' => 'Выключения', 'url' => ['windows/index'], 'iconStyle' => 'far'],
                         ]
                     ],
                     ['label' => 'Simple Link', 'icon' => 'th', 'badge' => '<span class="right badge badge-danger">New</span>'],
-                    ['label' => 'Yii2 PROVIDED', 'header' => true],
-                    ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
-                    ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
-                    ['label' => 'Debug', 'icon' => 'bug', 'url' => ['/debug'], 'target' => '_blank'],
-                    ['label' => 'MULTI LEVEL EXAMPLE', 'header' => true],
-                    ['label' => 'Level1'],
+                    ['label' => 'Группы', 'header' => true],
                     [
-                        'label' => 'Level1',
+                            'label' => 'Отчеты', 'icon' => 'chart-bar'
+                    ],
+                    [
+                        'label' => 'Кадровые данные','icon' => 'briefcase',
                         'items' => [
                             ['label' => 'Level2', 'iconStyle' => 'far'],
                             [
                                 'label' => 'Level2',
                                 'iconStyle' => 'far',
-                                'items' => [
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle']
-                                ]
                             ],
                             ['label' => 'Level2', 'iconStyle' => 'far']
                         ]
                     ],
-                    ['label' => 'Level1'],
+                    [
+                            'label' => 'Справочники'
+                    ],
+                    [
+                            'label' => 'Документация'
+                    ],
                     ['label' => 'LABELS', 'header' => true],
                     ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
                     ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
