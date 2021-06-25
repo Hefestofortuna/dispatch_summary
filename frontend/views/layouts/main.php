@@ -37,10 +37,6 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/admi
     <?= $this->render('content', ['content' => $content, 'assetDir' => $assetDir]) ?>
     <!-- /.content-wrapper -->
 
-    <!-- Control Sidebar -->
-    <?= $this->render('control-sidebar') ?>
-    <!-- /.control-sidebar -->
-
     <!-- Main Footer -->
     <?= $this->render('footer') ?>
 </div>
